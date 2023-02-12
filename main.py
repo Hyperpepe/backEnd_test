@@ -1,16 +1,33 @@
-# 这是一个示例 Python 脚本。
+import socket
+import json
 
-# 按 Shift+F10 执行或将其替换为您的代码。
-# 按 双击 Shift 在所有地方搜索类、文件、工具窗口、操作和设置。
+# Server configuration
+IP = "192.168.137.1"
+PORT = 50000
 
+# Create socket and bind to IP and PORT
+server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+server_socket.bind((IP, PORT))
 
-def print_hi(name):
-    # 在下面的代码行中使用断点来调试脚本。
-    print(f'Hi, {name}')  # 按 Ctrl+F8 切换断点。
+# Listen for incoming connections
+server_socket.listen(1)
+print("Listening on {}:{}".format(IP, PORT))
 
+while True:
+    # Accept incoming connection
+    client_socket, client_address = server_socket.accept()
+    print("Accepted connection from {}:{}".format(*client_address))
 
-# 按间距中的绿色按钮以运行脚本。
-if __name__ == '__main__':
-    print_hi('PyCharm')
+    # Receive data from the client
+    data = client_socket.recv(1024).decode("utf-8")
+    print("Received data: {}".format(data))
 
-# 访问 https://www.jetbrains.com/help/pycharm/ 获取 PyCharm 帮助
+    # Decode JSON data
+    json_data = json.loads(data)
+    print("JSON data:", json_data)
+
+    # Send response to the client
+    client_socket.sendall("ACK".encode("utf-8"))
+
+    # Close the connection
+    client_socket.close()
