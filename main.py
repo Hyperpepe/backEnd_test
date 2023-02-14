@@ -1,46 +1,15 @@
+import base64
+import re
+
 import flask
 import argparse
 import time
 import cv2
 import numpy as np
-import serial  # 导入串口通信库
+import flask
+from flask import json,request
+api = flask.Flask(__name__)
 
-ser = serial.Serial()
-
-def port_open_recv():  # 对串口的参数进行配置
-    ser.port = '/dev/ttyS3'
-    ser.baudrate = 9600
-    ser.bytesize = 8
-    ser.stopbits = 1
-    ser.parity = "N"  # 奇偶校验位
-    ser.open()
-    if (ser.isOpen()):
-        print("串口打开成功！")
-    else:
-        print("串口打开失败！")
-
-
-# isOpen()函数来查看串口的开闭状态
-def port_close():
-    ser.close()
-    if (ser.isOpen()):
-        print("串口关闭失败！")
-    else:
-        print("串口关闭成功！")
-
-
-def send(send_data):
-    if (ser.isOpen()):
-        ser.write(send_data.encode('utf-8'))  # 编码
-        print("发送成功", send_data, time.asctime())
-    else:
-        print("发送失败！")
-
-
-def spark():
-    send("AA02" + "00" + "00032500")
-def nospark():
-    send("AA020100032500")
 
 class FastestDet():
     def __init__(self, confThreshold=0.3, nmsThreshold=0.4):
@@ -99,8 +68,8 @@ class FastestDet():
             width = box[2]
             height = box[3]
             frame = self.drawPred(frame, classIds[i], confidences[i], left, top, left + width, top + height)
-        if len(indices) == 0:
-            nospark()
+        # if len(indices) == 0:
+            # nospark()
         return frame
 
     def drawPred(self, frame, classId, conf, left, top, right, bottom):
@@ -112,8 +81,8 @@ class FastestDet():
         print(label)
         # port_open_recv()
         a = self.classes[classId]
-        if self.classes[classId] != 0:
-            spark()
+        # if self.classes[classId] != 0:
+            # spark()
 
         print("a=", a)
         print("b=", classId)
@@ -140,36 +109,82 @@ class FastestDet():
         # print(self.net.getUnconnectedOutLayersNames())
         return srcimg
 
+class PicInfo:
+    def __init__(self, data):
+        pic_info = data.get('picinfo')
+        self.pic_base64 = pic_info
+        base64_code = re.sub('^data:image/.+;base64,', '', pic_info)
+        self.image_data = base64.b64decode(base64_code)
+        pic_array = np.frombuffer(self.image_data, np.uint8)
+        self.pic_array = cv2.imdecode(pic_array, cv2.IMREAD_UNCHANGED)
+        model = FastestDet(confThreshold=0.7, nmsThreshold=0.4)
+        self.srcimg = model.detect(self.pic_array)
+
+    def get_result(self):
+        return self.srcimg
+@api.route('/test', methods=['post'])
+def test():
+    ren = {'msg': 'OK', 'msg_code': 101}
+    print('/test')
+    return json.dumps(ren, ensure_ascii=False)
+
+@api.route('/checkleds', methods=['post'])
+def checkleds():
+    data = request.get_json()
+    num = data['number']
+    act = data['action']
+    print(num, act)
+    ren = {'msg': 'OK', 'msg_code': 101}
+    return json.dumps(ren, ensure_ascii=False)
+
+@api.route('/checkrelay', methods=['post'])
+def checkrelay():
+    data = request.get_json()
+    num = data['number']
+    act = data['action']
+    print(num,act)
+    ren = {'msg': 'OK', 'msg_code': 101}
+    return json.dumps(ren, ensure_ascii=False)
+
+@api.route('/checkAI', methods=['post'])
+def checkAI():
+    data = request.get_json()
+    num = data['number']
+    act = data['action']
+    picinfo = data['picinfo']
+    picin = PicInfo(data)
+    date = picin.get_result()
+    # cv2.imshow('Detection Results', date)
+    cv2.imwrite('output'+ str(num) +'.jpg', date)
+
+    print(date)
+    ren = {'msg': 'ERROR_NONE_ARGS', 'msg_code': 404}
+    return json.dumps(ren, ensure_ascii=False)
+
+
+
+
 
 if __name__ == '__main__':
-    port_open_recv()
-    ser.flushInput()
-    parser = argparse.ArgumentParser()
+    # parser = argparse.ArgumentParser()
+    # parser.add_argument('--confThreshold', default=0.8, type=float, help='class confidence')
+    # parser.add_argument('--nmsThreshold', default=0.35, type=float, help='nms iou thresh')
+    # args = parser.parse_args()
+    # model = FastestDet(confThreshold=0.7, nmsThreshold=0.4)
+    # while True:
+    #     time.sleep(1)
+    #     start = time.time()
+    #     cap = cv2.VideoCapture(0)
+    #     cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
+    #     cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
+    #     success, img = cap.read()
+    #     cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
+    #     srcimg = model.detect(img)
+    #     cap.release()
+    #     end = time.time()
+    #     print("运行时间为：{}s".format(end - start))
+    #     if cv2.waitKey(1) == ord('q'):
+    #         break
+    # cap.release()
 
-    parser.add_argument('--confThreshold', default=0.8, type=float, help='class confidence')
-    parser.add_argument('--nmsThreshold', default=0.35, type=float, help='nms iou thresh')
-    args = parser.parse_args()
-    model = FastestDet(confThreshold=0.7, nmsThreshold=0.4)
-    while True:
-        time.sleep(1)
-        # count = ser.inWaiting()
-        # if count != 0:
-        start = time.time()
-        # recv = ser.read(ser.in_waiting).decode("utf-8")  # 读出串口数据，数据采用gbk编码
-        # print(time.asctime(), " --- recv --> ", recv)  # 打印一下子
-        # ser.flushInput()
-        # if recv == "a":
-        cap = cv2.VideoCapture(0)
-        cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
-        cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
-        success, img = cap.read()
-        cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
-        srcimg = model.detect(img)
-            # cv2.imshow('Detection Results', srcimg)
-        cap.release()
-                # time.sleep(0.1)
-        end = time.time()
-        print("运行时间为：{}s".format(end - start))
-        if cv2.waitKey(1) == ord('q'):
-            break
-    cap.release()
+    api.run(port=5000, debug=True, host='0.0.0.0')
