@@ -1,175 +1,184 @@
-import flask
-import argparse
+import json
+import os
 import time
+import flask
 import cv2
 import numpy as np
-import serial  # 导入串口通信库
+import onnxruntime
+from flask import request
 
-ser = serial.Serial()
+api = flask.Flask(__name__)
+# sigmoid函数
+def sigmoid(x):
+    return 1. / (1 + np.exp(-x))
+# tanh函数
+def tanh(x):
+    return 2. / (1 + np.exp(-2 * x)) - 1
+# 数据预处理
+def preprocess(src_img, size):
+    output = cv2.resize(src_img, (size[0], size[1]), interpolation=cv2.INTER_AREA)
+    output = output.transpose(2, 0, 1)
+    output = output.reshape((1, 3, size[1], size[0])) / 255
+    return output.astype('float32')
+# nms算法
+def nms(dets, thresh=0.4):
+    # dets:N*M,N是bbox的个数，M的前4位是对应的（x1,y1,x2,y2），第5位是对应的分数
+    # #thresh:0.3,0.5....
+    print("dets.shape:", dets.shape)
+    x1 = dets[:, 0]
+    y1 = dets[:, 1]
+    x2 = dets[:, 2]
+    y2 = dets[:, 3]
+    scores = dets[:, 4]
+    areas = (x2 - x1 + 1) * (y2 - y1 + 1)  # 求每个bbox的面积
+    order = scores.argsort()[::-1]  # 对分数进行倒排序
+    keep = []  # 用来保存最后留下来的bboxx下标
 
-def port_open_recv():  # 对串口的参数进行配置
-    ser.port = '/dev/ttyS3'
-    ser.baudrate = 9600
-    ser.bytesize = 8
-    ser.stopbits = 1
-    ser.parity = "N"  # 奇偶校验位
-    ser.open()
-    if (ser.isOpen()):
-        print("串口打开成功！")
-    else:
-        print("串口打开失败！")
+    while order.size > 0:
+        i = order[0]  # 无条件保留每次迭代中置信度最高的bbox
+        keep.append(i)
 
+        # 计算置信度最高的bbox和其他剩下bbox之间的交叉区域
+        xx1 = np.maximum(x1[i], x1[order[1:]])
+        yy1 = np.maximum(y1[i], y1[order[1:]])
+        xx2 = np.minimum(x2[i], x2[order[1:]])
+        yy2 = np.minimum(y2[i], y2[order[1:]])
 
-# isOpen()函数来查看串口的开闭状态
-def port_close():
-    ser.close()
-    if (ser.isOpen()):
-        print("串口关闭失败！")
-    else:
-        print("串口关闭成功！")
+        # 计算置信度高的bbox和其他剩下bbox之间交叉区域的面积
+        w = np.maximum(0.0, xx2 - xx1 + 1)
+        h = np.maximum(0.0, yy2 - yy1 + 1)
+        inter = w * h
 
+        # 求交叉区域的面积占两者（置信度高的bbox和其他bbox）面积和的必烈
+        ovr = inter / (areas[i] + areas[order[1:]] - inter)
 
-def send(send_data):
-    if (ser.isOpen()):
-        ser.write(send_data.encode('utf-8'))  # 编码
-        print("发送成功", send_data, time.asctime())
-    else:
-        print("发送失败！")
+        # 保留ovr小于thresh的bbox，进入下一次迭代。
+        inds = np.where(ovr <= thresh)[0]
 
+        # 因为ovr中的索引不包括order[0]所以要向后移动一位
+        order = order[inds + 1]
 
-def spark():
-    send("AA02" + "00" + "00032500")
-def nospark():
-    send("AA020100032500")
+    output = []
+    for i in keep:
+        output.append(dets[i].tolist())
 
-class FastestDet():
-    def __init__(self, confThreshold=0.3, nmsThreshold=0.4):
-        self.classes = list(map(lambda x: x.strip(), open('model/coco.names','r').readlines()))
-        ###这个是在coco数据集上训练的模型做opencv部署的，如果你在自己的数据集上训练出的模型做opencv部署，那么需要修改self.classes
-        self.inpWidth = 512
-        self.inpHeight = 512
-        self.net = cv2.dnn.readNet('model/FastestDet.onnx')
-        self.confThreshold = confThreshold
-        self.nmsThreshold = nmsThreshold
-        self.H, self.W = 32, 32
-        self.grid = self._make_grid(self.W, self.H)
+    return output
+# 目标检测
+def detection(session, img, input_width, input_height, thresh):
+    pred = []
 
-    def _make_grid(self, nx=20, ny=20):
-        xv, yv = np.meshgrid(np.arange(ny), np.arange(nx))
-        return np.stack((xv, yv), 2).reshape((-1, 2)).astype(np.float32)
+    # 输入图像的原始宽高
+    H, W, _ = img.shape
 
-    def postprocess(self, frame, outs):
-        frameHeight = frame.shape[0]
-        frameWidth = frame.shape[1]
+    # 数据预处理: resize, 1/255
+    data = preprocess(img, [input_width, input_height])
 
-        # Scan through all the bounding boxes output from the network and keep only the
-        # ones with high confidence scores. Assign the box's class label as the class with the highest score.
+    # 模型推理
+    input_name = session.get_inputs()[0].name
+    feature_map = session.run([], {input_name: data})[0][0]
 
-        classIds = []
-        confidences = []
-        boxes = []
-        for detection in outs:
-            scores = detection[5:]
-            classId = np.argmax(scores)
-            confidence = scores[classId] * detection[0]
-            if confidence > self.confThreshold:
-                center_x = int(detection[1] * frameWidth)
-                center_y = int(detection[2] * frameHeight)
-                width = int(detection[3] * frameWidth)
-                height = int(detection[4] * frameHeight)
-                left = int(center_x - width / 2)
-                top = int(center_y - height / 2)
-                classIds.append(classId)
+    # 输出特征图转置: CHW, HWC
+    feature_map = feature_map.transpose(1, 2, 0)
+    # 输出特征图的宽高
+    feature_map_height = feature_map.shape[0]
+    feature_map_width = feature_map.shape[1]
 
-                # confidences.append(float(confidence))
+    # 特征图后处理
+    for h in range(feature_map_height):
+        for w in range(feature_map_width):
+            data = feature_map[h][w]
 
-                confidences.append(float(confidence))
-                boxes.append([left, top, width, height])
+            # 解析检测框置信度
+            obj_score, cls_score = data[0], data[5:].max()
+            score = (obj_score ** 0.6) * (cls_score ** 0.4)
 
-        # Perform non maximum suppression to eliminate redundant overlapping boxes with
-        # lower confidences.
+            # 阈值筛选
+            if score > thresh:
+                # 检测框类别
+                cls_index = np.argmax(data[5:])
+                # 检测框中心点偏移
+                x_offset, y_offset = tanh(data[1]), tanh(data[2])
+                # 检测框归一化后的宽高
+                box_width, box_height = sigmoid(data[3]), sigmoid(data[4])
+                # 检测框归一化后中心点
+                box_cx = (w + x_offset) / feature_map_width
+                box_cy = (h + y_offset) / feature_map_height
 
-        indices = cv2.dnn.NMSBoxes(boxes, confidences, self.confThreshold, self.nmsThreshold)
-        print(indices)
-        for i in indices:
-            # print(indices)
-            box = boxes[i]
-            left = box[0]
-            top = box[1]
-            width = box[2]
-            height = box[3]
-            frame = self.drawPred(frame, classIds[i], confidences[i], left, top, left + width, top + height)
-        if len(indices) == 0:
-            nospark()
-        return frame
-
-    def drawPred(self, frame, classId, conf, left, top, right, bottom):
-        # Draw a bounding box.
-        cv2.rectangle(frame, (left, top), (right, bottom), (0, 0, 255), thickness=2)
-
-        label = '%.2f' % conf
-        label = '%s:%s' % (self.classes[classId], label)
-        print(label)
-        # port_open_recv()
-        a = self.classes[classId]
-        if self.classes[classId] != 0:
-            spark()
-
-        print("a=", a)
-        print("b=", classId)
-
-        # Display the label at the top of the bounding box
-        labelSize, baseLine = cv2.getTextSize(label, cv2.FONT_HERSHEY_SIMPLEX, 0.5, 1)
-        top = max(top, labelSize[1])
-        # cv.rectangle(frame, (left, top - round(1.5 * labelSize[1])), (left + round(1.5 * labelSize[0]), top + baseLine), (255,255,255), cv.FILLED)
-        cv2.putText(frame, label, (left, top - 10), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), thickness=1)
-        # print(label)
-        return frame
-
-    def sigmoid(self, x):
-        return 1 / (1 + np.exp(-x))
-
-    def detect(self, srcimg):
-        blob = cv2.dnn.blobFromImage(srcimg, 1 / 255.0, (self.inpWidth, self.inpHeight))
-        self.net.setInput(blob)
-        pred = self.net.forward(self.net.getUnconnectedOutLayersNames())[0]
-        pred[:, 3:5] = self.sigmoid(pred[:, 3:5])  ###w,h
-        pred[:, 1:3] = (np.tanh(pred[:, 1:3]) + self.grid) / np.tile(np.array([self.W, self.H]),
-                                                                     (pred.shape[0], 1))  ###cx,cy
-        srcimg = self.postprocess(srcimg, pred)
-        # print(self.net.getUnconnectedOutLayersNames())
-        return srcimg
+                # cx,cy,w,h => x1, y1, x2, y2
+                x1, y1 = box_cx - 0.5 * box_width, box_cy - 0.5 * box_height
+                x2, y2 = box_cx + 0.5 * box_width, box_cy + 0.5 * box_height
+                x1, y1, x2, y2 = int(x1 * W), int(y1 * H), int(x2 * W), int(y2 * H)
+                pred.append([x1, y1, x2, y2, score, cls_index])
+    return nms(np.array(pred))
 
 
-if __name__ == '__main__':
-    port_open_recv()
-    ser.flushInput()
-    parser = argparse.ArgumentParser()
+@api.route('/checkAI', methods=['post'])
+def cherckAI():
+    # data = request.get_json()
+    # # pic_thread = PicInfo(data)
+    #
+    # t2 = time.time()
+    #
+    # if result:
+    #     ren = {'status': 'OK', 'time': t, 'result': result}
+    # else:
+    #     ren = {'msg': 'ERROR ', 'time': t}
+    bboxes = detection(session, img, input_width, input_height, 0.8)
 
-    parser.add_argument('--confThreshold', default=0.8, type=float, help='class confidence')
-    parser.add_argument('--nmsThreshold', default=0.35, type=float, help='nms iou thresh')
-    args = parser.parse_args()
-    model = FastestDet(confThreshold=0.7, nmsThreshold=0.4)
-    while True:
-        time.sleep(1)
-        # count = ser.inWaiting()
-        # if count != 0:
-        start = time.time()
-        # recv = ser.read(ser.in_waiting).decode("utf-8")  # 读出串口数据，数据采用gbk编码
-        # print(time.asctime(), " --- recv --> ", recv)  # 打印一下子
-        # ser.flushInput()
-        # if recv == "a":
-        cap = cv2.VideoCapture(0)
-        cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
-        cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
-        success, img = cap.read()
-        cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
-        srcimg = model.detect(img)
-            # cv2.imshow('Detection Results', srcimg)
-        cap.release()
-                # time.sleep(0.1)
-        end = time.time()
-        print("运行时间为：{}s".format(end - start))
-        if cv2.waitKey(1) == ord('q'):
-            break
-    cap.release()
+
+    return json.dumps(ren, ensure_ascii=False)
+
+
+@api.route('/test', methods=['post'])
+def test():
+    ren = {'status': '连接正常'}
+    return json.dumps(ren, ensure_ascii=False)
+
+
+
+
+
+
+
+# bboxes = detection(session, img, input_width, input_height, 0.8)
+# for b in bboxes:
+#     obj_score, cls_index = b[4], int(b[5])
+#     x1, y1, x2, y2 = int(b[0]), int(b[1]), int(b[2]), int(b[3])
+#     # 绘制检测框
+#     cv2.rectangle(img, (x1, y1), (x2, y2), (255, 255, 0), 1)
+#     cv2.putText(img, '%.2f' % obj_score, (10, img.shape[0] - 50), 0, 0.4, (0, 255, 0), 1)
+#     cv2.putText(img, names[cls_index], (10, img.shape[0] - 10), 0, 0.4, (0, 255, 0), 1)
+# cv2.putText(img, "num is  : " + str(len(bboxes)), (0, 70), 0, 0.4, (0, 0, 255), 1)
+# cv2.imwrite(os.path.join(out_dir, imgname) + ".jpg", img)
+
+
+
+# if __name__ == '__main__':
+#     filelist = os.listdir(image_dir)
+#     for n, imgname in enumerate(filelist):
+#         # 读取图片
+#         img = cv2.imread(os.path.join(image_dir, imgname))
+#         # 模型输入的宽高
+#         input_width, input_height = 352, 352
+#         # 加载模型
+#         session = onnxruntime.InferenceSession('../model/daozha.onnx')
+#         # 目标检测
+#         # start = time.perf_counter()
+#         start = time.time()
+#         if img is None:
+#             print("Unable to read image file: {}".format(imgname))
+#             continue
+#
+#         # end = time.perf_counter()
+#         end = time.time()
+#         # time = (end - start) * 1000.
+#         print("运行时间为：{}s".format(end - start))
+#         # time = (end - start) * 1000.
+#         # print("forward time:%fms" %time)
+#         # 加载label names
+#         names = []
+#         with open("../model/class-daozha.names", 'r') as f:
+#             for line in f.readlines():
+#                 names.append(line.strip())
+#
+#         print("result:" + str(imgname))
