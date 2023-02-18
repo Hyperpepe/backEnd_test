@@ -7,7 +7,14 @@ import numpy as np
 import onnxruntime
 from flask import request
 
+
+
+
+
 api = flask.Flask(__name__)
+
+
+
 # sigmoid函数
 def sigmoid(x):
     return 1. / (1 + np.exp(-x))
