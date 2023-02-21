@@ -1,7 +1,5 @@
-import base64
 import json
 import os
-import re
 import time
 import flask
 import cv2
@@ -9,9 +7,12 @@ import numpy as np
 import onnxruntime
 from flask import request
 
+
+
+
+
 api = flask.Flask(__name__)
-input_width, input_height = 512, 512
-session = onnxruntime.InferenceSession('daozha.onnx')
+
 
 
 # sigmoid函数
@@ -117,18 +118,7 @@ def detection(session, img, input_width, input_height, thresh):
                 pred.append([x1, y1, x2, y2, score, cls_index])
     return nms(np.array(pred))
 
-class PicInfo:
-    def __init__(self, data):
-        pic_info = data.get('picinfo')
-        self.pic_base64 = pic_info
-        base64_code = re.sub('^data:image/.+;base64,', '', pic_info)
-        self.image_data = base64.b64decode(base64_code)
-        pic_array = np.frombuffer(self.image_data, np.uint8)
-        self.pic_array = cv2.imdecode(pic_array, cv2.IMREAD_UNCHANGED)
-        self.bboxes = detection(session, self.pic_array, input_width, input_height, 0.65)
 
-    def get_result(self):
-        return self.bboxes
 @api.route('/test', methods=['post'])
 def test():
     ren = {'msg': 'OK', 'msg_code': 101}
@@ -171,6 +161,10 @@ def checkAI():
 
 if __name__ == '__main__':
     api.run(port=5000, debug=True, host='0.0.0.0')
+
+
+
+
 
 
 
