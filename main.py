@@ -7,10 +7,6 @@ import numpy as np
 import onnxruntime
 from flask import request
 
-
-
-
-
 api = flask.Flask(__name__)
 
 
