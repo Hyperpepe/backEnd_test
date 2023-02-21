@@ -1,5 +1,7 @@
+import base64
 import json
 import os
+import re
 import time
 import flask
 import cv2
@@ -7,12 +9,9 @@ import numpy as np
 import onnxruntime
 from flask import request
 
-
-
-
-
 api = flask.Flask(__name__)
-
+input_width, input_height = 512, 512
+session = onnxruntime.InferenceSession('daozha.onnx')
 
 
 # sigmoid函数
@@ -118,31 +117,60 @@ def detection(session, img, input_width, input_height, thresh):
                 pred.append([x1, y1, x2, y2, score, cls_index])
     return nms(np.array(pred))
 
+class PicInfo:
+    def __init__(self, data):
+        pic_info = data.get('picinfo')
+        self.pic_base64 = pic_info
+        base64_code = re.sub('^data:image/.+;base64,', '', pic_info)
+        self.image_data = base64.b64decode(base64_code)
+        pic_array = np.frombuffer(self.image_data, np.uint8)
+        self.pic_array = cv2.imdecode(pic_array, cv2.IMREAD_UNCHANGED)
+        self.bboxes = detection(session, self.pic_array, input_width, input_height, 0.65)
 
-@api.route('/checkAI', methods=['post'])
-def cherckAI():
-    # data = request.get_json()
-    # # pic_thread = PicInfo(data)
-    #
-    # t2 = time.time()
-    #
-    # if result:
-    #     ren = {'status': 'OK', 'time': t, 'result': result}
-    # else:
-    #     ren = {'msg': 'ERROR ', 'time': t}
-    bboxes = detection(session, img, input_width, input_height, 0.8)
-
-
-    return json.dumps(ren, ensure_ascii=False)
-
-
+    def get_result(self):
+        return self.bboxes
 @api.route('/test', methods=['post'])
 def test():
-    ren = {'status': '连接正常'}
+    ren = {'msg': 'OK', 'msg_code': 101}
+    print('/test')
+    return json.dumps(ren, ensure_ascii=False)
+
+@api.route('/checkleds', methods=['post'])
+def checkleds():
+    data = request.get_json()
+    num = data['number']
+    act = data['action']
+    print(num, act)
+    ren = {'msg': 'OK', 'msg_code': 101}
+    return json.dumps(ren, ensure_ascii=False)
+
+@api.route('/checkrelay', methods=['post'])
+def checkrelay():
+    data = request.get_json()
+    num = data['number']
+    act = data['action']
+    print(num,act)
+    ren = {'msg': 'OK', 'msg_code': 101}
+    return json.dumps(ren, ensure_ascii=False)
+
+@api.route('/checkAI', methods=['post'])
+def checkAI():
+    data = request.get_json()
+    num = data['number']
+    act = data['action']
+    picinfo = data['picinfo']
+    picin = PicInfo(data)
+    date = picin.get_result()
+    # cv2.imshow('Detection Results', date)
+    cv2.imwrite('output'+ str(num) +'.jpg', date)
+
+    print(date)
+    ren = {'msg': 'ERROR_NONE_ARGS', 'msg_code': 404}
     return json.dumps(ren, ensure_ascii=False)
 
 
-
+if __name__ == '__main__':
+    api.run(port=5000, debug=True, host='0.0.0.0')
 
 
 
