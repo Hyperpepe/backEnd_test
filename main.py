@@ -1,28 +1,36 @@
+import base64
 import json
-import os
-import time
-import flask
+import re
+import threading
+
 import cv2
+import flask
 import numpy as np
 import onnxruntime
 from flask import request
 
 api = flask.Flask(__name__)
-
+session = onnxruntime.InferenceSession('./model/daozha.onnx')
 
 
 # sigmoid函数
 def sigmoid(x):
     return 1. / (1 + np.exp(-x))
+
+
 # tanh函数
 def tanh(x):
     return 2. / (1 + np.exp(-2 * x)) - 1
+
+
 # 数据预处理
 def preprocess(src_img, size):
     output = cv2.resize(src_img, (size[0], size[1]), interpolation=cv2.INTER_AREA)
     output = output.transpose(2, 0, 1)
     output = output.reshape((1, 3, size[1], size[0])) / 255
     return output.astype('float32')
+
+
 # nms算法
 def nms(dets, thresh=0.4):
     # dets:N*M,N是bbox的个数，M的前4位是对应的（x1,y1,x2,y2），第5位是对应的分数
@@ -66,6 +74,8 @@ def nms(dets, thresh=0.4):
         output.append(dets[i].tolist())
 
     return output
+
+
 # 目标检测
 def detection(session, img, input_width, input_height, thresh):
     pred = []
@@ -115,11 +125,38 @@ def detection(session, img, input_width, input_height, thresh):
     return nms(np.array(pred))
 
 
+class PicInfo(threading.Thread):
+    def __init__(self, data, w, h):
+        threading.Thread.__init__(self)
+        self.data = data
+        self.result = None
+        self.input_width = w
+        self.input_height = h
+
+    def run(self):
+        pic_info = self.data.get('picinfo')
+        self.pic_base64 = pic_info
+        base64_code = re.sub('^data:image/.+;base64,', '', pic_info)
+        self.image_data = base64.b64decode(base64_code)
+        pic_array = np.frombuffer(self.image_data, np.uint8)
+        self.pic_array = cv2.imdecode(pic_array, cv2.IMREAD_UNCHANGED)
+        self.results = detection(session, self.pic_array, self.input_width, self.input_height, 0.65)
+        names = []
+        with open("../model/class-daozha.names", 'r') as f:
+            for line in f.readlines():
+                names.append(line.strip())
+        print("result:" + str(imgname))
+
+    def get_result(self):
+        return self.result
+
+
 @api.route('/test', methods=['post'])
 def test():
-    ren = {'msg': 'OK', 'msg_code': 101}
+    ren = {'status': 'OK', 'status_code': 200}
     print('/test')
     return json.dumps(ren, ensure_ascii=False)
+
 
 @api.route('/checkleds', methods=['post'])
 def checkleds():
@@ -127,17 +164,19 @@ def checkleds():
     num = data['number']
     act = data['action']
     print(num, act)
-    ren = {'msg': 'OK', 'msg_code': 101}
+    ren = {'status': 'OK', 'status_code': 200}
     return json.dumps(ren, ensure_ascii=False)
+
 
 @api.route('/checkrelay', methods=['post'])
 def checkrelay():
     data = request.get_json()
     num = data['number']
     act = data['action']
-    print(num,act)
-    ren = {'msg': 'OK', 'msg_code': 101}
+    print(num, act)
+    ren = {'status': 'OK', 'msg_code': 200}
     return json.dumps(ren, ensure_ascii=False)
+
 
 @api.route('/checkAI', methods=['post'])
 def checkAI():
@@ -148,62 +187,11 @@ def checkAI():
     picin = PicInfo(data)
     date = picin.get_result()
     # cv2.imshow('Detection Results', date)
-    cv2.imwrite('output'+ str(num) +'.jpg', date)
-
+    cv2.imwrite('output' + str(num) + '.jpg', date)
     print(date)
     ren = {'msg': 'ERROR_NONE_ARGS', 'msg_code': 404}
     return json.dumps(ren, ensure_ascii=False)
 
 
 if __name__ == '__main__':
-    api.run(port=5000, debug=True, host='0.0.0.0')
-
-
-
-
-
-
-
-
-# bboxes = detection(session, img, input_width, input_height, 0.8)
-# for b in bboxes:
-#     obj_score, cls_index = b[4], int(b[5])
-#     x1, y1, x2, y2 = int(b[0]), int(b[1]), int(b[2]), int(b[3])
-#     # 绘制检测框
-#     cv2.rectangle(img, (x1, y1), (x2, y2), (255, 255, 0), 1)
-#     cv2.putText(img, '%.2f' % obj_score, (10, img.shape[0] - 50), 0, 0.4, (0, 255, 0), 1)
-#     cv2.putText(img, names[cls_index], (10, img.shape[0] - 10), 0, 0.4, (0, 255, 0), 1)
-# cv2.putText(img, "num is  : " + str(len(bboxes)), (0, 70), 0, 0.4, (0, 0, 255), 1)
-# cv2.imwrite(os.path.join(out_dir, imgname) + ".jpg", img)
-
-
-
-# if __name__ == '__main__':
-#     filelist = os.listdir(image_dir)
-#     for n, imgname in enumerate(filelist):
-#         # 读取图片
-#         img = cv2.imread(os.path.join(image_dir, imgname))
-#         # 模型输入的宽高
-#         input_width, input_height = 352, 352
-#         # 加载模型
-#         session = onnxruntime.InferenceSession('../model/daozha.onnx')
-#         # 目标检测
-#         # start = time.perf_counter()
-#         start = time.time()
-#         if img is None:
-#             print("Unable to read image file: {}".format(imgname))
-#             continue
-#
-#         # end = time.perf_counter()
-#         end = time.time()
-#         # time = (end - start) * 1000.
-#         print("运行时间为：{}s".format(end - start))
-#         # time = (end - start) * 1000.
-#         # print("forward time:%fms" %time)
-#         # 加载label names
-#         names = []
-#         with open("../model/class-daozha.names", 'r') as f:
-#             for line in f.readlines():
-#                 names.append(line.strip())
-#
-#         print("result:" + str(imgname))
+    api.run(port=5000, debug=True, host='192.168.137.1')
