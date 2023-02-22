@@ -1,5 +1,6 @@
 import base64
 import json
+import os
 import re
 import threading
 
@@ -11,6 +12,49 @@ from flask import request
 
 api = flask.Flask(__name__)
 session = onnxruntime.InferenceSession('./model/daozha.onnx')
+
+gpios = [
+    "/proc/rp_gpio/gpioa12",  # A红
+    "/proc/rp_gpio/gpioa11",  # A绿
+    "/proc/rp_gpio/gpioao11",  # B红
+    "/proc/rp_gpio/gpioa10",  # B绿
+    "/proc/rp_gpio/gpioa0",  # C红
+    "/proc/rp_gpio/gpioa13",  # C绿
+]
+gpioes = [
+    "/proc/rp_gpio/gpioz6",  # A相分
+    "/proc/rp_gpio/gpioz5",  # A相分
+    "/proc/rp_gpio/gpioz4",  # B相合
+    "/proc/rp_gpio/gpioz1",  # B相分
+    "/proc/rp_gpio/gpioz0",  # C相合
+    "/proc/rp_gpio/gpioz13",  # C相分
+]
+
+
+def control_gpio(gpio_index, value, classes):
+    # print(gpios[6])
+    # Check if the value is valid
+    if value != 0 and value != 1:
+        print("Error: Invalid value")
+        return
+    # Get the path of the GPIO
+    if classes == 1:
+        gpio = gpios[gpio_index - 1]
+        if gpio_index < 0 or gpio_index >= len(gpios) + 1:
+            print("Error: Invalid GPIO index")
+            return
+    elif classes == 0:
+        if gpio_index < 0 or gpio_index >= len(gpioes) + 1:
+            print("Error: Invalid GPIO index")
+            return
+        gpio = gpioes[gpio_index - 1]
+    elif classes == 2:
+        for gpio in gpioes:
+            os.system('echo 0 > ' + gpio)
+
+    os.system('echo ' + str(value) + ' > ' + gpio)
+
+    print("GPIO", gpio, "is now", value)
 
 
 # sigmoid函数
@@ -145,7 +189,7 @@ class PicInfo(threading.Thread):
         with open("../model/class-daozha.names", 'r') as f:
             for line in f.readlines():
                 names.append(line.strip())
-        print("result:" + str(imgname))
+        # print("result:" + str(imgname))
 
     def get_result(self):
         return self.result
@@ -161,9 +205,13 @@ def test():
 @api.route('/checkleds', methods=['post'])
 def checkleds():
     data = request.get_json()
+
     num = data['number']
     act = data['action']
-    print(num, act)
+
+    print('inputnum:', num, 'inputact:', act)
+    # os.system('echo 0 > /proc/rp_gpio/gpioa11')
+    control_gpio(num, act, 1)
     ren = {'status': 'OK', 'status_code': 200}
     return json.dumps(ren, ensure_ascii=False)
 
@@ -173,6 +221,10 @@ def checkrelay():
     data = request.get_json()
     num = data['number']
     act = data['action']
+    if num != 7:
+        control_gpio(num, act, 0)
+    else:
+        control_gpio(num, act, 2)
     print(num, act)
     ren = {'status': 'OK', 'msg_code': 200}
     return json.dumps(ren, ensure_ascii=False)
@@ -194,4 +246,4 @@ def checkAI():
 
 
 if __name__ == '__main__':
-    api.run(port=5000, debug=True, host='192.168.137.1')
+    api.run(port=5000, debug=True, host='0.0.0.0')
