@@ -1,4 +1,5 @@
 import base64
+import datetime
 import json
 import os
 import re
@@ -9,6 +10,17 @@ import flask
 import numpy as np
 import onnxruntime
 from flask import request
+
+import sys
+import logging
+
+logging.basicConfig(filename="log.txt", level=logging.DEBUG, format="%(asctime)s: %(message)s")
+
+def print(*args, **kwargs):
+    output = " ".join([str(arg) for arg in args])
+    logging.debug(output)
+    print(output, **kwargs)
+
 
 api = flask.Flask(__name__)
 session = onnxruntime.InferenceSession('./model/daozha.onnx')
@@ -29,10 +41,7 @@ gpioes = [
     "/proc/rp_gpio/gpioz0",  # C相合
     "/proc/rp_gpio/gpioz13",  # C相分
 ]
-
-
 def control_gpio(gpio_index, value, classes):
-    # print(gpios[6])
     # Check if the value is valid
     if value != 0 and value != 1:
         print("Error: Invalid value")
@@ -51,30 +60,24 @@ def control_gpio(gpio_index, value, classes):
     elif classes == 2:
         for gpio in gpioes:
             os.system('echo 0 > ' + gpio)
-
+    elif classes == 3:
+        for gpio in gpios:
+            os.system('echo 0 > ' + gpio)
     os.system('echo ' + str(value) + ' > ' + gpio)
-
-    print("GPIO", gpio, "is now", value)
-
+    # print("GPIO", gpio, "is now", value)
 
 # sigmoid函数
 def sigmoid(x):
     return 1. / (1 + np.exp(-x))
-
-
 # tanh函数
 def tanh(x):
     return 2. / (1 + np.exp(-2 * x)) - 1
-
-
 # 数据预处理
 def preprocess(src_img, size):
     output = cv2.resize(src_img, (size[0], size[1]), interpolation=cv2.INTER_AREA)
     output = output.transpose(2, 0, 1)
     output = output.reshape((1, 3, size[1], size[0])) / 255
     return output.astype('float32')
-
-
 # nms算法
 def nms(dets, thresh=0.4):
     # dets:N*M,N是bbox的个数，M的前4位是对应的（x1,y1,x2,y2），第5位是对应的分数
@@ -92,18 +95,15 @@ def nms(dets, thresh=0.4):
     while order.size > 0:
         i = order[0]  # 无条件保留每次迭代中置信度最高的bbox
         keep.append(i)
-
         # 计算置信度最高的bbox和其他剩下bbox之间的交叉区域
         xx1 = np.maximum(x1[i], x1[order[1:]])
         yy1 = np.maximum(y1[i], y1[order[1:]])
         xx2 = np.minimum(x2[i], x2[order[1:]])
         yy2 = np.minimum(y2[i], y2[order[1:]])
-
         # 计算置信度高的bbox和其他剩下bbox之间交叉区域的面积
         w = np.maximum(0.0, xx2 - xx1 + 1)
         h = np.maximum(0.0, yy2 - yy1 + 1)
         inter = w * h
-
         # 求交叉区域的面积占两者（置信度高的bbox和其他bbox）面积和的必烈
         ovr = inter / (areas[i] + areas[order[1:]] - inter)
 
@@ -118,8 +118,6 @@ def nms(dets, thresh=0.4):
         output.append(dets[i].tolist())
 
     return output
-
-
 # 目标检测
 def detection(session, img, input_width, input_height, thresh):
     pred = []
@@ -167,8 +165,6 @@ def detection(session, img, input_width, input_height, thresh):
                 x1, y1, x2, y2 = int(x1 * W), int(y1 * H), int(x2 * W), int(y2 * H)
                 pred.append([x1, y1, x2, y2, score, cls_index])
     return nms(np.array(pred))
-
-
 class PicInfo(threading.Thread):
     def __init__(self, data, w, h):
         threading.Thread.__init__(self)
@@ -176,7 +172,6 @@ class PicInfo(threading.Thread):
         self.result = None
         self.input_width = w
         self.input_height = h
-
     def run(self):
         pic_info = self.data.get('picinfo')
         self.pic_base64 = pic_info
@@ -190,29 +185,27 @@ class PicInfo(threading.Thread):
             for line in f.readlines():
                 names.append(line.strip())
         # print("result:" + str(imgname))
-
     def get_result(self):
         return self.result
-
 
 @api.route('/test', methods=['post'])
 def test():
     ren = {'status': 'OK', 'status_code': 200}
-    print('/test')
+    print(ren)
     return json.dumps(ren, ensure_ascii=False)
 
 
 @api.route('/checkleds', methods=['post'])
 def checkleds():
     data = request.get_json()
-
     num = data['number']
     act = data['action']
-
+    if num != 7:
+        control_gpio(num, act, 1)
+    else:
+        control_gpio(num, act, 3)
     print('inputnum:', num, 'inputact:', act)
-    # os.system('echo 0 > /proc/rp_gpio/gpioa11')
-    control_gpio(num, act, 1)
-    ren = {'status': 'OK', 'status_code': 200}
+    ren = {f"{datetime.now()}:'status': 'OK', 'status_code': 200"}
     return json.dumps(ren, ensure_ascii=False)
 
 
