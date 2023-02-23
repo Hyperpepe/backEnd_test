@@ -1,9 +1,10 @@
 import base64
-import datetime
 import json
+import logging
 import os
 import re
 import threading
+import time
 
 import cv2
 import flask
@@ -11,20 +12,18 @@ import numpy as np
 import onnxruntime
 from flask import request
 
-import sys
-import logging
-
+# 日志输出
 logging.basicConfig(filename="log.txt", level=logging.DEBUG, format="%(asctime)s: %(message)s")
-
-def print(*args, **kwargs):
-    output = " ".join([str(arg) for arg in args])
-    logging.debug(output)
-    print(output, **kwargs)
-
-
+# flask服务
 api = flask.Flask(__name__)
-session = onnxruntime.InferenceSession('./model/daozha.onnx')
 
+# 读取模型以及标签名称
+names = []
+session = onnxruntime.InferenceSession('./model/daozha.onnx')
+with open("./model/class-daozha.names", 'r') as f:
+    for line in f.readlines():
+        names.append(line.strip())
+# GPIO列表
 gpios = [
     "/proc/rp_gpio/gpioa12",  # A红
     "/proc/rp_gpio/gpioa11",  # A绿
@@ -41,10 +40,13 @@ gpioes = [
     "/proc/rp_gpio/gpioz0",  # C相合
     "/proc/rp_gpio/gpioz13",  # C相分
 ]
+
+
 def control_gpio(gpio_index, value, classes):
     # Check if the value is valid
     if value != 0 and value != 1:
         print("Error: Invalid value")
+
         return
     # Get the path of the GPIO
     if classes == 1:
@@ -64,20 +66,28 @@ def control_gpio(gpio_index, value, classes):
         for gpio in gpios:
             os.system('echo 0 > ' + gpio)
     os.system('echo ' + str(value) + ' > ' + gpio)
-    # print("GPIO", gpio, "is now", value)
+    print("GPIO", gpio, "is now", value)
+    logging.debug("GPIO" + gpio + "is now" + str(value))
+
 
 # sigmoid函数
 def sigmoid(x):
     return 1. / (1 + np.exp(-x))
+
+
 # tanh函数
 def tanh(x):
     return 2. / (1 + np.exp(-2 * x)) - 1
+
+
 # 数据预处理
 def preprocess(src_img, size):
     output = cv2.resize(src_img, (size[0], size[1]), interpolation=cv2.INTER_AREA)
     output = output.transpose(2, 0, 1)
     output = output.reshape((1, 3, size[1], size[0])) / 255
     return output.astype('float32')
+
+
 # nms算法
 def nms(dets, thresh=0.4):
     # dets:N*M,N是bbox的个数，M的前4位是对应的（x1,y1,x2,y2），第5位是对应的分数
@@ -118,6 +128,8 @@ def nms(dets, thresh=0.4):
         output.append(dets[i].tolist())
 
     return output
+
+
 # 目标检测
 def detection(session, img, input_width, input_height, thresh):
     pred = []
@@ -165,76 +177,105 @@ def detection(session, img, input_width, input_height, thresh):
                 x1, y1, x2, y2 = int(x1 * W), int(y1 * H), int(x2 * W), int(y2 * H)
                 pred.append([x1, y1, x2, y2, score, cls_index])
     return nms(np.array(pred))
+
+
 class PicInfo(threading.Thread):
     def __init__(self, data, w, h):
         threading.Thread.__init__(self)
+        self.t1 = time.time()
         self.data = data
         self.result = None
         self.input_width = w
         self.input_height = h
+
     def run(self):
-        pic_info = self.data.get('picinfo')
-        self.pic_base64 = pic_info
-        base64_code = re.sub('^data:image/.+;base64,', '', pic_info)
+        # pic_info = self.data.get('picinfo')
+        # self.pic_base64 = pic_info
+        base64_code = re.sub('^data:image/.+;base64,', '', self.data)
         self.image_data = base64.b64decode(base64_code)
         pic_array = np.frombuffer(self.image_data, np.uint8)
         self.pic_array = cv2.imdecode(pic_array, cv2.IMREAD_UNCHANGED)
         self.results = detection(session, self.pic_array, self.input_width, self.input_height, 0.65)
-        names = []
-        with open("../model/class-daozha.names", 'r') as f:
-            for line in f.readlines():
-                names.append(line.strip())
-        # print("result:" + str(imgname))
+        self.dataAnalyse()
+        # self.get_result()
+
+    # 解析检测结果
+    def dataAnalyse(self):
+        for b in self.results:
+            print(b)
+            self.obj_score, self.cls_index = b[4], int(b[5])
+        self.name = names[self.cls_index]
+        self.t2 = time.time()
+        T = self.t2 - self.t1
+        logging.debug("checkAI result : {} time : {}:".format(self.name, T))
+        print("checkAI result : {} time : {}:".format(self.name, T))
+
+    # 输出结果
     def get_result(self):
-        return self.result
+        return self.name
+
 
 @api.route('/test', methods=['post'])
 def test():
     ren = {'status': 'OK', 'status_code': 200}
     print(ren)
+    logging.debug(ren)
     return json.dumps(ren, ensure_ascii=False)
 
 
 @api.route('/checkleds', methods=['post'])
 def checkleds():
-    data = request.get_json()
-    num = data['number']
-    act = data['action']
-    if num != 7:
-        control_gpio(num, act, 1)
-    else:
-        control_gpio(num, act, 3)
-    print('inputnum:', num, 'inputact:', act)
-    ren = {f"{datetime.now()}:'status': 'OK', 'status_code': 200"}
+    try:
+        data = request.get_json()
+        num = data['number']
+        act = data['action']
+        if num != 7:
+            control_gpio(num, act, 1)
+        else:
+            control_gpio(num, act, 3)
+        print('inputnum:', num, 'inputact:', act)
+        logging.debug('inputnum: {} inputact: {}'.format(num, act))
+        ren = {'status': 'OK', 'status_code': 200}
+    except:
+        ren = {'status': 'ERROR', 'status_code': 404}
     return json.dumps(ren, ensure_ascii=False)
 
 
 @api.route('/checkrelay', methods=['post'])
 def checkrelay():
-    data = request.get_json()
-    num = data['number']
-    act = data['action']
-    if num != 7:
-        control_gpio(num, act, 0)
-    else:
-        control_gpio(num, act, 2)
-    print(num, act)
-    ren = {'status': 'OK', 'msg_code': 200}
+    try:
+        data = request.get_json()
+        num = data['number']
+        act = data['action']
+        if num != 7:
+            control_gpio(num, act, 0)
+        else:
+            control_gpio(num, act, 2)
+        print('inputnum:', num, 'inputact:', act)
+        logging.debug('inputnum: {} inputact: {}'.format(num, act))
+        ren = {'status': 'OK', 'status_code': 200}
+    except:
+        ren = {'status': 'ERROR', 'status_code': 404}
     return json.dumps(ren, ensure_ascii=False)
 
 
 @api.route('/checkAI', methods=['post'])
 def checkAI():
-    data = request.get_json()
-    num = data['number']
-    act = data['action']
-    picinfo = data['picinfo']
-    picin = PicInfo(data)
-    date = picin.get_result()
-    # cv2.imshow('Detection Results', date)
-    cv2.imwrite('output' + str(num) + '.jpg', date)
-    print(date)
-    ren = {'msg': 'ERROR_NONE_ARGS', 'msg_code': 404}
+    try:
+        data = request.get_json()
+        num = data['number']
+        act = data['action']
+        picinfo = data['picinfo']
+        picin = PicInfo(picinfo, 352, 352)
+        picin.start()
+        picin.join()
+        result = picin.name
+        print(result)
+        ren = {'status': result, 'status_code': 200}
+        logging.debug("checkAI succeeded with number: {} and action: {}".format(num, act))
+    except Exception as e:
+        ren = {'status': 'ERROR', 'status_code': 404}
+        logging.error("checkAI failed with error: {}".format(e))
     return json.dumps(ren, ensure_ascii=False)
 
 
