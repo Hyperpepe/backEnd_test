@@ -34,13 +34,149 @@ gpios = [
 ]
 gpioes = [
     "/proc/rp_gpio/gpioz6",  # A相分
-    "/proc/rp_gpio/gpioz5",  # A相分
+    "/proc/rp_gpio/gpioz5",  # A相合
     "/proc/rp_gpio/gpioz4",  # B相合
     "/proc/rp_gpio/gpioz1",  # B相分
     "/proc/rp_gpio/gpioz0",  # C相合
     "/proc/rp_gpio/gpioz13",  # C相分
 ]
 
+def output(num, act, result):
+    control_gpio(7, 0, 3)
+    control_gpio(7, 0, 2)
+    if num == "ALL" :# A,B,C 相
+        if act == "C":
+            if result == "Opened":
+                gpioled = [gpios[1], gpios[3], gpios[5]]
+                gpiorelay = [gpios[0], gpios[2], gpios[4]]
+                #全部置高
+            elif result == "Closed":
+                # led全灭
+                # 继电器全开
+                control_gpio(7, 0, 3)
+                control_gpio(7, 0, 2)
+            elif result == "Running":
+                # led全灭
+                # 继电器全开
+                control_gpio(7, 0, 3)
+                control_gpio(7, 0, 2)
+
+        elif act == "O":
+            if result == "Opened":
+                # led全灭
+                # 继电器全开
+                control_gpio(7, 0, 3)
+                control_gpio(7, 0, 2)
+            elif result == "Closed":
+                gpioled = [gpios[1], gpios[3], gpios[5]]
+                gpiorelay = [gpios[0], gpios[2], gpios[4]]
+
+            elif result == "Running":
+                # led全灭
+                # 继电器全开
+                control_gpio(7, 0, 3)
+                control_gpio(7, 0, 2)
+
+    elif num == "A" :# A 相
+        if act == "C":
+            if result == "Opened":#开到位
+                os.system('echo 0 > '+ gpios[0])
+                os.system('echo 1 > ' + gpios[1])
+                os.system('echo 1 > ' + gpioes[0])
+                os.system('echo 0 > ' + gpioes[1])
+            elif result == "Closed":#开不到位
+                os.system('echo 0 > '+ gpios[0])
+                os.system('echo 0 > ' + gpios[1])
+                os.system('echo 0 > ' + gpioes[0])
+                os.system('echo 0 > ' + gpioes[1])
+            elif result == "Running":#开不到位
+                os.system('echo 0 > '+ gpios[0])
+                os.system('echo 0 > ' + gpios[1])
+                os.system('echo 0 > ' + gpioes[0])
+                os.system('echo 0 > ' + gpioes[1])
+        elif act == "O":
+            if result == "Opened":#合不到位
+                os.system('echo 0 > '+ gpios[0])
+                os.system('echo 0 > ' + gpios[1])
+                os.system('echo 0 > ' + gpioes[0])
+                os.system('echo 0 > ' + gpioes[1])
+            elif result == "Closed":#合到位
+                os.system('echo 1 > '+ gpios[0])
+                os.system('echo 0 > ' + gpios[1])
+                os.system('echo 0 > ' + gpioes[0])
+                os.system('echo 1 > ' + gpioes[1])
+            elif result == "Running":#合不到位
+                os.system('echo 0 > '+ gpios[0])
+                os.system('echo 0 > ' + gpios[1])
+                os.system('echo 0 > ' + gpioes[0])
+                os.system('echo 0 > ' + gpioes[1])
+
+    elif num == "B":# B 相
+        if act == "C":
+            if result == "Opened":
+                os.system('echo 0 > '+ gpios[2])
+                os.system('echo 1 > ' + gpios[3])
+                os.system('echo 1 > ' + gpioes[2])
+                os.system('echo 0 > ' + gpioes[3])
+            elif result == "Closed":
+                os.system('echo 0 > '+ gpios[2])
+                os.system('echo 0 > ' + gpios[3])
+                os.system('echo 0 > ' + gpioes[2])
+                os.system('echo 0 > ' + gpioes[3])
+            elif result == "Running":
+                os.system('echo 0 > '+ gpios[2])
+                os.system('echo 0 > ' + gpios[3])
+                os.system('echo 0 > ' + gpioes[2])
+                os.system('echo 0 > ' + gpioes[3])
+        elif act == "O":
+            if result == "Opened":
+                os.system('echo 0 > '+ gpios[2])
+                os.system('echo 0 > ' + gpios[3])
+                os.system('echo 0 > ' + gpioes[2])
+                os.system('echo 0 > ' + gpioes[3])
+            elif result == "Closed":
+                os.system('echo 1 > '+ gpios[2])
+                os.system('echo 0 > ' + gpios[3])
+                os.system('echo 0 > ' + gpioes[2])
+                os.system('echo 1 > ' + gpioes[3])
+            elif result == "Running":
+                os.system('echo 0 > '+ gpios[2])
+                os.system('echo 0 > ' + gpios[3])
+                os.system('echo 0 > ' + gpioes[2])
+                os.system('echo 0 > ' + gpioes[3])
+    elif num == "C": # C 相
+        if act == "C":
+            if result == "Opened":
+                os.system('echo 0 > '+ gpios[4])
+                os.system('echo 1 > ' + gpios[5])
+                os.system('echo 1 > ' + gpioes[4])
+                os.system('echo 0 > ' + gpioes[5])
+            elif result == "Closed":
+                os.system('echo 0 > '+ gpios[4])
+                os.system('echo 0 > ' + gpios[5])
+                os.system('echo 0 > ' + gpioes[4])
+                os.system('echo 0 > ' + gpioes[5])
+            elif result == "Running":
+                os.system('echo 0 > '+ gpios[4])
+                os.system('echo 0 > ' + gpios[5])
+                os.system('echo 0 > ' + gpioes[4])
+                os.system('echo 0 > ' + gpioes[5])
+        elif act == "O":
+            if result == "Opened":
+                os.system('echo 0 > '+ gpios[4])
+                os.system('echo 0 > ' + gpios[5])
+                os.system('echo 0 > ' + gpioes[4])
+                os.system('echo 0 > ' + gpioes[5])
+            elif result == "Closed":
+                os.system('echo 1 > '+ gpios[4])
+                os.system('echo 0 > ' + gpios[5])
+                os.system('echo 0 > ' + gpioes[4])
+                os.system('echo 1 > ' + gpioes[5])
+            elif result == "Running":
+                os.system('echo 0 > '+ gpios[4])
+                os.system('echo 0 > ' + gpios[5])
+                os.system('echo 0 > ' + gpioes[4])
+                os.system('echo 0 > ' + gpioes[5])
 
 def control_gpio(gpio_index, value, classes):
     # Check if the value is valid
@@ -197,7 +333,6 @@ class PicInfo(threading.Thread):
         self.pic_array = cv2.imdecode(pic_array, cv2.IMREAD_UNCHANGED)
         self.results = detection(session, self.pic_array, self.input_width, self.input_height, 0.65)
         self.dataAnalyse()
-        # self.get_result()
 
     # 解析检测结果
     def dataAnalyse(self):
@@ -270,9 +405,9 @@ def checkAI():
         picin.start()
         picin.join()
         result = picin.name
-        print(result)
-        ren = {'status': result, 'status_code': 200}
-        logging.debug("checkAI succeeded with number: {} and action: {}".format(num, act))
+        print(num, act)
+
+        ren = {'result': result, 'status_code': 200}
     except Exception as e:
         ren = {'status': 'ERROR', 'status_code': 404}
         logging.error("checkAI failed with error: {}".format(e))

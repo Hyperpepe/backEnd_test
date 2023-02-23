@@ -1,0 +1,40 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="10">
+            <item index="0" class="java.lang.String" itemvalue="opencv-contrib-python" />
+            <item index="1" class="java.lang.String" itemvalue="PyMuPDF" />
+            <item index="2" class="java.lang.String" itemvalue="premailer" />
+            <item index="3" class="java.lang.String" itemvalue="lanms-neo" />
+            <item index="4" class="java.lang.String" itemvalue="opencv-python" />
+            <item index="5" class="java.lang.String" itemvalue="rapidfuzz" />
+            <item index="6" class="java.lang.String" itemvalue="attrdict" />
+            <item index="7" class="java.lang.String" itemvalue="visualdl" />
+            <item index="8" class="java.lang.String" itemvalue="imgaug" />
+            <item index="9" class="java.lang.String" itemvalue="Polygon3" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N806" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="cv2.putText" />
+          <option value="cv2.rectangle" />
+          <option value="cv2.imwrite" />
+          <option value="cv2.*" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
