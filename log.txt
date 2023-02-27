@@ -1,1603 +1,534 @@
-2023-02-23 16:10:01,113:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-23 16:10:01,200:  * Restarting with stat
-2023-02-23 16:10:02,227:  * Debugger is active!
-2023-02-23 16:10:02,239:  * Debugger PIN: 898-540-398
-2023-02-23 16:10:50,521:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-23 16:10:50,556:  * Restarting with stat
-2023-02-23 16:10:51,621:  * Debugger is active!
-2023-02-23 16:10:51,633:  * Debugger PIN: 898-540-398
-2023-02-23 16:12:18,155:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-23 16:12:18,244:  * Restarting with stat
-2023-02-23 16:12:19,238:  * Debugger is active!
-2023-02-23 16:12:19,250:  * Debugger PIN: 898-540-398
-2023-02-23 16:12:34,345:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-23 16:12:34,382:  * Restarting with stat
-2023-02-23 16:12:35,255:  * Debugger is active!
-2023-02-23 16:12:35,267:  * Debugger PIN: 898-540-398
-2023-02-23 16:12:42,319:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-23 16:12:42,377:  * Restarting with stat
-2023-02-23 16:12:43,288:  * Debugger is active!
-2023-02-23 16:12:43,300:  * Debugger PIN: 898-540-398
-2023-02-23 16:13:00,417:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-23 16:13:00,466:  * Restarting with stat
-2023-02-23 16:13:01,376:  * Debugger is active!
-2023-02-23 16:13:01,389:  * Debugger PIN: 898-540-398
-2023-02-23 16:14:39,962:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-23 16:14:40,070:  * Restarting with stat
-2023-02-23 16:26:53,614: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2023-02-27 15:39:49,462: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
- * Running on http://192.168.101.33:5000
-2023-02-23 16:26:53,614: [33mPress CTRL+C to quit[0m
-2023-02-23 16:26:53,616:  * Restarting with stat
-2023-02-23 16:26:54,581:  * Debugger is active!
-2023-02-23 16:26:54,595:  * Debugger PIN: 898-540-398
-2023-02-23 16:27:09,199: {'status': 'OK', 'status_code': 200}
-2023-02-23 16:27:09,199: 192.168.137.1 - - [23/Feb/2023 16:27:09] "POST /test HTTP/1.1" 200 -
-2023-02-23 16:27:24,873: {'status': 'OK', 'status_code': 200}
-2023-02-23 16:27:24,873: 192.168.137.1 - - [23/Feb/2023 16:27:24] "POST /test HTTP/1.1" 200 -
-2023-02-23 16:27:57,351: {'status': 'OK', 'status_code': 200}
-2023-02-23 16:27:57,352: 192.168.137.1 - - [23/Feb/2023 16:27:57] "POST /test HTTP/1.1" 200 -
-2023-02-23 16:28:39,535: {'status': 'OK', 'status_code': 200}
-2023-02-23 16:28:39,536: 192.168.137.1 - - [23/Feb/2023 16:28:39] "POST /test HTTP/1.1" 200 -
-2023-02-23 16:28:43,511: checkAI failed with error: __init__() missing 2 required positional arguments: 'w' and 'h'
-2023-02-23 16:28:43,511: 192.168.137.1 - - [23/Feb/2023 16:28:43] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:28:58,812: {'status': 'OK', 'status_code': 200}
-2023-02-23 16:28:58,812: 192.168.137.1 - - [23/Feb/2023 16:28:58] "POST /test HTTP/1.1" 200 -
-2023-02-23 16:28:59,754: {'status': 'OK', 'status_code': 200}
-2023-02-23 16:28:59,754: 192.168.137.1 - - [23/Feb/2023 16:28:59] "POST /test HTTP/1.1" 200 -
-2023-02-23 16:29:00,185: {'status': 'OK', 'status_code': 200}
-2023-02-23 16:29:00,186: 192.168.137.1 - - [23/Feb/2023 16:29:00] "POST /test HTTP/1.1" 200 -
-2023-02-23 16:29:21,487:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-23 16:29:21,532:  * Restarting with stat
-2023-02-23 16:29:22,629:  * Debugger is active!
-2023-02-23 16:29:22,642:  * Debugger PIN: 898-540-398
-2023-02-23 16:29:29,698:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-23 16:29:29,805:  * Restarting with stat
-2023-02-23 16:29:30,804:  * Debugger is active!
-2023-02-23 16:29:30,817:  * Debugger PIN: 898-540-398
-2023-02-23 16:29:35,571: checkAI failed with error: dataAnalyse() missing 1 required positional argument: 'data'
-2023-02-23 16:29:35,572: 192.168.137.1 - - [23/Feb/2023 16:29:35] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:29:37,027: checkAI failed with error: dataAnalyse() missing 1 required positional argument: 'data'
-2023-02-23 16:29:37,028: 192.168.137.1 - - [23/Feb/2023 16:29:37] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:29:38,005: checkAI failed with error: dataAnalyse() missing 1 required positional argument: 'data'
-2023-02-23 16:29:38,005: 192.168.137.1 - - [23/Feb/2023 16:29:38] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:29:38,292: checkAI failed with error: dataAnalyse() missing 1 required positional argument: 'data'
-2023-02-23 16:29:38,292: 192.168.137.1 - - [23/Feb/2023 16:29:38] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:30:29,150:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-23 16:30:29,226:  * Restarting with stat
-2023-02-23 16:30:30,215:  * Debugger is active!
-2023-02-23 16:30:30,227:  * Debugger PIN: 898-540-398
-2023-02-23 16:30:42,469: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:30:42,470: 192.168.137.1 - - [23/Feb/2023 16:30:42] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:30:45,188: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:30:45,189: 192.168.137.1 - - [23/Feb/2023 16:30:45] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:30:45,976: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:30:45,977: 192.168.137.1 - - [23/Feb/2023 16:30:45] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:30:46,608: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:30:46,609: 192.168.137.1 - - [23/Feb/2023 16:30:46] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:30:47,107: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:30:47,108: 192.168.137.1 - - [23/Feb/2023 16:30:47] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:30:47,388: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:30:47,389: 192.168.137.1 - - [23/Feb/2023 16:30:47] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:30:50,511: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:30:50,512: 192.168.137.1 - - [23/Feb/2023 16:30:50] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:30:51,361: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:30:51,361: 192.168.137.1 - - [23/Feb/2023 16:30:51] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:30:51,792: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:30:51,793: 192.168.137.1 - - [23/Feb/2023 16:30:51] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:30:52,082: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:30:52,082: 192.168.137.1 - - [23/Feb/2023 16:30:52] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:30:52,346: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:30:52,346: 192.168.137.1 - - [23/Feb/2023 16:30:52] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:30:52,569: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:30:52,569: 192.168.137.1 - - [23/Feb/2023 16:30:52] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:31:50,740:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-23 16:31:50,790:  * Restarting with stat
-2023-02-23 16:31:51,762:  * Debugger is active!
-2023-02-23 16:31:51,774:  * Debugger PIN: 898-540-398
-2023-02-23 16:31:56,877: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:31:56,878: 192.168.137.1 - - [23/Feb/2023 16:31:56] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:31:58,147: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:31:58,148: 192.168.137.1 - - [23/Feb/2023 16:31:58] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:31:58,811: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:31:58,812: 192.168.137.1 - - [23/Feb/2023 16:31:58] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:31:59,105: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:31:59,105: 192.168.137.1 - - [23/Feb/2023 16:31:59] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:32:57,162:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-23 16:32:57,245:  * Restarting with stat
-2023-02-23 16:32:58,220:  * Debugger is active!
-2023-02-23 16:32:58,234:  * Debugger PIN: 898-540-398
-2023-02-23 16:34:28,773:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-23 16:34:28,825:  * Restarting with stat
-2023-02-23 16:34:29,833:  * Debugger is active!
-2023-02-23 16:34:29,844:  * Debugger PIN: 898-540-398
-2023-02-23 16:38:28,182:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-23 16:38:28,222:  * Restarting with stat
-2023-02-23 16:38:29,204:  * Debugger is active!
-2023-02-23 16:38:29,217:  * Debugger PIN: 898-540-398
-2023-02-23 16:38:40,290:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-23 16:38:40,325:  * Restarting with stat
-2023-02-23 16:38:41,343:  * Debugger is active!
-2023-02-23 16:38:41,355:  * Debugger PIN: 898-540-398
-2023-02-23 16:38:53,438:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-23 16:38:53,475:  * Restarting with stat
-2023-02-23 16:38:54,441:  * Debugger is active!
-2023-02-23 16:38:54,454:  * Debugger PIN: 898-540-398
-2023-02-23 16:39:25,644:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-23 16:39:25,715:  * Restarting with stat
-2023-02-23 16:39:26,694:  * Debugger is active!
-2023-02-23 16:39:26,707:  * Debugger PIN: 898-540-398
-2023-02-23 16:39:32,764:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-23 16:39:32,812:  * Restarting with stat
-2023-02-23 16:39:33,740:  * Debugger is active!
-2023-02-23 16:39:33,754:  * Debugger PIN: 898-540-398
-2023-02-23 16:39:34,968: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:39:34,968: 192.168.137.1 - - [23/Feb/2023 16:39:34] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:39:53,883:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-23 16:39:53,934:  * Restarting with stat
-2023-02-23 16:39:54,892:  * Debugger is active!
-2023-02-23 16:39:54,905:  * Debugger PIN: 898-540-398
-2023-02-23 16:39:57,596: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:39:57,596: 192.168.137.1 - - [23/Feb/2023 16:39:57] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:39:57,625: checkAI result : Opened
-2023-02-23 16:40:07,516: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:40:07,516: 192.168.137.1 - - [23/Feb/2023 16:40:07] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:40:07,534: checkAI result : Running
-2023-02-23 16:41:52,592:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-23 16:41:52,641:  * Restarting with stat
-2023-02-23 16:41:53,514:  * Debugger is active!
-2023-02-23 16:41:53,527:  * Debugger PIN: 898-540-398
-2023-02-23 16:41:59,570:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-23 16:41:59,689:  * Restarting with stat
-2023-02-23 16:42:00,630:  * Debugger is active!
-2023-02-23 16:42:00,643:  * Debugger PIN: 898-540-398
-2023-02-23 16:42:08,456: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:42:08,457: 192.168.137.1 - - [23/Feb/2023 16:42:08] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:42:08,474: checkAI result : Running
-2023-02-23 16:42:26,241: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:42:26,242: 192.168.137.1 - - [23/Feb/2023 16:42:26] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:42:26,252: checkAI result : Running
-2023-02-23 16:42:26,492: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:42:26,492: 192.168.137.1 - - [23/Feb/2023 16:42:26] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:42:26,509: checkAI result : Running
-2023-02-23 16:42:26,672: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:42:26,672: 192.168.137.1 - - [23/Feb/2023 16:42:26] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:42:26,683: checkAI result : Running
-2023-02-23 16:42:26,854: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:42:26,854: 192.168.137.1 - - [23/Feb/2023 16:42:26] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:42:26,865: checkAI result : Running
-2023-02-23 16:42:27,034: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:42:27,034: 192.168.137.1 - - [23/Feb/2023 16:42:27] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:42:27,044: checkAI result : Running
-2023-02-23 16:42:27,216: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:42:27,216: 192.168.137.1 - - [23/Feb/2023 16:42:27] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:42:27,226: checkAI result : Running
-2023-02-23 16:42:27,384: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:42:27,384: 192.168.137.1 - - [23/Feb/2023 16:42:27] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:42:27,399: checkAI result : Running
-2023-02-23 16:42:27,539: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:42:27,539: 192.168.137.1 - - [23/Feb/2023 16:42:27] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:42:27,549: checkAI result : Running
-2023-02-23 16:43:31,162:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-23 16:43:31,203:  * Restarting with stat
-2023-02-23 16:43:32,222:  * Debugger is active!
-2023-02-23 16:43:32,234:  * Debugger PIN: 898-540-398
-2023-02-23 16:43:32,518: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:43:32,519: 192.168.137.1 - - [23/Feb/2023 16:43:32] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:43:50,354:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-23 16:43:50,422:  * Restarting with stat
-2023-02-23 16:43:51,302:  * Debugger is active!
-2023-02-23 16:43:51,315:  * Debugger PIN: 898-540-398
-2023-02-23 16:43:54,557: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:43:54,557: 192.168.137.1 - - [23/Feb/2023 16:43:54] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:43:54,575: checkAI result : Running
-2023-02-23 16:43:55,348:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-23 16:43:55,387:  * Restarting with stat
-2023-02-23 16:43:56,253:  * Debugger is active!
-2023-02-23 16:43:56,264:  * Debugger PIN: 898-540-398
-2023-02-23 16:43:57,822: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:43:57,823: 192.168.137.1 - - [23/Feb/2023 16:43:57] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:43:57,841: checkAI result : Running
-2023-02-23 16:43:58,792: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:43:58,792: 192.168.137.1 - - [23/Feb/2023 16:43:58] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:43:58,801: checkAI result : Running
-2023-02-23 16:43:59,624: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:43:59,624: 192.168.137.1 - - [23/Feb/2023 16:43:59] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:43:59,634: checkAI result : Running
-2023-02-23 16:44:00,397: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:44:00,398: 192.168.137.1 - - [23/Feb/2023 16:44:00] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:44:00,407: checkAI result : Running
-2023-02-23 16:44:01,118: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:44:01,119: 192.168.137.1 - - [23/Feb/2023 16:44:01] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:44:01,128: checkAI result : Running
-2023-02-23 16:44:01,633: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:44:01,633: 192.168.137.1 - - [23/Feb/2023 16:44:01] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:44:01,646: checkAI result : Running
-2023-02-23 16:44:02,024: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:44:02,024: 192.168.137.1 - - [23/Feb/2023 16:44:02] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:44:02,033: checkAI result : Running
-2023-02-23 16:44:02,494: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:44:02,494: 192.168.137.1 - - [23/Feb/2023 16:44:02] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:44:02,503: checkAI result : Running
-2023-02-23 16:44:02,967: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:44:02,967: 192.168.137.1 - - [23/Feb/2023 16:44:02] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:44:02,978: checkAI result : Running
-2023-02-23 16:44:03,538: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:44:03,538: 192.168.137.1 - - [23/Feb/2023 16:44:03] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:44:03,552: checkAI result : Running
-2023-02-23 16:44:03,955: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:44:03,955: 192.168.137.1 - - [23/Feb/2023 16:44:03] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:44:03,968: checkAI result : Running
-2023-02-23 16:44:04,417: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:44:04,418: 192.168.137.1 - - [23/Feb/2023 16:44:04] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:44:04,432: checkAI result : Running
-2023-02-23 16:44:04,927: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:44:04,927: 192.168.137.1 - - [23/Feb/2023 16:44:04] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:44:04,941: checkAI result : Running
-2023-02-23 16:44:05,433: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:44:05,433: 192.168.137.1 - - [23/Feb/2023 16:44:05] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:44:05,448: checkAI result : Running
-2023-02-23 16:44:05,919: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:44:05,919: 192.168.137.1 - - [23/Feb/2023 16:44:05] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:44:05,933: checkAI result : Running
-2023-02-23 16:44:06,427: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:44:06,427: 192.168.137.1 - - [23/Feb/2023 16:44:06] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:44:06,442: checkAI result : Running
-2023-02-23 16:44:06,907: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:44:06,907: 192.168.137.1 - - [23/Feb/2023 16:44:06] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:44:06,922: checkAI result : Running
-2023-02-23 16:44:07,445: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:44:07,445: 192.168.137.1 - - [23/Feb/2023 16:44:07] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:44:07,459: checkAI result : Running
-2023-02-23 16:44:07,904: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:44:07,904: 192.168.137.1 - - [23/Feb/2023 16:44:07] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:44:07,917: checkAI result : Running
-2023-02-23 16:44:08,366: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:44:08,367: 192.168.137.1 - - [23/Feb/2023 16:44:08] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:44:08,382: checkAI result : Running
-2023-02-23 16:44:08,917: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:44:08,918: 192.168.137.1 - - [23/Feb/2023 16:44:08] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:44:08,933: checkAI result : Running
-2023-02-23 16:44:09,457: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:44:09,457: 192.168.137.1 - - [23/Feb/2023 16:44:09] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:44:09,472: checkAI result : Running
-2023-02-23 16:45:22,781:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-23 16:45:22,824:  * Restarting with stat
-2023-02-23 16:45:24,012:  * Debugger is active!
-2023-02-23 16:45:24,036:  * Debugger PIN: 898-540-398
-2023-02-23 16:45:40,348: {'status': 'OK', 'status_code': 200}
-2023-02-23 16:45:40,349: 192.168.137.1 - - [23/Feb/2023 16:45:40] "POST /test HTTP/1.1" 200 -
-2023-02-23 16:45:44,759: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:45:44,759: 192.168.137.1 - - [23/Feb/2023 16:45:44] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:45:44,788: checkAI result : Closed
-2023-02-23 16:46:03,286:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-23 16:46:03,343:  * Restarting with stat
-2023-02-23 16:46:04,338:  * Debugger is active!
-2023-02-23 16:46:04,350:  * Debugger PIN: 898-540-398
-2023-02-23 16:46:09,748: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:46:09,749: 192.168.137.1 - - [23/Feb/2023 16:46:09] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:46:09,764: checkAI result : Closed
-2023-02-23 16:46:12,986: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:46:12,986: 192.168.137.1 - - [23/Feb/2023 16:46:12] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:46:12,997: checkAI result : Closed
-2023-02-23 16:46:14,163: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:46:14,163: 192.168.137.1 - - [23/Feb/2023 16:46:14] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:46:14,172: checkAI result : Closed
-2023-02-23 16:46:15,769: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:46:15,769: 192.168.137.1 - - [23/Feb/2023 16:46:15] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:46:15,784: checkAI result : Closed
-2023-02-23 16:46:17,223: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:46:17,224: 192.168.137.1 - - [23/Feb/2023 16:46:17] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:46:17,237: checkAI result : Closed
-2023-02-23 16:46:17,839: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:46:17,839: 192.168.137.1 - - [23/Feb/2023 16:46:17] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:46:17,854: checkAI result : Closed
-2023-02-23 16:46:18,284: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:46:18,285: 192.168.137.1 - - [23/Feb/2023 16:46:18] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:46:18,299: checkAI result : Closed
-2023-02-23 16:46:18,534: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:46:18,534: 192.168.137.1 - - [23/Feb/2023 16:46:18] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:46:18,548: checkAI result : Closed
-2023-02-23 16:46:18,695: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:46:18,695: 192.168.137.1 - - [23/Feb/2023 16:46:18] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:46:18,711: checkAI result : Closed
-2023-02-23 16:46:18,870: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:46:18,870: 192.168.137.1 - - [23/Feb/2023 16:46:18] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:46:18,881: checkAI result : Closed
-2023-02-23 16:46:19,029: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:46:19,029: 192.168.137.1 - - [23/Feb/2023 16:46:19] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:46:19,041: checkAI result : Closed
-2023-02-23 16:46:19,202: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:46:19,202: 192.168.137.1 - - [23/Feb/2023 16:46:19] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:46:19,213: checkAI result : Closed
-2023-02-23 16:46:19,340: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:46:19,341: 192.168.137.1 - - [23/Feb/2023 16:46:19] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:46:19,350: checkAI result : Closed
-2023-02-23 16:46:19,515: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:46:19,515: 192.168.137.1 - - [23/Feb/2023 16:46:19] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:46:19,530: checkAI result : Closed
-2023-02-23 16:46:19,685: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:46:19,686: 192.168.137.1 - - [23/Feb/2023 16:46:19] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:46:19,699: checkAI result : Closed
-2023-02-23 16:46:19,852: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:46:19,852: 192.168.137.1 - - [23/Feb/2023 16:46:19] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:46:19,862: checkAI result : Closed
-2023-02-23 16:46:20,017: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:46:20,017: 192.168.137.1 - - [23/Feb/2023 16:46:20] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:46:20,026: checkAI result : Closed
-2023-02-23 16:46:20,189: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:46:20,189: 192.168.137.1 - - [23/Feb/2023 16:46:20] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:46:20,200: checkAI result : Closed
-2023-02-23 16:46:20,363: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:46:20,364: 192.168.137.1 - - [23/Feb/2023 16:46:20] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:46:20,378: checkAI result : Closed
-2023-02-23 16:46:20,519: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:46:20,520: 192.168.137.1 - - [23/Feb/2023 16:46:20] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:46:20,532: checkAI result : Closed
-2023-02-23 16:46:20,667: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:46:20,667: 192.168.137.1 - - [23/Feb/2023 16:46:20] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:46:20,683: checkAI result : Closed
-2023-02-23 16:46:20,838: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:46:20,838: 192.168.137.1 - - [23/Feb/2023 16:46:20] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:46:20,853: checkAI result : Closed
-2023-02-23 16:46:21,030: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:46:21,031: 192.168.137.1 - - [23/Feb/2023 16:46:21] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:46:21,043: checkAI result : Closed
-2023-02-23 16:46:21,171: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:46:21,171: 192.168.137.1 - - [23/Feb/2023 16:46:21] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:46:21,181: checkAI result : Closed
-2023-02-23 16:46:21,338: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:46:21,339: 192.168.137.1 - - [23/Feb/2023 16:46:21] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:46:21,351: checkAI result : Closed
-2023-02-23 16:46:55,678:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-23 16:46:55,717:  * Restarting with stat
-2023-02-23 16:46:56,750:  * Debugger is active!
-2023-02-23 16:46:56,762:  * Debugger PIN: 898-540-398
-2023-02-23 16:47:26,942:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-23 16:47:27,018:  * Restarting with stat
-2023-02-23 16:47:28,027:  * Debugger is active!
-2023-02-23 16:47:28,040:  * Debugger PIN: 898-540-398
-2023-02-23 16:48:02,279:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-23 16:48:02,318:  * Restarting with stat
-2023-02-23 16:48:03,256:  * Debugger is active!
-2023-02-23 16:48:03,271:  * Debugger PIN: 898-540-398
-2023-02-23 16:49:21,804:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-23 16:49:21,858:  * Restarting with stat
-2023-02-23 16:49:22,780:  * Debugger is active!
-2023-02-23 16:49:22,793:  * Debugger PIN: 898-540-398
-2023-02-23 16:49:24,744: checkAI result : Closed time : 0.021996498107910156:
-2023-02-23 16:49:24,744: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:49:24,744: 192.168.137.1 - - [23/Feb/2023 16:49:24] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:49:26,747: checkAI result : Closed time : 0.011965751647949219:
-2023-02-23 16:49:26,747: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:49:26,747: 192.168.137.1 - - [23/Feb/2023 16:49:26] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:49:27,204: checkAI result : Closed time : 0.009609222412109375:
-2023-02-23 16:49:27,204: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:49:27,205: 192.168.137.1 - - [23/Feb/2023 16:49:27] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:49:27,430: checkAI result : Closed time : 0.009003877639770508:
-2023-02-23 16:49:27,431: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:49:27,431: 192.168.137.1 - - [23/Feb/2023 16:49:27] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:49:27,630: checkAI result : Closed time : 0.007970333099365234:
-2023-02-23 16:49:27,631: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:49:27,631: 192.168.137.1 - - [23/Feb/2023 16:49:27] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:49:28,047: checkAI result : Closed time : 0.009670257568359375:
-2023-02-23 16:49:28,047: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:49:28,049: 192.168.137.1 - - [23/Feb/2023 16:49:28] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:49:28,214: checkAI result : Closed time : 0.008883476257324219:
-2023-02-23 16:49:28,214: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:49:28,215: 192.168.137.1 - - [23/Feb/2023 16:49:28] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:49:31,648: checkAI result : Running time : 0.021996498107910156:
-2023-02-23 16:49:31,648: checkAI succeeded with number: 1 and action: 0
-2023-02-23 16:49:31,648: 192.168.137.1 - - [23/Feb/2023 16:49:31] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:49:38,736: checkAI result : Running time : 0.01511383056640625:
-2023-02-23 16:49:38,736: checkAI succeeded with number: 3 and action: 1
-2023-02-23 16:49:38,736: 192.168.137.1 - - [23/Feb/2023 16:49:38] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:49:39,543: checkAI result : Running time : 0.01709890365600586:
-2023-02-23 16:49:39,544: checkAI succeeded with number: 3 and action: 1
-2023-02-23 16:49:39,544: 192.168.137.1 - - [23/Feb/2023 16:49:39] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:49:39,710: checkAI result : Running time : 0.011040449142456055:
-2023-02-23 16:49:39,710: checkAI succeeded with number: 3 and action: 1
-2023-02-23 16:49:39,711: 192.168.137.1 - - [23/Feb/2023 16:49:39] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:49:39,867: checkAI result : Running time : 0.010004758834838867:
-2023-02-23 16:49:39,868: checkAI succeeded with number: 3 and action: 1
-2023-02-23 16:49:39,869: 192.168.137.1 - - [23/Feb/2023 16:49:39] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:49:42,939: checkAI result : Running time : 0.018004179000854492:
-2023-02-23 16:49:42,940: checkAI succeeded with number: 3 and action: 1
-2023-02-23 16:49:42,940: 192.168.137.1 - - [23/Feb/2023 16:49:42] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:49:43,329: checkAI result : Running time : 0.01721048355102539:
-2023-02-23 16:49:43,329: checkAI succeeded with number: 3 and action: 1
-2023-02-23 16:49:43,330: 192.168.137.1 - - [23/Feb/2023 16:49:43] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:49:43,514: checkAI result : Running time : 0.01701045036315918:
-2023-02-23 16:49:43,514: checkAI succeeded with number: 3 and action: 1
-2023-02-23 16:49:43,515: 192.168.137.1 - - [23/Feb/2023 16:49:43] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:49:43,688: checkAI result : Running time : 0.017682552337646484:
-2023-02-23 16:49:43,689: checkAI succeeded with number: 3 and action: 1
-2023-02-23 16:49:43,689: 192.168.137.1 - - [23/Feb/2023 16:49:43] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:49:49,498: checkAI result : Opened time : 0.016384363174438477:
-2023-02-23 16:49:49,498: checkAI succeeded with number: 3 and action: 1
-2023-02-23 16:49:49,498: 192.168.137.1 - - [23/Feb/2023 16:49:49] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:49:49,871: checkAI result : Opened time : 0.017967700958251953:
-2023-02-23 16:49:49,871: checkAI succeeded with number: 3 and action: 1
-2023-02-23 16:49:49,871: 192.168.137.1 - - [23/Feb/2023 16:49:49] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:49:50,060: checkAI result : Opened time : 0.013998270034790039:
-2023-02-23 16:49:50,060: checkAI succeeded with number: 3 and action: 1
-2023-02-23 16:49:50,061: 192.168.137.1 - - [23/Feb/2023 16:49:50] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:49:50,250: checkAI result : Opened time : 0.018033981323242188:
-2023-02-23 16:49:50,250: checkAI succeeded with number: 3 and action: 1
-2023-02-23 16:49:50,251: 192.168.137.1 - - [23/Feb/2023 16:49:50] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:49:50,427: checkAI result : Opened time : 0.01099395751953125:
-2023-02-23 16:49:50,427: checkAI succeeded with number: 3 and action: 1
-2023-02-23 16:49:50,428: 192.168.137.1 - - [23/Feb/2023 16:49:50] "POST /checkAI HTTP/1.1" 200 -
-2023-02-23 16:49:50,604: checkAI result : Opened time : 0.01195836067199707:
-2023-02-23 16:49:50,604: checkAI succeeded with number: 3 and action: 1
-2023-02-23 16:49:50,605: 192.168.137.1 - - [23/Feb/2023 16:49:50] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:30:17,584: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.101.33:5000
-2023-02-24 09:30:17,585: [33mPress CTRL+C to quit[0m
-2023-02-24 09:30:17,586:  * Restarting with stat
-2023-02-24 09:30:18,286:  * Debugger is active!
-2023-02-24 09:30:18,300:  * Debugger PIN: 898-540-398
-2023-02-24 09:30:58,306: {'status': 'OK', 'status_code': 200}
-2023-02-24 09:30:58,306: 192.168.137.1 - - [24/Feb/2023 09:30:58] "POST /test HTTP/1.1" 200 -
-2023-02-24 09:31:03,854: checkAI result : Closed time : 0.018601655960083008:
-2023-02-24 09:31:03,932: checkAI failed with error: list index out of range
-2023-02-24 09:31:03,932: 192.168.137.1 - - [24/Feb/2023 09:31:03] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:31:15,521: checkAI result : Closed time : 0.008998870849609375:
-2023-02-24 09:31:15,596: checkAI failed with error: list index out of range
-2023-02-24 09:31:15,596: 192.168.137.1 - - [24/Feb/2023 09:31:15] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:31:16,795: checkAI result : Closed time : 0.009037256240844727:
-2023-02-24 09:31:16,867: checkAI failed with error: list index out of range
-2023-02-24 09:31:16,868: 192.168.137.1 - - [24/Feb/2023 09:31:16] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:31:17,614: checkAI result : Closed time : 0.009573221206665039:
-2023-02-24 09:31:17,687: checkAI failed with error: list index out of range
-2023-02-24 09:31:17,688: 192.168.137.1 - - [24/Feb/2023 09:31:17] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:31:18,298: checkAI result : Closed time : 0.01000213623046875:
-2023-02-24 09:31:18,370: checkAI failed with error: list index out of range
-2023-02-24 09:31:18,370: 192.168.137.1 - - [24/Feb/2023 09:31:18] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:31:19,145: checkAI result : Closed time : 0.008974790573120117:
-2023-02-24 09:31:19,222: checkAI failed with error: list index out of range
-2023-02-24 09:31:19,222: 192.168.137.1 - - [24/Feb/2023 09:31:19] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:31:30,248: checkAI result : Opened time : 0.009998798370361328:
-2023-02-24 09:31:30,346: 192.168.137.1 - - [24/Feb/2023 09:31:30] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:31:32,674: checkAI result : Opened time : 0.009972810745239258:
-2023-02-24 09:31:32,768: 192.168.137.1 - - [24/Feb/2023 09:31:32] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:31:33,440: checkAI result : Opened time : 0.010254859924316406:
-2023-02-24 09:31:33,536: 192.168.137.1 - - [24/Feb/2023 09:31:33] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:31:33,956: checkAI result : Opened time : 0.00989532470703125:
-2023-02-24 09:31:34,057: 192.168.137.1 - - [24/Feb/2023 09:31:34] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:31:34,571: checkAI result : Opened time : 0.00999593734741211:
-2023-02-24 09:31:34,670: 192.168.137.1 - - [24/Feb/2023 09:31:34] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:31:35,138: checkAI result : Opened time : 0.009494543075561523:
-2023-02-24 09:31:35,239: 192.168.137.1 - - [24/Feb/2023 09:31:35] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:31:35,763: checkAI result : Opened time : 0.00899505615234375:
-2023-02-24 09:31:35,859: 192.168.137.1 - - [24/Feb/2023 09:31:35] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:31:45,772: checkAI result : Opened time : 0.008893251419067383:
-2023-02-24 09:31:45,919: 192.168.137.1 - - [24/Feb/2023 09:31:45] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:32:16,444: checkAI result : Opened time : 0.008988380432128906:
-2023-02-24 09:32:16,593: 192.168.137.1 - - [24/Feb/2023 09:32:16] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:32:58,017:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-24 09:32:58,093:  * Restarting with stat
-2023-02-24 09:32:58,894:  * Debugger is active!
-2023-02-24 09:32:58,906:  * Debugger PIN: 898-540-398
-2023-02-24 09:33:07,962:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-24 09:33:07,997:  * Restarting with stat
-2023-02-24 09:33:08,845:  * Debugger is active!
-2023-02-24 09:33:08,857:  * Debugger PIN: 898-540-398
-2023-02-24 09:33:12,357: checkAI result : Opened time : 0.016208410263061523:
-2023-02-24 09:33:12,529: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:33:12,698: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:33:12,840: 192.168.137.1 - - [24/Feb/2023 09:33:12] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:33:27,785: checkAI result : Opened time : 0.009980201721191406:
-2023-02-24 09:33:27,959: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:33:28,152: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:33:28,306: 192.168.137.1 - - [24/Feb/2023 09:33:28] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:33:31,442: {'status': 'OK', 'status_code': 200}
-2023-02-24 09:33:31,442: 192.168.137.1 - - [24/Feb/2023 09:33:31] "POST /test HTTP/1.1" 200 -
-2023-02-24 09:33:32,967: checkAI result : Opened time : 0.009002923965454102:
-2023-02-24 09:33:33,136: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:33:33,304: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:33:33,443: 192.168.137.1 - - [24/Feb/2023 09:33:33] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:33:48,242: checkAI result : Opened time : 0.013235092163085938:
-2023-02-24 09:33:48,409: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:33:48,597: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:33:48,766: 192.168.137.1 - - [24/Feb/2023 09:33:48] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:34:03,983: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.101.33:5000
-2023-02-24 09:34:03,983: [33mPress CTRL+C to quit[0m
-2023-02-24 09:34:03,985:  * Restarting with stat
-2023-02-24 09:34:05,594:  * Debugger is active!
-2023-02-24 09:34:05,608:  * Debugger PIN: 898-540-398
-2023-02-24 09:34:15,380: checkAI result : Opened time : 0.02095317840576172:
-2023-02-24 09:34:15,552: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:34:15,746: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:34:52,506: 192.168.137.1 - - [24/Feb/2023 09:34:52] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:35:03,833: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.101.33:5000
-2023-02-24 09:35:03,833: [33mPress CTRL+C to quit[0m
-2023-02-24 09:35:03,835:  * Restarting with stat
-2023-02-24 09:35:05,402:  * Debugger is active!
-2023-02-24 09:35:05,416:  * Debugger PIN: 898-540-398
-2023-02-24 09:35:13,897: checkAI result : Opened time : 0.01827263832092285:
-2023-02-24 09:35:14,074: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:35:14,278: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:35:18,717: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.101.33:5000
-2023-02-24 09:35:18,717: [33mPress CTRL+C to quit[0m
-2023-02-24 09:35:18,719:  * Restarting with stat
-2023-02-24 09:35:20,197:  * Debugger is active!
-2023-02-24 09:35:20,214:  * Debugger PIN: 898-540-398
-2023-02-24 09:35:22,018: checkAI result : Opened time : 0.018008947372436523:
-2023-02-24 09:35:22,191: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:35:22,370: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:35:22,515: 192.168.137.1 - - [24/Feb/2023 09:35:22] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:35:25,353: checkAI result : Opened time : 0.011987447738647461:
-2023-02-24 09:35:25,523: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:35:25,691: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:35:25,834: 192.168.137.1 - - [24/Feb/2023 09:35:25] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:35:27,205: checkAI result : Opened time : 0.012432575225830078:
-2023-02-24 09:35:27,382: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:35:27,554: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:35:27,698: 192.168.137.1 - - [24/Feb/2023 09:35:27] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:37:15,460:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-24 09:37:15,545:  * Restarting with stat
-2023-02-24 09:37:17,163:  * Debugger is active!
-2023-02-24 09:37:17,178:  * Debugger PIN: 898-540-398
-2023-02-24 09:37:23,791: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.101.33:5000
-2023-02-24 09:37:23,791: [33mPress CTRL+C to quit[0m
-2023-02-24 09:37:23,794:  * Restarting with stat
-2023-02-24 09:37:25,362:  * Debugger is active!
-2023-02-24 09:37:25,376:  * Debugger PIN: 898-540-398
-2023-02-24 09:37:26,198: checkAI result : Opened time : 0.019516944885253906:
-2023-02-24 09:37:26,377: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:37:26,590: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:37:26,736: 192.168.137.1 - - [24/Feb/2023 09:37:26] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:37:29,473: {'status': 'OK', 'status_code': 200}
-2023-02-24 09:37:29,474: 192.168.137.1 - - [24/Feb/2023 09:37:29] "POST /test HTTP/1.1" 200 -
-2023-02-24 09:37:30,604: checkAI result : Opened time : 0.01050710678100586:
-2023-02-24 09:37:30,776: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:37:30,952: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:37:31,102: 192.168.137.1 - - [24/Feb/2023 09:37:31] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:37:33,088: checkAI result : Opened time : 0.012018203735351562:
-2023-02-24 09:37:33,265: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:37:33,438: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:37:33,589: 192.168.137.1 - - [24/Feb/2023 09:37:33] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:37:34,636: checkAI result : Opened time : 0.009901762008666992:
-2023-02-24 09:37:34,810: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:37:34,981: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:37:35,128: 192.168.137.1 - - [24/Feb/2023 09:37:35] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:37:35,752: checkAI result : Opened time : 0.011974573135375977:
-2023-02-24 09:37:35,932: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:37:36,108: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:37:36,256: 192.168.137.1 - - [24/Feb/2023 09:37:36] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:37:36,687: checkAI result : Opened time : 0.009999513626098633:
-2023-02-24 09:37:36,863: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:37:37,035: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:37:37,182: 192.168.137.1 - - [24/Feb/2023 09:37:37] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:37:38,472: checkAI result : Opened time : 0.012033939361572266:
-2023-02-24 09:37:38,644: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:37:38,813: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:37:38,959: 192.168.137.1 - - [24/Feb/2023 09:37:38] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:37:39,527: checkAI result : Opened time : 0.012988567352294922:
-2023-02-24 09:37:39,702: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:37:39,873: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:37:40,017: 192.168.137.1 - - [24/Feb/2023 09:37:40] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:37:45,529: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.101.33:5000
-2023-02-24 09:37:45,530: [33mPress CTRL+C to quit[0m
-2023-02-24 09:37:45,531:  * Restarting with stat
-2023-02-24 09:37:46,244:  * Debugger is active!
-2023-02-24 09:37:46,255:  * Debugger PIN: 898-540-398
-2023-02-24 09:37:49,710: {'status': 'OK', 'status_code': 200}
-2023-02-24 09:37:49,710: 192.168.137.1 - - [24/Feb/2023 09:37:49] "POST /test HTTP/1.1" 200 -
-2023-02-24 09:37:51,085: checkAI result : Opened time : 0.014963626861572266:
-2023-02-24 09:37:51,254: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:37:51,416: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:37:51,554: 192.168.137.1 - - [24/Feb/2023 09:37:51] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:37:53,603: checkAI result : Opened time : 0.009393930435180664:
-2023-02-24 09:37:53,769: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:37:53,938: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:37:54,078: 192.168.137.1 - - [24/Feb/2023 09:37:54] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:37:54,899: checkAI result : Opened time : 0.00989842414855957:
-2023-02-24 09:37:55,070: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:37:55,240: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:37:55,384: 192.168.137.1 - - [24/Feb/2023 09:37:55] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:37:55,502: checkAI result : Opened time : 0.011992216110229492:
-2023-02-24 09:37:55,670: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:37:55,840: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:37:55,981: 192.168.137.1 - - [24/Feb/2023 09:37:55] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:38:00,642: checkAI result : Opened time : 0.009483814239501953:
-2023-02-24 09:38:00,819: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:38:00,996: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:38:01,147: 192.168.137.1 - - [24/Feb/2023 09:38:01] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:39:09,301: checkAI result : Running time : 0.014963865280151367:
-2023-02-24 09:39:09,485: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:39:09,659: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:39:09,752: 192.168.137.1 - - [24/Feb/2023 09:39:09] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:44:07,268: checkAI result : Running time : 0.009002208709716797:
-2023-02-24 09:44:07,442: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:44:07,649: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:44:07,766: 192.168.137.1 - - [24/Feb/2023 09:44:07] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:44:08,550: checkAI result : Running time : 0.009886503219604492:
-2023-02-24 09:44:08,742: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:44:08,910: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:44:09,004: 192.168.137.1 - - [24/Feb/2023 09:44:09] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:44:09,443: checkAI result : Running time : 0.010013103485107422:
-2023-02-24 09:44:09,608: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:44:09,768: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:44:09,860: 192.168.137.1 - - [24/Feb/2023 09:44:09] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:44:10,215: checkAI result : Running time : 0.009998798370361328:
-2023-02-24 09:44:10,383: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:44:10,546: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:44:10,641: 192.168.137.1 - - [24/Feb/2023 09:44:10] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:44:10,835: checkAI result : Running time : 0.008934974670410156:
-2023-02-24 09:44:10,998: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:44:11,158: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:44:11,257: 192.168.137.1 - - [24/Feb/2023 09:44:11] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:44:11,410: checkAI result : Running time : 0.008883953094482422:
-2023-02-24 09:44:11,573: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:44:11,731: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:44:11,818: 192.168.137.1 - - [24/Feb/2023 09:44:11] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:44:11,960: checkAI result : Running time : 0.00948023796081543:
-2023-02-24 09:44:12,126: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:44:12,295: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:44:12,389: 192.168.137.1 - - [24/Feb/2023 09:44:12] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:44:12,543: checkAI result : Running time : 0.015980958938598633:
-2023-02-24 09:44:12,712: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:44:12,879: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:44:12,976: 192.168.137.1 - - [24/Feb/2023 09:44:12] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:49:07,577:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-24 09:49:07,616:  * Restarting with stat
-2023-02-24 09:49:08,584:  * Debugger is active!
-2023-02-24 09:49:08,602:  * Debugger PIN: 898-540-398
-2023-02-24 09:51:31,353:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-24 09:51:31,388:  * Restarting with stat
-2023-02-24 09:54:15,633: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.101.33:5000
-2023-02-24 09:54:15,634: [33mPress CTRL+C to quit[0m
-2023-02-24 09:54:15,635:  * Restarting with stat
-2023-02-24 09:54:16,349:  * Debugger is active!
-2023-02-24 09:54:16,361:  * Debugger PIN: 898-540-398
-2023-02-24 09:54:17,908: checkAI result : Running time : 0.01599860191345215:
-2023-02-24 09:54:17,909: GPIO/proc/rp_gpio/gpioa13is now0
-2023-02-24 09:54:17,909: GPIO/proc/rp_gpio/gpioz13is now0
-2023-02-24 09:54:17,909: 192.168.137.1 - - [24/Feb/2023 09:54:17] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:55:27,724:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-24 09:55:27,770:  * Restarting with stat
-2023-02-24 09:55:28,527:  * Debugger is active!
-2023-02-24 09:55:28,542:  * Debugger PIN: 898-540-398
-2023-02-24 09:55:32,578: checkAI result : Running time : 0.01597738265991211:
-2023-02-24 09:55:32,578: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:55:32,578: 192.168.137.1 - - [24/Feb/2023 09:55:32] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:55:33,982: checkAI result : Running time : 0.009994029998779297:
-2023-02-24 09:55:33,982: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:55:33,982: 192.168.137.1 - - [24/Feb/2023 09:55:33] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:55:34,412: checkAI result : Running time : 0.008979320526123047:
-2023-02-24 09:55:34,412: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:55:34,413: 192.168.137.1 - - [24/Feb/2023 09:55:34] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:55:34,587: checkAI result : Running time : 0.00999760627746582:
-2023-02-24 09:55:34,587: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:55:34,588: 192.168.137.1 - - [24/Feb/2023 09:55:34] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:55:34,763: checkAI result : Running time : 0.010515213012695312:
-2023-02-24 09:55:34,763: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:55:34,763: 192.168.137.1 - - [24/Feb/2023 09:55:34] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:55:34,910: checkAI result : Running time : 0.008970499038696289:
-2023-02-24 09:55:34,910: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:55:34,911: 192.168.137.1 - - [24/Feb/2023 09:55:34] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:55:35,070: checkAI result : Running time : 0.009964227676391602:
-2023-02-24 09:55:35,071: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:55:35,071: 192.168.137.1 - - [24/Feb/2023 09:55:35] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:55:35,221: checkAI result : Running time : 0.009979009628295898:
-2023-02-24 09:55:35,221: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:55:35,221: 192.168.137.1 - - [24/Feb/2023 09:55:35] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:55:45,389: checkAI result : Opened time : 0.009896278381347656:
-2023-02-24 09:55:45,390: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:55:45,391: 192.168.137.1 - - [24/Feb/2023 09:55:45] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:55:47,117: checkAI result : Opened time : 0.008999109268188477:
-2023-02-24 09:55:47,118: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:55:47,118: 192.168.137.1 - - [24/Feb/2023 09:55:47] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:55:47,598: checkAI result : Opened time : 0.013942718505859375:
-2023-02-24 09:55:47,599: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:55:47,599: 192.168.137.1 - - [24/Feb/2023 09:55:47] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:55:47,799: checkAI result : Opened time : 0.011892557144165039:
-2023-02-24 09:55:47,799: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:55:47,800: 192.168.137.1 - - [24/Feb/2023 09:55:47] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:55:47,933: checkAI result : Opened time : 0.008977651596069336:
-2023-02-24 09:55:47,933: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:55:47,934: 192.168.137.1 - - [24/Feb/2023 09:55:47] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:55:48,075: checkAI result : Opened time : 0.011509895324707031:
-2023-02-24 09:55:48,075: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:55:48,076: 192.168.137.1 - - [24/Feb/2023 09:55:48] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:55:58,292: checkAI result : Opened time : 0.010550498962402344:
-2023-02-24 09:55:58,292: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:55:58,292: 192.168.137.1 - - [24/Feb/2023 09:55:58] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:55:59,418: checkAI result : Opened time : 0.010978221893310547:
-2023-02-24 09:55:59,418: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:55:59,419: 192.168.137.1 - - [24/Feb/2023 09:55:59] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:56:00,420: checkAI result : Opened time : 0.009000301361083984:
-2023-02-24 09:56:00,421: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:56:00,421: 192.168.137.1 - - [24/Feb/2023 09:56:00] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:56:03,030: checkAI result : Opened time : 0.011016130447387695:
-2023-02-24 09:56:03,031: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:56:03,031: 192.168.137.1 - - [24/Feb/2023 09:56:03] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:56:04,050: checkAI result : Opened time : 0.016008615493774414:
-2023-02-24 09:56:04,050: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:56:04,050: 192.168.137.1 - - [24/Feb/2023 09:56:04] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:56:04,783: checkAI result : Opened time : 0.010999679565429688:
-2023-02-24 09:56:04,784: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:56:04,784: 192.168.137.1 - - [24/Feb/2023 09:56:04] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:56:05,470: checkAI result : Opened time : 0.009977579116821289:
-2023-02-24 09:56:05,470: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:56:05,470: 192.168.137.1 - - [24/Feb/2023 09:56:05] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:56:06,204: checkAI result : Opened time : 0.013242244720458984:
-2023-02-24 09:56:06,204: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:56:06,205: 192.168.137.1 - - [24/Feb/2023 09:56:06] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:56:06,943: checkAI result : Opened time : 0.00997781753540039:
-2023-02-24 09:56:06,944: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:56:06,944: 192.168.137.1 - - [24/Feb/2023 09:56:06] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:56:07,836: checkAI result : Opened time : 0.00999760627746582:
-2023-02-24 09:56:07,836: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:56:07,836: 192.168.137.1 - - [24/Feb/2023 09:56:07] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:56:08,775: checkAI result : Opened time : 0.009891748428344727:
-2023-02-24 09:56:08,775: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:56:08,776: 192.168.137.1 - - [24/Feb/2023 09:56:08] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:56:13,821: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.101.33:5000
-2023-02-24 09:56:13,821: [33mPress CTRL+C to quit[0m
-2023-02-24 09:56:13,823:  * Restarting with stat
-2023-02-24 09:56:15,420:  * Debugger is active!
-2023-02-24 09:56:15,434:  * Debugger PIN: 898-540-398
-2023-02-24 09:56:15,550: checkAI result : Opened time : 0.04150700569152832:
-2023-02-24 09:56:15,550: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:56:15,552: 192.168.137.1 - - [24/Feb/2023 09:56:15] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:56:17,380: checkAI result : Opened time : 0.01239466667175293:
-2023-02-24 09:56:17,381: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:56:17,381: 192.168.137.1 - - [24/Feb/2023 09:56:17] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:56:36,142: {'status': 'OK', 'status_code': 200}
-2023-02-24 09:56:36,143: 192.168.137.1 - - [24/Feb/2023 09:56:36] "POST /test HTTP/1.1" 200 -
-2023-02-24 09:56:40,518: checkAI result : Opened time : 0.008861541748046875:
-2023-02-24 09:56:40,518: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:56:40,518: 192.168.137.1 - - [24/Feb/2023 09:56:40] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:56:41,709: checkAI result : Opened time : 0.01099705696105957:
-2023-02-24 09:56:41,710: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:56:41,710: 192.168.137.1 - - [24/Feb/2023 09:56:41] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:56:42,097: checkAI result : Opened time : 0.009967565536499023:
-2023-02-24 09:56:42,104: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:56:42,104: 192.168.137.1 - - [24/Feb/2023 09:56:42] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:56:44,711: checkAI result : Closed time : 0.013000726699829102:
-2023-02-24 09:56:44,712: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:56:44,712: 192.168.137.1 - - [24/Feb/2023 09:56:44] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:56:45,301: checkAI result : Closed time : 0.010999202728271484:
-2023-02-24 09:56:45,301: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:56:45,302: 192.168.137.1 - - [24/Feb/2023 09:56:45] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:56:45,510: checkAI result : Closed time : 0.009998083114624023:
-2023-02-24 09:56:45,510: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:56:45,511: 192.168.137.1 - - [24/Feb/2023 09:56:45] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:56:45,741: checkAI result : Closed time : 0.013004779815673828:
-2023-02-24 09:56:45,741: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:56:45,742: 192.168.137.1 - - [24/Feb/2023 09:56:45] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:56:45,964: checkAI result : Closed time : 0.011003732681274414:
-2023-02-24 09:56:45,965: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:56:45,965: 192.168.137.1 - - [24/Feb/2023 09:56:45] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 09:57:00,849: checkAI result : Running time : 0.011976957321166992:
-2023-02-24 09:57:00,850: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 09:57:00,851: 192.168.137.1 - - [24/Feb/2023 09:57:00] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:01:07,112: checkAI result : Running time : 0.013508319854736328:
-2023-02-24 10:01:07,112: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 10:01:07,113: 192.168.137.1 - - [24/Feb/2023 10:01:07] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:01:10,799: checkAI result : Closed time : 0.01647782325744629:
-2023-02-24 10:01:10,800: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 10:01:10,801: 192.168.137.1 - - [24/Feb/2023 10:01:10] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:01:11,883: checkAI result : Closed time : 0.012406349182128906:
-2023-02-24 10:01:11,884: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 10:01:11,884: 192.168.137.1 - - [24/Feb/2023 10:01:11] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:01:12,184: checkAI result : Closed time : 0.011509418487548828:
-2023-02-24 10:01:12,185: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 10:01:12,186: 192.168.137.1 - - [24/Feb/2023 10:01:12] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:01:12,403: checkAI result : Closed time : 0.013273477554321289:
-2023-02-24 10:01:12,403: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 10:01:12,404: 192.168.137.1 - - [24/Feb/2023 10:01:12] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:01:12,583: checkAI result : Closed time : 0.012595415115356445:
-2023-02-24 10:01:12,584: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 10:01:12,585: 192.168.137.1 - - [24/Feb/2023 10:01:12] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:01:12,758: checkAI result : Closed time : 0.00999760627746582:
-2023-02-24 10:01:12,758: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 10:01:12,759: 192.168.137.1 - - [24/Feb/2023 10:01:12] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:01:12,976: checkAI result : Closed time : 0.017005205154418945:
-2023-02-24 10:01:12,976: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 10:01:12,977: 192.168.137.1 - - [24/Feb/2023 10:01:12] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:01:13,110: checkAI result : Closed time : 0.009508848190307617:
-2023-02-24 10:01:13,110: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 10:01:13,111: 192.168.137.1 - - [24/Feb/2023 10:01:13] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:01:13,279: checkAI result : Closed time : 0.010968446731567383:
-2023-02-24 10:01:13,280: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 10:01:13,280: 192.168.137.1 - - [24/Feb/2023 10:01:13] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:02:28,709:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-24 10:02:28,782:  * Restarting with stat
-2023-02-24 10:07:24,222: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.101.33:5000
-2023-02-24 10:07:24,222: [33mPress CTRL+C to quit[0m
-2023-02-24 10:07:24,225:  * Restarting with stat
-2023-02-24 10:07:25,799:  * Debugger is active!
-2023-02-24 10:07:25,813:  * Debugger PIN: 898-540-398
-2023-02-24 10:07:26,605: {'status': 'OK', 'status_code': 200}
-2023-02-24 10:07:26,606: 192.168.137.1 - - [24/Feb/2023 10:07:26] "POST /test HTTP/1.1" 200 -
-2023-02-24 10:07:27,717: checkAI result : Closed time : 0.01696920394897461:
-2023-02-24 10:07:27,717: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 10:07:27,718: 192.168.137.1 - - [24/Feb/2023 10:07:27] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:07:30,104: checkAI result : Closed time : 0.01061391830444336:
-2023-02-24 10:07:30,104: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 10:07:30,105: 192.168.137.1 - - [24/Feb/2023 10:07:30] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:07:31,103: checkAI result : Closed time : 0.010575056076049805:
-2023-02-24 10:07:31,104: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 10:07:31,104: 192.168.137.1 - - [24/Feb/2023 10:07:31] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:07:31,938: checkAI result : Closed time : 0.00897979736328125:
-2023-02-24 10:07:31,939: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 10:07:31,939: 192.168.137.1 - - [24/Feb/2023 10:07:31] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:21:56,096:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-24 10:21:56,221:  * Restarting with stat
-2023-02-24 10:21:57,893:  * Debugger is active!
-2023-02-24 10:21:57,908:  * Debugger PIN: 898-540-398
-2023-02-24 10:23:22,007:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-24 10:23:22,092:  * Restarting with stat
-2023-02-24 10:23:23,903:  * Debugger is active!
-2023-02-24 10:23:23,918:  * Debugger PIN: 898-540-398
-2023-02-24 10:30:57,936: checkAI result : Closed time : 0.037505388259887695:
-2023-02-24 10:30:57,936: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 10:30:57,937: 192.168.137.1 - - [24/Feb/2023 10:30:57] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:31:01,676: checkAI result : Opened time : 0.01699995994567871:
-2023-02-24 10:31:01,677: checkAI failed with error: local variable 'gpio' referenced before assignment
-2023-02-24 10:31:01,677: 192.168.137.1 - - [24/Feb/2023 10:31:01] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:31:17,322:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-24 10:31:17,416:  * Restarting with stat
-2023-02-24 10:31:19,544:  * Debugger is active!
-2023-02-24 10:31:19,560:  * Debugger PIN: 898-540-398
-2023-02-24 10:31:24,388: checkAI result : Opened time : 0.0189971923828125:
-2023-02-24 10:31:24,389: 192.168.137.1 - - [24/Feb/2023 10:31:24] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:31:25,210: checkAI result : Opened time : 0.013081789016723633:
-2023-02-24 10:31:25,211: 192.168.137.1 - - [24/Feb/2023 10:31:25] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:31:25,669: checkAI result : Opened time : 0.010999917984008789:
-2023-02-24 10:31:25,670: 192.168.137.1 - - [24/Feb/2023 10:31:25] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:31:25,825: checkAI result : Opened time : 0.009946107864379883:
-2023-02-24 10:31:25,827: 192.168.137.1 - - [24/Feb/2023 10:31:25] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:31:26,025: checkAI result : Opened time : 0.009979009628295898:
-2023-02-24 10:31:26,026: 192.168.137.1 - - [24/Feb/2023 10:31:26] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:31:26,158: checkAI result : Opened time : 0.009981155395507812:
-2023-02-24 10:31:26,158: 192.168.137.1 - - [24/Feb/2023 10:31:26] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:31:26,334: checkAI result : Opened time : 0.010495424270629883:
-2023-02-24 10:31:26,335: 192.168.137.1 - - [24/Feb/2023 10:31:26] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:31:26,484: checkAI result : Opened time : 0.009998321533203125:
-2023-02-24 10:31:26,485: 192.168.137.1 - - [24/Feb/2023 10:31:26] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:31:26,643: checkAI result : Opened time : 0.009883642196655273:
-2023-02-24 10:31:26,644: 192.168.137.1 - - [24/Feb/2023 10:31:26] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:31:26,783: checkAI result : Opened time : 0.009856700897216797:
-2023-02-24 10:31:26,784: 192.168.137.1 - - [24/Feb/2023 10:31:26] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:31:26,938: checkAI result : Opened time : 0.010004997253417969:
-2023-02-24 10:31:26,939: 192.168.137.1 - - [24/Feb/2023 10:31:26] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:31:27,094: checkAI result : Opened time : 0.009992599487304688:
-2023-02-24 10:31:27,096: 192.168.137.1 - - [24/Feb/2023 10:31:27] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:31:27,229: checkAI result : Opened time : 0.009974002838134766:
-2023-02-24 10:31:27,229: 192.168.137.1 - - [24/Feb/2023 10:31:27] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:31:27,401: checkAI result : Opened time : 0.01199650764465332:
-2023-02-24 10:31:27,402: 192.168.137.1 - - [24/Feb/2023 10:31:27] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:31:33,348: checkAI result : Opened time : 0.009853124618530273:
-2023-02-24 10:31:33,349: 192.168.137.1 - - [24/Feb/2023 10:31:33] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:33:22,323:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-24 10:33:22,406:  * Restarting with stat
-2023-02-24 10:33:24,178:  * Debugger is active!
-2023-02-24 10:33:24,192:  * Debugger PIN: 898-540-398
-2023-02-24 10:33:26,038: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.101.33:5000
-2023-02-24 10:33:26,039: [33mPress CTRL+C to quit[0m
-2023-02-24 10:33:26,040:  * Restarting with stat
-2023-02-24 10:33:26,771:  * Debugger is active!
-2023-02-24 10:33:26,782:  * Debugger PIN: 898-540-398
-2023-02-24 10:33:29,052: {'status': 'OK', 'status_code': 200}
-2023-02-24 10:33:29,052: 192.168.137.1 - - [24/Feb/2023 10:33:29] "POST /test HTTP/1.1" 200 -
-2023-02-24 10:33:30,103: checkAI result : Opened time : 0.0155487060546875:
-2023-02-24 10:33:30,104: 192.168.137.1 - - [24/Feb/2023 10:33:30] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:33:54,938:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-24 10:33:54,977:  * Restarting with stat
-2023-02-24 10:33:55,692:  * Debugger is active!
-2023-02-24 10:33:55,704:  * Debugger PIN: 898-540-398
-2023-02-24 10:33:55,730: checkAI result : Opened time : 0.015961170196533203:
-2023-02-24 10:33:55,730: 192.168.137.1 - - [24/Feb/2023 10:33:55] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:34:03,984: checkAI result : Opened time : 0.008979320526123047:
-2023-02-24 10:34:03,985: 192.168.137.1 - - [24/Feb/2023 10:34:03] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:36:22,780: checkAI result : Opened time : 0.009504079818725586:
-2023-02-24 10:36:22,780: 192.168.137.1 - - [24/Feb/2023 10:36:22] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:36:33,383: checkAI result : Opened time : 0.01506805419921875:
-2023-02-24 10:36:33,383: 192.168.137.1 - - [24/Feb/2023 10:36:33] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:36:51,752: checkAI result : Closed time : 0.01097726821899414:
-2023-02-24 10:36:51,752: 192.168.137.1 - - [24/Feb/2023 10:36:51] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:36:54,929: checkAI result : Closed time : 0.008507728576660156:
-2023-02-24 10:36:54,930: 192.168.137.1 - - [24/Feb/2023 10:36:54] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:36:56,141: checkAI result : Closed time : 0.007955074310302734:
-2023-02-24 10:36:56,142: 192.168.137.1 - - [24/Feb/2023 10:36:56] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:37:01,665: checkAI result : Closed time : 0.011977672576904297:
-2023-02-24 10:37:01,774: 192.168.137.1 - - [24/Feb/2023 10:37:01] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:37:03,090: checkAI result : Closed time : 0.010892629623413086:
-2023-02-24 10:37:03,187: 192.168.137.1 - - [24/Feb/2023 10:37:03] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:37:04,058: checkAI result : Closed time : 0.010996818542480469:
-2023-02-24 10:37:04,158: 192.168.137.1 - - [24/Feb/2023 10:37:04] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:37:28,764:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-24 10:37:28,809:  * Restarting with stat
-2023-02-24 10:37:29,594:  * Debugger is active!
-2023-02-24 10:37:29,626:  * Debugger PIN: 898-540-398
-2023-02-24 10:37:36,657: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.101.33:5000
-2023-02-24 10:37:36,657: [33mPress CTRL+C to quit[0m
-2023-02-24 10:37:36,658:  * Restarting with stat
-2023-02-24 10:37:37,360:  * Debugger is active!
-2023-02-24 10:37:37,371:  * Debugger PIN: 898-540-398
-2023-02-24 10:37:40,356: checkAI result : Closed time : 0.017540931701660156:
-2023-02-24 10:37:40,357: 192.168.137.1 - - [24/Feb/2023 10:37:40] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:37:44,166: checkAI result : Closed time : 0.010003328323364258:
-2023-02-24 10:37:44,167: 192.168.137.1 - - [24/Feb/2023 10:37:44] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:37:49,022: checkAI result : Closed time : 0.01005244255065918:
-2023-02-24 10:37:49,023: 192.168.137.1 - - [24/Feb/2023 10:37:49] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:37:53,374: checkAI result : Closed time : 0.009999752044677734:
-2023-02-24 10:37:53,374: 192.168.137.1 - - [24/Feb/2023 10:37:53] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:37:58,393: checkAI result : Opened time : 0.010486602783203125:
-2023-02-24 10:37:58,394: 192.168.137.1 - - [24/Feb/2023 10:37:58] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:38:01,132: checkAI result : Opened time : 0.013994932174682617:
-2023-02-24 10:38:01,132: 192.168.137.1 - - [24/Feb/2023 10:38:01] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:38:55,766:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-24 10:38:55,805:  * Restarting with stat
-2023-02-24 10:40:01,179: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.101.33:5000
-2023-02-24 10:40:01,179: [33mPress CTRL+C to quit[0m
-2023-02-24 10:40:01,180:  * Restarting with stat
-2023-02-24 10:40:01,910:  * Debugger is active!
-2023-02-24 10:40:01,922:  * Debugger PIN: 898-540-398
-2023-02-24 10:40:01,930: {'status': 'OK', 'status_code': 200}
-2023-02-24 10:40:01,931: 192.168.137.1 - - [24/Feb/2023 10:40:01] "POST /test HTTP/1.1" 200 -
-2023-02-24 10:40:04,905: {'status': 'OK', 'status_code': 200}
-2023-02-24 10:40:04,905: 192.168.137.1 - - [24/Feb/2023 10:40:04] "POST /test HTTP/1.1" 200 -
-2023-02-24 10:40:09,673: checkAI result : Running time : 0.018292903900146484:
-2023-02-24 10:40:09,674: 192.168.137.1 - - [24/Feb/2023 10:40:09] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:40:12,198: checkAI result : Running time : 0.010998010635375977:
-2023-02-24 10:40:12,198: 192.168.137.1 - - [24/Feb/2023 10:40:12] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:40:12,966: checkAI result : Running time : 0.008982181549072266:
-2023-02-24 10:40:12,967: 192.168.137.1 - - [24/Feb/2023 10:40:12] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:40:13,452: checkAI result : Running time : 0.008979082107543945:
-2023-02-24 10:40:13,453: 192.168.137.1 - - [24/Feb/2023 10:40:13] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:40:13,906: checkAI result : Running time : 0.00997471809387207:
-2023-02-24 10:40:13,906: 192.168.137.1 - - [24/Feb/2023 10:40:13] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:40:14,488: checkAI result : Running time : 0.009978055953979492:
-2023-02-24 10:40:14,490: 192.168.137.1 - - [24/Feb/2023 10:40:14] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:40:14,907: checkAI result : Running time : 0.00899958610534668:
-2023-02-24 10:40:14,908: 192.168.137.1 - - [24/Feb/2023 10:40:14] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:40:15,310: checkAI result : Running time : 0.008997678756713867:
-2023-02-24 10:40:15,311: 192.168.137.1 - - [24/Feb/2023 10:40:15] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:42:24,245: checkAI result : Running time : 0.013808727264404297:
-2023-02-24 10:42:24,245: 192.168.137.1 - - [24/Feb/2023 10:42:24] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:45:51,569:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-24 10:45:51,610:  * Restarting with stat
-2023-02-24 10:46:52,057: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.101.33:5000
-2023-02-24 10:46:52,057: [33mPress CTRL+C to quit[0m
-2023-02-24 10:46:52,059:  * Restarting with stat
-2023-02-24 10:46:52,781:  * Debugger is active!
-2023-02-24 10:46:52,795:  * Debugger PIN: 898-540-398
-2023-02-24 10:46:54,186: checkAI result : Running time : 0.01697230339050293:
-2023-02-24 10:46:54,187: 192.168.137.1 - - [24/Feb/2023 10:46:54] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:46:55,663: checkAI result : Running time : 0.009004354476928711:
-2023-02-24 10:46:55,664: 192.168.137.1 - - [24/Feb/2023 10:46:55] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:46:56,064: checkAI result : Running time : 0.010003328323364258:
-2023-02-24 10:46:56,064: 192.168.137.1 - - [24/Feb/2023 10:46:56] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:46:56,294: checkAI result : Running time : 0.00951075553894043:
-2023-02-24 10:46:56,295: 192.168.137.1 - - [24/Feb/2023 10:46:56] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:46:56,511: checkAI result : Running time : 0.010999441146850586:
-2023-02-24 10:46:56,512: 192.168.137.1 - - [24/Feb/2023 10:46:56] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:46:56,675: checkAI result : Running time : 0.00953531265258789:
-2023-02-24 10:46:56,676: 192.168.137.1 - - [24/Feb/2023 10:46:56] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:46:56,842: checkAI result : Running time : 0.008752584457397461:
-2023-02-24 10:46:56,843: 192.168.137.1 - - [24/Feb/2023 10:46:56] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:46:57,009: checkAI result : Running time : 0.010955810546875:
-2023-02-24 10:46:57,010: 192.168.137.1 - - [24/Feb/2023 10:46:57] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:46:57,502: checkAI result : Running time : 0.009981155395507812:
-2023-02-24 10:46:57,502: 192.168.137.1 - - [24/Feb/2023 10:46:57] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:46:58,009: checkAI result : Running time : 0.009998798370361328:
-2023-02-24 10:46:58,009: 192.168.137.1 - - [24/Feb/2023 10:46:58] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:48:39,288: {'status': 'OK', 'status_code': 200}
-2023-02-24 10:48:39,288: 192.168.137.1 - - [24/Feb/2023 10:48:39] "POST /test HTTP/1.1" 200 -
-2023-02-24 10:48:43,168: checkAI result : Closed time : 0.014900684356689453:
-2023-02-24 10:48:43,169: 192.168.137.1 - - [24/Feb/2023 10:48:43] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:48:44,598: checkAI result : Closed time : 0.010998010635375977:
-2023-02-24 10:48:44,599: 192.168.137.1 - - [24/Feb/2023 10:48:44] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:48:45,295: checkAI result : Closed time : 0.011058807373046875:
-2023-02-24 10:48:45,295: 192.168.137.1 - - [24/Feb/2023 10:48:45] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:48:45,695: checkAI result : Closed time : 0.010032892227172852:
-2023-02-24 10:48:45,695: 192.168.137.1 - - [24/Feb/2023 10:48:45] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:48:45,913: checkAI result : Closed time : 0.011553525924682617:
-2023-02-24 10:48:45,914: 192.168.137.1 - - [24/Feb/2023 10:48:45] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:48:46,517: checkAI result : Closed time : 0.009966850280761719:
-2023-02-24 10:48:46,518: 192.168.137.1 - - [24/Feb/2023 10:48:46] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:48:46,787: checkAI result : Closed time : 0.011982917785644531:
-2023-02-24 10:48:46,788: 192.168.137.1 - - [24/Feb/2023 10:48:46] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:48:46,995: checkAI result : Closed time : 0.01003265380859375:
-2023-02-24 10:48:46,996: 192.168.137.1 - - [24/Feb/2023 10:48:46] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:48:47,168: checkAI result : Closed time : 0.009998083114624023:
-2023-02-24 10:48:47,169: 192.168.137.1 - - [24/Feb/2023 10:48:47] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:48:47,344: checkAI result : Closed time : 0.01188802719116211:
-2023-02-24 10:48:47,345: 192.168.137.1 - - [24/Feb/2023 10:48:47] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:48:47,522: checkAI result : Closed time : 0.013986349105834961:
-2023-02-24 10:48:47,522: 192.168.137.1 - - [24/Feb/2023 10:48:47] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:48:47,674: checkAI result : Closed time : 0.010980367660522461:
-2023-02-24 10:48:47,674: 192.168.137.1 - - [24/Feb/2023 10:48:47] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:48:47,831: checkAI result : Closed time : 0.012998342514038086:
-2023-02-24 10:48:47,832: 192.168.137.1 - - [24/Feb/2023 10:48:47] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:48:48,094: checkAI result : Closed time : 0.013712882995605469:
-2023-02-24 10:48:48,094: 192.168.137.1 - - [24/Feb/2023 10:48:48] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:48:48,228: checkAI result : Closed time : 0.010601520538330078:
-2023-02-24 10:48:48,229: 192.168.137.1 - - [24/Feb/2023 10:48:48] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:48:48,756: inputnum: 4 inputact: 1
-2023-02-24 10:48:48,756: 192.168.137.1 - - [24/Feb/2023 10:48:48] "POST /checkrelay HTTP/1.1" 200 -
-2023-02-24 10:48:49,212: inputnum: 3 inputact: 1
-2023-02-24 10:48:49,212: 192.168.137.1 - - [24/Feb/2023 10:48:49] "POST /checkrelay HTTP/1.1" 200 -
-2023-02-24 10:48:49,737: inputnum: 2 inputact: 1
-2023-02-24 10:48:49,738: 192.168.137.1 - - [24/Feb/2023 10:48:49] "POST /checkrelay HTTP/1.1" 200 -
-2023-02-24 10:48:50,043: inputnum: 1 inputact: 1
-2023-02-24 10:48:50,043: 192.168.137.1 - - [24/Feb/2023 10:48:50] "POST /checkrelay HTTP/1.1" 200 -
-2023-02-24 10:48:50,765: inputnum: 1 inputact: 1
-2023-02-24 10:48:50,766: 192.168.137.1 - - [24/Feb/2023 10:48:50] "POST /checkleds HTTP/1.1" 200 -
-2023-02-24 10:48:50,995: inputnum: 2 inputact: 1
-2023-02-24 10:48:50,995: 192.168.137.1 - - [24/Feb/2023 10:48:50] "POST /checkleds HTTP/1.1" 200 -
-2023-02-24 10:48:51,272: inputnum: 3 inputact: 1
-2023-02-24 10:48:51,272: 192.168.137.1 - - [24/Feb/2023 10:48:51] "POST /checkleds HTTP/1.1" 200 -
-2023-02-24 10:48:51,574: inputnum: 4 inputact: 1
-2023-02-24 10:48:51,575: 192.168.137.1 - - [24/Feb/2023 10:48:51] "POST /checkleds HTTP/1.1" 200 -
-2023-02-24 10:48:51,899: inputnum: 5 inputact: 1
-2023-02-24 10:48:51,899: 192.168.137.1 - - [24/Feb/2023 10:48:51] "POST /checkleds HTTP/1.1" 200 -
-2023-02-24 10:48:52,161: inputnum: 6 inputact: 1
-2023-02-24 10:48:52,162: 192.168.137.1 - - [24/Feb/2023 10:48:52] "POST /checkleds HTTP/1.1" 200 -
-2023-02-24 10:48:52,950: inputnum: 7 inputact: 0
-2023-02-24 10:48:52,950: 192.168.137.1 - - [24/Feb/2023 10:48:52] "POST /checkrelay HTTP/1.1" 200 -
-2023-02-24 10:48:53,524: inputnum: 5 inputact: 1
-2023-02-24 10:48:53,524: 192.168.137.1 - - [24/Feb/2023 10:48:53] "POST /checkrelay HTTP/1.1" 200 -
-2023-02-24 10:48:53,781: inputnum: 6 inputact: 1
-2023-02-24 10:48:53,781: 192.168.137.1 - - [24/Feb/2023 10:48:53] "POST /checkrelay HTTP/1.1" 200 -
-2023-02-24 10:48:54,263: checkAI result : Closed time : 0.01100015640258789:
-2023-02-24 10:48:54,264: 192.168.137.1 - - [24/Feb/2023 10:48:54] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:48:54,449: checkAI result : Closed time : 0.010003328323364258:
-2023-02-24 10:48:54,449: 192.168.137.1 - - [24/Feb/2023 10:48:54] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:48:54,620: checkAI result : Closed time : 0.012505531311035156:
-2023-02-24 10:48:54,620: 192.168.137.1 - - [24/Feb/2023 10:48:54] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:48:54,786: checkAI result : Closed time : 0.010001182556152344:
-2023-02-24 10:48:54,786: 192.168.137.1 - - [24/Feb/2023 10:48:54] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:48:54,939: checkAI result : Closed time : 0.010959863662719727:
-2023-02-24 10:48:54,940: 192.168.137.1 - - [24/Feb/2023 10:48:54] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:48:55,092: checkAI result : Closed time : 0.0149993896484375:
-2023-02-24 10:48:55,093: 192.168.137.1 - - [24/Feb/2023 10:48:55] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:53:57,845: {'status': 'OK', 'status_code': 200}
-2023-02-24 10:53:57,846: 192.168.137.1 - - [24/Feb/2023 10:53:57] "POST /test HTTP/1.1" 200 -
-2023-02-24 10:53:58,605: checkAI result : Running time : 0.009979009628295898:
-2023-02-24 10:53:58,605: 192.168.137.1 - - [24/Feb/2023 10:53:58] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 10:54:00,065: checkAI result : Running time : 0.009997129440307617:
-2023-02-24 10:54:00,066: 192.168.137.1 - - [24/Feb/2023 10:54:00] "POST /checkAI HTTP/1.1" 200 -
-2023-02-24 14:02:14,413:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-24 14:02:14,528:  * Restarting with stat
-2023-02-25 16:40:28,304: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.254:5000
-2023-02-25 16:40:28,304: [33mPress CTRL+C to quit[0m
-2023-02-25 16:40:28,306:  * Restarting with stat
-2023-02-25 16:40:28,976:  * Debugger is active!
-2023-02-25 16:40:28,988:  * Debugger PIN: 898-540-398
-2023-02-25 16:42:55,712:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-25 16:42:55,755:  * Restarting with stat
-2023-02-25 16:42:56,668:  * Debugger is active!
-2023-02-25 16:42:56,722:  * Debugger PIN: 898-540-398
-2023-02-25 16:42:58,932: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.254:5000
-2023-02-25 16:42:58,932: [33mPress CTRL+C to quit[0m
-2023-02-25 16:42:58,933:  * Restarting with stat
-2023-02-25 16:42:59,708:  * Debugger is active!
-2023-02-25 16:42:59,725:  * Debugger PIN: 898-540-398
-2023-02-25 16:43:23,022: {'status': 'OK', 'status_code': 200}
-2023-02-25 16:43:23,022: 192.168.137.1 - - [25/Feb/2023 16:43:23] "POST /test HTTP/1.1" 200 -
-2023-02-25 16:43:27,573: checkAI result : Closed time : 0.03530240058898926:
-2023-02-25 16:43:27,574: 192.168.137.1 - - [25/Feb/2023 16:43:27] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 16:43:35,084: checkAI result : Closed time : 0.009988784790039062:
-2023-02-25 16:43:35,085: 192.168.137.1 - - [25/Feb/2023 16:43:35] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 16:43:43,418: checkAI result : Closed time : 0.012609720230102539:
-2023-02-25 16:43:43,418: 192.168.137.1 - - [25/Feb/2023 16:43:43] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 16:43:44,261: checkAI result : Closed time : 0.013895034790039062:
-2023-02-25 16:43:44,261: 192.168.137.1 - - [25/Feb/2023 16:43:44] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 16:43:44,582: checkAI result : Closed time : 0.011005401611328125:
-2023-02-25 16:43:44,582: 192.168.137.1 - - [25/Feb/2023 16:43:44] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 16:43:49,943: checkAI result : Closed time : 0.011106729507446289:
-2023-02-25 16:43:49,944: 192.168.137.1 - - [25/Feb/2023 16:43:49] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 16:43:54,639: checkAI result : Running time : 0.013892889022827148:
-2023-02-25 16:43:54,639: 192.168.137.1 - - [25/Feb/2023 16:43:54] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 16:43:55,304: checkAI result : Running time : 0.010955095291137695:
-2023-02-25 16:43:55,305: 192.168.137.1 - - [25/Feb/2023 16:43:55] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 16:43:55,481: checkAI result : Running time : 0.014996051788330078:
-2023-02-25 16:43:55,481: 192.168.137.1 - - [25/Feb/2023 16:43:55] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 16:43:55,648: checkAI result : Running time : 0.01295018196105957:
-2023-02-25 16:43:55,649: 192.168.137.1 - - [25/Feb/2023 16:43:55] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 16:43:55,865: checkAI result : Running time : 0.011977434158325195:
-2023-02-25 16:43:55,865: 192.168.137.1 - - [25/Feb/2023 16:43:55] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 16:43:56,005: checkAI result : Running time : 0.010998725891113281:
-2023-02-25 16:43:56,006: 192.168.137.1 - - [25/Feb/2023 16:43:56] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 16:44:01,606: checkAI result : Opened time : 0.012175559997558594:
-2023-02-25 16:44:01,606: 192.168.137.1 - - [25/Feb/2023 16:44:01] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 16:44:02,226: checkAI result : Opened time : 0.010030269622802734:
-2023-02-25 16:44:02,227: 192.168.137.1 - - [25/Feb/2023 16:44:02] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 16:44:02,450: checkAI result : Opened time : 0.009996891021728516:
-2023-02-25 16:44:02,451: 192.168.137.1 - - [25/Feb/2023 16:44:02] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 16:44:02,681: checkAI result : Opened time : 0.012032270431518555:
-2023-02-25 16:44:02,682: 192.168.137.1 - - [25/Feb/2023 16:44:02] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 16:44:03,095: checkAI result : Opened time : 0.009970426559448242:
-2023-02-25 16:44:03,096: 192.168.137.1 - - [25/Feb/2023 16:44:03] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 16:44:03,270: checkAI result : Opened time : 0.008998632431030273:
-2023-02-25 16:44:03,271: 192.168.137.1 - - [25/Feb/2023 16:44:03] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 16:44:40,272:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-25 16:44:40,313:  * Restarting with stat
-2023-02-25 16:44:41,151:  * Debugger is active!
-2023-02-25 16:44:41,163:  * Debugger PIN: 898-540-398
-2023-02-25 16:44:50,221:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-25 16:44:50,262:  * Restarting with stat
-2023-02-25 16:44:51,052:  * Debugger is active!
-2023-02-25 16:44:51,064:  * Debugger PIN: 898-540-398
-2023-02-25 16:44:53,893: checkAI result : Opened time : 0.015997648239135742:
-2023-02-25 16:44:53,894: 192.168.137.1 - - [25/Feb/2023 16:44:53] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 16:44:54,751: checkAI result : Opened time : 0.00887608528137207:
-2023-02-25 16:44:54,752: 192.168.137.1 - - [25/Feb/2023 16:44:54] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 16:44:55,159: checkAI result : Opened time : 0.008870363235473633:
-2023-02-25 16:44:55,160: 192.168.137.1 - - [25/Feb/2023 16:44:55] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 16:44:55,457: checkAI result : Opened time : 0.008977890014648438:
-2023-02-25 16:44:55,457: 192.168.137.1 - - [25/Feb/2023 16:44:55] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 16:44:55,906: checkAI result : Opened time : 0.010004758834838867:
-2023-02-25 16:44:55,906: 192.168.137.1 - - [25/Feb/2023 16:44:55] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 16:44:56,133: checkAI result : Opened time : 0.011478185653686523:
-2023-02-25 16:44:56,134: 192.168.137.1 - - [25/Feb/2023 16:44:56] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 16:44:56,313: checkAI result : Opened time : 0.009960412979125977:
-2023-02-25 16:44:56,314: 192.168.137.1 - - [25/Feb/2023 16:44:56] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 16:44:56,908: checkAI result : Opened time : 0.01099252700805664:
-2023-02-25 16:44:56,908: 192.168.137.1 - - [25/Feb/2023 16:44:56] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 16:44:57,087: checkAI result : Opened time : 0.008997917175292969:
-2023-02-25 16:44:57,088: 192.168.137.1 - - [25/Feb/2023 16:44:57] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 16:44:57,267: checkAI result : Opened time : 0.009979963302612305:
-2023-02-25 16:44:57,267: 192.168.137.1 - - [25/Feb/2023 16:44:57] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 16:44:58,545: checkAI result : Opened time : 0.010962963104248047:
-2023-02-25 16:44:58,545: 192.168.137.1 - - [25/Feb/2023 16:44:58] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 16:44:58,726: checkAI result : Opened time : 0.009284496307373047:
-2023-02-25 16:44:58,726: 192.168.137.1 - - [25/Feb/2023 16:44:58] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 16:44:58,985: checkAI result : Opened time : 0.009000062942504883:
-2023-02-25 16:44:58,986: 192.168.137.1 - - [25/Feb/2023 16:44:58] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 17:06:14,460: {'status': 'OK', 'status_code': 200}
-2023-02-25 17:06:14,460: 192.168.137.1 - - [25/Feb/2023 17:06:14] "POST /test HTTP/1.1" 200 -
-2023-02-25 17:06:15,244: checkAI result : Running time : 0.015019416809082031:
-2023-02-25 17:06:15,245: 192.168.137.1 - - [25/Feb/2023 17:06:15] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 17:06:17,559: checkAI result : Running time : 0.013574838638305664:
-2023-02-25 17:06:17,559: 192.168.137.1 - - [25/Feb/2023 17:06:17] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 17:06:18,651: checkAI result : Running time : 0.010504007339477539:
-2023-02-25 17:06:18,652: 192.168.137.1 - - [25/Feb/2023 17:06:18] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 17:06:19,138: checkAI result : Running time : 0.01580953598022461:
-2023-02-25 17:06:19,138: 192.168.137.1 - - [25/Feb/2023 17:06:19] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 17:06:19,364: checkAI result : Running time : 0.011129140853881836:
-2023-02-25 17:06:19,365: 192.168.137.1 - - [25/Feb/2023 17:06:19] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 17:06:19,550: checkAI result : Running time : 0.011056661605834961:
-2023-02-25 17:06:19,551: 192.168.137.1 - - [25/Feb/2023 17:06:19] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 17:06:19,736: checkAI result : Running time : 0.01665949821472168:
-2023-02-25 17:06:19,737: 192.168.137.1 - - [25/Feb/2023 17:06:19] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 17:06:19,902: checkAI result : Running time : 0.01062631607055664:
-2023-02-25 17:06:19,903: 192.168.137.1 - - [25/Feb/2023 17:06:19] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 17:06:20,063: checkAI result : Running time : 0.011891365051269531:
-2023-02-25 17:06:20,064: 192.168.137.1 - - [25/Feb/2023 17:06:20] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 17:06:20,227: checkAI result : Running time : 0.010581493377685547:
-2023-02-25 17:06:20,228: 192.168.137.1 - - [25/Feb/2023 17:06:20] "POST /checkAI HTTP/1.1" 200 -
-2023-02-25 17:07:09,593:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-25 17:07:09,642:  * Restarting with stat
-2023-02-25 17:07:10,465:  * Debugger is active!
-2023-02-25 17:07:10,480:  * Debugger PIN: 898-540-398
-2023-02-25 17:07:23,553:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-25 17:07:23,590:  * Restarting with stat
-2023-02-25 17:07:24,427:  * Debugger is active!
-2023-02-25 17:07:24,444:  * Debugger PIN: 898-540-398
-2023-02-26 00:15:45,712: checkAI result : Running time : 0.09184861183166504:
-2023-02-26 00:15:45,715: 192.168.137.1 - - [26/Feb/2023 00:15:45] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:17:35,752:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-26 00:17:35,839:  * Restarting with stat
-2023-02-26 00:17:36,951:  * Debugger is active!
-2023-02-26 00:17:36,965:  * Debugger PIN: 898-540-398
-2023-02-26 00:18:13,178:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-26 00:18:13,215:  * Restarting with stat
-2023-02-26 00:20:01,910: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.254:5000
-2023-02-26 00:20:01,910: [33mPress CTRL+C to quit[0m
-2023-02-26 00:20:01,911:  * Restarting with stat
-2023-02-26 00:20:02,640:  * Debugger is active!
-2023-02-26 00:20:02,653:  * Debugger PIN: 898-540-398
-2023-02-26 00:20:05,797: {'status': 'OK', 'status_code': 200}
-2023-02-26 00:20:05,797: 192.168.137.1 - - [26/Feb/2023 00:20:05] "POST /test HTTP/1.1" 200 -
-2023-02-26 00:20:07,083: checkAI result : Running time : 0.017733097076416016:
-2023-02-26 00:20:07,083: 192.168.137.1 - - [26/Feb/2023 00:20:07] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:20:08,225: checkAI result : Running time : 0.009610176086425781:
-2023-02-26 00:20:08,226: 192.168.137.1 - - [26/Feb/2023 00:20:08] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:20:08,888: checkAI result : Running time : 0.010526657104492188:
-2023-02-26 00:20:08,889: 192.168.137.1 - - [26/Feb/2023 00:20:08] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:20:09,497: checkAI result : Running time : 0.009546756744384766:
-2023-02-26 00:20:09,497: 192.168.137.1 - - [26/Feb/2023 00:20:09] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:20:09,940: checkAI result : Running time : 0.012535810470581055:
-2023-02-26 00:20:09,940: 192.168.137.1 - - [26/Feb/2023 00:20:09] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:20:10,121: checkAI result : Running time : 0.016134023666381836:
-2023-02-26 00:20:10,122: 192.168.137.1 - - [26/Feb/2023 00:20:10] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:20:26,799:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-26 00:20:26,885:  * Restarting with stat
-2023-02-26 00:20:27,648:  * Debugger is active!
-2023-02-26 00:20:27,662:  * Debugger PIN: 898-540-398
-2023-02-26 00:20:30,044: checkAI result : Running time : 0.01706099510192871:
-2023-02-26 00:20:30,044: 192.168.137.1 - - [26/Feb/2023 00:20:30] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:24:03,841:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-26 00:24:03,885:  * Restarting with stat
-2023-02-26 00:24:04,705:  * Debugger is active!
-2023-02-26 00:24:04,717:  * Debugger PIN: 898-540-398
-2023-02-26 00:27:35,092:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-26 00:27:35,136:  * Restarting with stat
-2023-02-26 00:27:36,009:  * Debugger is active!
-2023-02-26 00:27:36,022:  * Debugger PIN: 898-540-398
-2023-02-26 00:27:38,548: checkAI result : Running time : 0.017163515090942383:
-2023-02-26 00:27:38,549: 192.168.137.1 - - [26/Feb/2023 00:27:38] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:27:39,850: checkAI result : Running time : 0.011173486709594727:
-2023-02-26 00:27:39,850: 192.168.137.1 - - [26/Feb/2023 00:27:39] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:27:40,394: checkAI result : Running time : 0.009995698928833008:
-2023-02-26 00:27:40,394: 192.168.137.1 - - [26/Feb/2023 00:27:40] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:27:40,526: checkAI result : Running time : 0.008656024932861328:
-2023-02-26 00:27:40,527: 192.168.137.1 - - [26/Feb/2023 00:27:40] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:27:42,342: checkAI result : Running time : 0.009500265121459961:
-2023-02-26 00:27:42,343: 192.168.137.1 - - [26/Feb/2023 00:27:42] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:27:42,915: checkAI result : Running time : 0.011523246765136719:
-2023-02-26 00:27:42,915: 192.168.137.1 - - [26/Feb/2023 00:27:42] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:27:43,084: checkAI result : Running time : 0.009285449981689453:
-2023-02-26 00:27:43,085: 192.168.137.1 - - [26/Feb/2023 00:27:43] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:27:43,218: checkAI result : Running time : 0.012512683868408203:
-2023-02-26 00:27:43,218: 192.168.137.1 - - [26/Feb/2023 00:27:43] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:27:46,943: checkAI result : Opened time : 0.015020132064819336:
-2023-02-26 00:27:46,944: 192.168.137.1 - - [26/Feb/2023 00:27:46] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:27:47,902: checkAI result : Opened time : 0.024209976196289062:
-2023-02-26 00:27:47,902: 192.168.137.1 - - [26/Feb/2023 00:27:47] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:27:48,085: checkAI result : Opened time : 0.012744903564453125:
-2023-02-26 00:27:48,085: 192.168.137.1 - - [26/Feb/2023 00:27:48] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:27:48,271: checkAI result : Opened time : 0.01554417610168457:
-2023-02-26 00:27:48,272: 192.168.137.1 - - [26/Feb/2023 00:27:48] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:27:48,438: checkAI result : Opened time : 0.018263578414916992:
-2023-02-26 00:27:48,439: 192.168.137.1 - - [26/Feb/2023 00:27:48] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:27:48,596: checkAI result : Opened time : 0.02003955841064453:
-2023-02-26 00:27:48,597: 192.168.137.1 - - [26/Feb/2023 00:27:48] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:27:48,802: checkAI result : Opened time : 0.018052101135253906:
-2023-02-26 00:27:48,803: 192.168.137.1 - - [26/Feb/2023 00:27:48] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:27:49,197: checkAI result : Opened time : 0.020040035247802734:
-2023-02-26 00:27:49,198: 192.168.137.1 - - [26/Feb/2023 00:27:49] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:27:49,345: checkAI result : Opened time : 0.01507115364074707:
-2023-02-26 00:27:49,346: 192.168.137.1 - - [26/Feb/2023 00:27:49] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:27:49,502: checkAI result : Opened time : 0.016318798065185547:
-2023-02-26 00:27:49,503: 192.168.137.1 - - [26/Feb/2023 00:27:49] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:27:51,466: checkAI result : Opened time : 0.019576072692871094:
-2023-02-26 00:27:51,466: 192.168.137.1 - - [26/Feb/2023 00:27:51] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:27:52,068: checkAI result : Opened time : 0.015525579452514648:
-2023-02-26 00:27:52,069: 192.168.137.1 - - [26/Feb/2023 00:27:52] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:27:52,276: checkAI result : Opened time : 0.01805591583251953:
-2023-02-26 00:27:52,277: 192.168.137.1 - - [26/Feb/2023 00:27:52] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:27:52,797: checkAI result : Opened time : 0.016450881958007812:
-2023-02-26 00:27:52,798: 192.168.137.1 - - [26/Feb/2023 00:27:52] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:27:52,997: checkAI result : Opened time : 0.017255544662475586:
-2023-02-26 00:27:52,998: 192.168.137.1 - - [26/Feb/2023 00:27:52] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:27:53,181: checkAI result : Opened time : 0.020211219787597656:
-2023-02-26 00:27:53,182: 192.168.137.1 - - [26/Feb/2023 00:27:53] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:27:53,339: checkAI result : Opened time : 0.01925516128540039:
-2023-02-26 00:27:53,339: 192.168.137.1 - - [26/Feb/2023 00:27:53] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:27:53,494: checkAI result : Opened time : 0.016613245010375977:
-2023-02-26 00:27:53,495: 192.168.137.1 - - [26/Feb/2023 00:27:53] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:27:55,917: checkAI result : Opened time : 0.01707172393798828:
-2023-02-26 00:27:55,918: 192.168.137.1 - - [26/Feb/2023 00:27:55] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:27:56,099: checkAI result : Opened time : 0.0165860652923584:
-2023-02-26 00:27:56,099: 192.168.137.1 - - [26/Feb/2023 00:27:56] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:27:56,255: checkAI result : Opened time : 0.020066499710083008:
-2023-02-26 00:27:56,256: 192.168.137.1 - - [26/Feb/2023 00:27:56] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:27:56,396: checkAI result : Opened time : 0.02404332160949707:
-2023-02-26 00:27:56,396: 192.168.137.1 - - [26/Feb/2023 00:27:56] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:28:46,089: {'status': 'OK', 'status_code': 200}
-2023-02-26 00:28:46,090: 192.168.137.1 - - [26/Feb/2023 00:28:46] "POST /test HTTP/1.1" 200 -
-2023-02-26 00:28:47,235: checkAI result : Opened time : 0.017284393310546875:
-2023-02-26 00:28:47,235: 192.168.137.1 - - [26/Feb/2023 00:28:47] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:28:48,070: checkAI result : Opened time : 0.01604461669921875:
-2023-02-26 00:28:48,071: 192.168.137.1 - - [26/Feb/2023 00:28:48] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:28:48,523: checkAI result : Opened time : 0.015167713165283203:
-2023-02-26 00:28:48,524: 192.168.137.1 - - [26/Feb/2023 00:28:48] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:28:48,706: checkAI result : Opened time : 0.019011259078979492:
-2023-02-26 00:28:48,707: 192.168.137.1 - - [26/Feb/2023 00:28:48] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:28:48,843: checkAI result : Opened time : 0.019212961196899414:
-2023-02-26 00:28:48,843: 192.168.137.1 - - [26/Feb/2023 00:28:48] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:29:07,093: checkAI result : Opened time : 0.015972614288330078:
-2023-02-26 00:29:07,094: 192.168.137.1 - - [26/Feb/2023 00:29:07] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:29:07,734: checkAI result : Opened time : 0.013317108154296875:
-2023-02-26 00:29:07,735: 192.168.137.1 - - [26/Feb/2023 00:29:07] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:29:08,168: checkAI result : Opened time : 0.014556884765625:
-2023-02-26 00:29:08,168: 192.168.137.1 - - [26/Feb/2023 00:29:08] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:29:08,392: checkAI result : Opened time : 0.017367124557495117:
-2023-02-26 00:29:08,392: 192.168.137.1 - - [26/Feb/2023 00:29:08] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:29:08,547: checkAI result : Opened time : 0.015854835510253906:
-2023-02-26 00:29:08,552: 192.168.137.1 - - [26/Feb/2023 00:29:08] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:31:21,375:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-26 00:31:21,423:  * Restarting with stat
-2023-02-26 00:31:22,318:  * Debugger is active!
-2023-02-26 00:31:22,331:  * Debugger PIN: 898-540-398
-2023-02-26 00:31:33,401:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-26 00:31:33,439:  * Restarting with stat
-2023-02-26 00:31:34,178:  * Debugger is active!
-2023-02-26 00:31:34,192:  * Debugger PIN: 898-540-398
-2023-02-26 00:31:41,025: checkAI result : Opened time : 0.016685962677001953:
-2023-02-26 00:31:41,026: 192.168.137.1 - - [26/Feb/2023 00:31:41] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:31:41,826: checkAI result : Opened time : 0.010051250457763672:
-2023-02-26 00:31:41,826: 192.168.137.1 - - [26/Feb/2023 00:31:41] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:31:42,027: checkAI result : Opened time : 0.008966207504272461:
-2023-02-26 00:31:42,028: 192.168.137.1 - - [26/Feb/2023 00:31:42] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:31:42,221: checkAI result : Opened time : 0.010339498519897461:
-2023-02-26 00:31:42,221: 192.168.137.1 - - [26/Feb/2023 00:31:42] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:31:42,398: checkAI result : Opened time : 0.011373281478881836:
-2023-02-26 00:31:42,399: 192.168.137.1 - - [26/Feb/2023 00:31:42] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:31:42,566: checkAI result : Opened time : 0.009039640426635742:
-2023-02-26 00:31:42,567: 192.168.137.1 - - [26/Feb/2023 00:31:42] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:31:45,584: checkAI result : Running time : 0.022024869918823242:
-2023-02-26 00:31:45,584: 192.168.137.1 - - [26/Feb/2023 00:31:45] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:31:46,150: checkAI result : Running time : 0.02617025375366211:
-2023-02-26 00:31:46,151: 192.168.137.1 - - [26/Feb/2023 00:31:46] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:31:46,335: checkAI result : Running time : 0.0260772705078125:
-2023-02-26 00:31:46,335: 192.168.137.1 - - [26/Feb/2023 00:31:46] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:31:46,503: checkAI result : Running time : 0.022591114044189453:
-2023-02-26 00:31:46,503: 192.168.137.1 - - [26/Feb/2023 00:31:46] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:31:46,669: checkAI result : Running time : 0.02027416229248047:
-2023-02-26 00:31:46,670: 192.168.137.1 - - [26/Feb/2023 00:31:46] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:31:46,839: checkAI result : Running time : 0.019080162048339844:
-2023-02-26 00:31:46,840: 192.168.137.1 - - [26/Feb/2023 00:31:46] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:31:46,978: checkAI result : Running time : 0.022225141525268555:
-2023-02-26 00:31:46,978: 192.168.137.1 - - [26/Feb/2023 00:31:46] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:31:47,124: checkAI result : Running time : 0.018055438995361328:
-2023-02-26 00:31:47,124: 192.168.137.1 - - [26/Feb/2023 00:31:47] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:31:50,143: checkAI result : Closed time : 0.01899862289428711:
-2023-02-26 00:31:50,144: 192.168.137.1 - - [26/Feb/2023 00:31:50] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:31:50,653: checkAI result : Closed time : 0.015033483505249023:
-2023-02-26 00:31:50,654: 192.168.137.1 - - [26/Feb/2023 00:31:50] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:31:50,834: checkAI result : Closed time : 0.0141754150390625:
-2023-02-26 00:31:50,834: 192.168.137.1 - - [26/Feb/2023 00:31:50] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:31:51,025: checkAI result : Closed time : 0.024519681930541992:
-2023-02-26 00:31:51,025: 192.168.137.1 - - [26/Feb/2023 00:31:51] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:31:51,200: checkAI result : Closed time : 0.02012920379638672:
-2023-02-26 00:31:51,200: 192.168.137.1 - - [26/Feb/2023 00:31:51] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:31:51,711: checkAI result : Closed time : 0.021082401275634766:
-2023-02-26 00:31:51,712: 192.168.137.1 - - [26/Feb/2023 00:31:51] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:31:52,443: checkAI result : Closed time : 0.017214059829711914:
-2023-02-26 00:31:52,444: 192.168.137.1 - - [26/Feb/2023 00:31:52] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:31:52,661: checkAI result : Closed time : 0.013907194137573242:
-2023-02-26 00:31:52,662: 192.168.137.1 - - [26/Feb/2023 00:31:52] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:31:53,213: checkAI result : Closed time : 0.013985633850097656:
-2023-02-26 00:31:53,214: 192.168.137.1 - - [26/Feb/2023 00:31:53] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:31:56,456: checkAI result : Closed time : 0.020087003707885742:
-2023-02-26 00:31:56,457: 192.168.137.1 - - [26/Feb/2023 00:31:56] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:31:57,834: checkAI result : Closed time : 0.0190889835357666:
-2023-02-26 00:31:57,835: 192.168.137.1 - - [26/Feb/2023 00:31:57] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:32:03,059: checkAI result : Running time : 0.0182802677154541:
-2023-02-26 00:32:03,059: 192.168.137.1 - - [26/Feb/2023 00:32:03] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:32:03,904: checkAI result : Running time : 0.020071029663085938:
-2023-02-26 00:32:03,905: 192.168.137.1 - - [26/Feb/2023 00:32:03] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:32:04,085: checkAI result : Running time : 0.018130779266357422:
-2023-02-26 00:32:04,086: 192.168.137.1 - - [26/Feb/2023 00:32:04] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:33:45,826:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-26 00:33:45,965:  * Restarting with stat
-2023-02-26 00:33:46,755:  * Debugger is active!
-2023-02-26 00:33:46,768:  * Debugger PIN: 898-540-398
-2023-02-26 00:33:49,484: checkAI result : Running time : 0.016042470932006836:
-2023-02-26 00:33:49,485: 192.168.137.1 - - [26/Feb/2023 00:33:49] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:33:50,566: checkAI result : Running time : 0.009492874145507812:
-2023-02-26 00:33:50,567: 192.168.137.1 - - [26/Feb/2023 00:33:50] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:33:50,760: checkAI result : Running time : 0.009276390075683594:
-2023-02-26 00:33:50,761: 192.168.137.1 - - [26/Feb/2023 00:33:50] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:33:50,938: checkAI result : Running time : 0.009708881378173828:
-2023-02-26 00:33:50,938: 192.168.137.1 - - [26/Feb/2023 00:33:50] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:33:51,100: checkAI result : Running time : 0.010554790496826172:
-2023-02-26 00:33:51,100: 192.168.137.1 - - [26/Feb/2023 00:33:51] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:33:51,251: checkAI result : Running time : 0.00900578498840332:
-2023-02-26 00:33:51,252: 192.168.137.1 - - [26/Feb/2023 00:33:51] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:33:51,416: checkAI result : Running time : 0.009665966033935547:
-2023-02-26 00:33:51,417: 192.168.137.1 - - [26/Feb/2023 00:33:51] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:33:51,584: checkAI result : Running time : 0.010651826858520508:
-2023-02-26 00:33:51,584: 192.168.137.1 - - [26/Feb/2023 00:33:51] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:33:51,724: checkAI result : Running time : 0.009511470794677734:
-2023-02-26 00:33:51,725: 192.168.137.1 - - [26/Feb/2023 00:33:51] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:34:00,516: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.254:5000
-2023-02-26 00:34:00,516: [33mPress CTRL+C to quit[0m
-2023-02-26 00:34:00,518:  * Restarting with stat
-2023-02-26 00:34:01,218:  * Debugger is active!
-2023-02-26 00:34:01,230:  * Debugger PIN: 898-540-398
-2023-02-26 00:34:04,228: checkAI result : Running time : 0.01687932014465332:
-2023-02-26 00:34:04,228: 192.168.137.1 - - [26/Feb/2023 00:34:04] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:34:04,786: checkAI result : Running time : 0.010209083557128906:
-2023-02-26 00:34:04,786: 192.168.137.1 - - [26/Feb/2023 00:34:04] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:34:04,992: checkAI result : Running time : 0.00950169563293457:
-2023-02-26 00:34:04,992: 192.168.137.1 - - [26/Feb/2023 00:34:04] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:34:05,186: checkAI result : Running time : 0.013489246368408203:
-2023-02-26 00:34:05,186: 192.168.137.1 - - [26/Feb/2023 00:34:05] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:34:05,347: checkAI result : Running time : 0.00954747200012207:
-2023-02-26 00:34:05,348: 192.168.137.1 - - [26/Feb/2023 00:34:05] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:34:05,491: checkAI result : Running time : 0.009959936141967773:
-2023-02-26 00:34:05,491: 192.168.137.1 - - [26/Feb/2023 00:34:05] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:34:10,070: checkAI result : Running time : 0.013078451156616211:
-2023-02-26 00:34:10,072: 192.168.137.1 - - [26/Feb/2023 00:34:10] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:34:10,470: checkAI result : Running time : 0.015074968338012695:
-2023-02-26 00:34:10,470: 192.168.137.1 - - [26/Feb/2023 00:34:10] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:34:10,670: checkAI result : Running time : 0.024544954299926758:
-2023-02-26 00:34:10,670: 192.168.137.1 - - [26/Feb/2023 00:34:10] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:34:10,820: checkAI result : Running time : 0.022321224212646484:
-2023-02-26 00:34:10,821: 192.168.137.1 - - [26/Feb/2023 00:34:10] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:34:10,972: checkAI result : Running time : 0.018711090087890625:
-2023-02-26 00:34:10,973: 192.168.137.1 - - [26/Feb/2023 00:34:10] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:34:16,449: checkAI result : Closed time : 0.017197847366333008:
-2023-02-26 00:34:16,449: 192.168.137.1 - - [26/Feb/2023 00:34:16] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:34:17,338: checkAI result : Closed time : 0.017843008041381836:
-2023-02-26 00:34:17,339: 192.168.137.1 - - [26/Feb/2023 00:34:17] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:34:19,209: checkAI result : Closed time : 0.0203857421875:
-2023-02-26 00:34:19,210: 192.168.137.1 - - [26/Feb/2023 00:34:19] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:34:20,386: checkAI result : Closed time : 0.01915454864501953:
-2023-02-26 00:34:20,387: 192.168.137.1 - - [26/Feb/2023 00:34:20] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:34:20,806: checkAI result : Closed time : 0.020900964736938477:
-2023-02-26 00:34:20,807: 192.168.137.1 - - [26/Feb/2023 00:34:20] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:34:21,404: checkAI result : Closed time : 0.01847052574157715:
-2023-02-26 00:34:21,405: 192.168.137.1 - - [26/Feb/2023 00:34:21] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:34:22,220: checkAI result : Closed time : 0.018682241439819336:
-2023-02-26 00:34:22,220: 192.168.137.1 - - [26/Feb/2023 00:34:22] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:34:23,362: checkAI result : Closed time : 0.021639585494995117:
-2023-02-26 00:34:23,367: 192.168.137.1 - - [26/Feb/2023 00:34:23] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:34:24,105: checkAI result : Closed time : 0.020176172256469727:
-2023-02-26 00:34:24,105: 192.168.137.1 - - [26/Feb/2023 00:34:24] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:34:24,930: checkAI result : Closed time : 0.01866459846496582:
-2023-02-26 00:34:24,930: 192.168.137.1 - - [26/Feb/2023 00:34:24] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:34:25,594: checkAI result : Closed time : 0.01984119415283203:
-2023-02-26 00:34:25,594: 192.168.137.1 - - [26/Feb/2023 00:34:25] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:34:25,995: checkAI result : Closed time : 0.020776987075805664:
-2023-02-26 00:34:25,996: 192.168.137.1 - - [26/Feb/2023 00:34:25] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:35:22,678:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-26 00:35:22,728:  * Restarting with stat
-2023-02-26 00:35:23,518:  * Debugger is active!
-2023-02-26 00:35:23,532:  * Debugger PIN: 898-540-398
-2023-02-26 00:35:28,873: checkAI result : Closed time : 0.017160654067993164:
-2023-02-26 00:35:28,874: 192.168.137.1 - - [26/Feb/2023 00:35:28] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:35:56,720:  * Detected change in 'C:\\Users\\Lenovo\\PycharmProjects\\backEnd_test\\main.py', reloading
-2023-02-26 00:35:56,764:  * Restarting with stat
-2023-02-26 00:35:57,550:  * Debugger is active!
-2023-02-26 00:35:57,564:  * Debugger PIN: 898-540-398
-2023-02-26 00:35:59,765: checkAI result : Closed time : 0.017053604125976562:
-2023-02-26 00:35:59,774: 192.168.137.1 - - [26/Feb/2023 00:35:59] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:00,409: checkAI result : Closed time : 0.009549617767333984:
-2023-02-26 00:36:00,410: 192.168.137.1 - - [26/Feb/2023 00:36:00] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:00,625: checkAI result : Closed time : 0.009512186050415039:
-2023-02-26 00:36:00,625: 192.168.137.1 - - [26/Feb/2023 00:36:00] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:00,811: checkAI result : Closed time : 0.008788824081420898:
-2023-02-26 00:36:00,812: 192.168.137.1 - - [26/Feb/2023 00:36:00] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:00,958: checkAI result : Closed time : 0.008548259735107422:
-2023-02-26 00:36:00,959: 192.168.137.1 - - [26/Feb/2023 00:36:00] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:01,105: checkAI result : Closed time : 0.008485078811645508:
-2023-02-26 00:36:01,106: 192.168.137.1 - - [26/Feb/2023 00:36:01] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:01,239: checkAI result : Closed time : 0.008512258529663086:
-2023-02-26 00:36:01,239: 192.168.137.1 - - [26/Feb/2023 00:36:01] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:04,012: checkAI result : Closed time : 0.009501934051513672:
-2023-02-26 00:36:04,013: 192.168.137.1 - - [26/Feb/2023 00:36:04] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:08,317: checkAI result : Running time : 0.01454925537109375:
-2023-02-26 00:36:08,318: 192.168.137.1 - - [26/Feb/2023 00:36:08] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:09,233: checkAI result : Running time : 0.01613926887512207:
-2023-02-26 00:36:09,234: 192.168.137.1 - - [26/Feb/2023 00:36:09] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:09,407: checkAI result : Running time : 0.02272343635559082:
-2023-02-26 00:36:09,407: 192.168.137.1 - - [26/Feb/2023 00:36:09] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:09,567: checkAI result : Running time : 0.01947474479675293:
-2023-02-26 00:36:09,568: 192.168.137.1 - - [26/Feb/2023 00:36:09] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:09,696: checkAI result : Running time : 0.013667106628417969:
-2023-02-26 00:36:09,696: 192.168.137.1 - - [26/Feb/2023 00:36:09] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:09,836: checkAI result : Running time : 0.01913905143737793:
-2023-02-26 00:36:09,837: 192.168.137.1 - - [26/Feb/2023 00:36:09] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:09,976: checkAI result : Running time : 0.012513875961303711:
-2023-02-26 00:36:09,977: 192.168.137.1 - - [26/Feb/2023 00:36:09] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:10,121: checkAI result : Running time : 0.013538122177124023:
-2023-02-26 00:36:10,122: 192.168.137.1 - - [26/Feb/2023 00:36:10] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:12,701: checkAI result : Running time : 0.015515565872192383:
-2023-02-26 00:36:12,702: 192.168.137.1 - - [26/Feb/2023 00:36:12] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:13,820: checkAI result : Running time : 0.020881175994873047:
-2023-02-26 00:36:13,821: 192.168.137.1 - - [26/Feb/2023 00:36:13] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:14,266: checkAI result : Running time : 0.01806950569152832:
-2023-02-26 00:36:14,267: 192.168.137.1 - - [26/Feb/2023 00:36:14] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:14,452: checkAI result : Running time : 0.014368534088134766:
-2023-02-26 00:36:14,459: 192.168.137.1 - - [26/Feb/2023 00:36:14] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:14,624: checkAI result : Running time : 0.016762733459472656:
-2023-02-26 00:36:14,624: 192.168.137.1 - - [26/Feb/2023 00:36:14] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:14,755: checkAI result : Running time : 0.017029285430908203:
-2023-02-26 00:36:14,756: 192.168.137.1 - - [26/Feb/2023 00:36:14] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:14,926: checkAI result : Running time : 0.019089221954345703:
-2023-02-26 00:36:14,926: 192.168.137.1 - - [26/Feb/2023 00:36:14] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:15,103: checkAI result : Running time : 0.019159555435180664:
-2023-02-26 00:36:15,104: 192.168.137.1 - - [26/Feb/2023 00:36:15] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:15,236: checkAI result : Running time : 0.014310598373413086:
-2023-02-26 00:36:15,237: 192.168.137.1 - - [26/Feb/2023 00:36:15] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:15,375: checkAI result : Running time : 0.016898393630981445:
-2023-02-26 00:36:15,376: 192.168.137.1 - - [26/Feb/2023 00:36:15] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:15,532: checkAI result : Running time : 0.014097929000854492:
-2023-02-26 00:36:15,533: 192.168.137.1 - - [26/Feb/2023 00:36:15] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:15,703: checkAI result : Running time : 0.015011310577392578:
-2023-02-26 00:36:15,704: 192.168.137.1 - - [26/Feb/2023 00:36:15] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:15,855: checkAI result : Running time : 0.012578248977661133:
-2023-02-26 00:36:15,855: 192.168.137.1 - - [26/Feb/2023 00:36:15] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:16,026: checkAI result : Running time : 0.01934075355529785:
-2023-02-26 00:36:16,027: 192.168.137.1 - - [26/Feb/2023 00:36:16] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:16,193: checkAI result : Running time : 0.018924951553344727:
-2023-02-26 00:36:16,193: 192.168.137.1 - - [26/Feb/2023 00:36:16] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:16,333: checkAI result : Running time : 0.014723062515258789:
-2023-02-26 00:36:16,333: 192.168.137.1 - - [26/Feb/2023 00:36:16] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:36:16,465: checkAI result : Running time : 0.015136957168579102:
-2023-02-26 00:36:16,465: 192.168.137.1 - - [26/Feb/2023 00:36:16] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:39:23,404: {'status': 'OK', 'status_code': 200}
-2023-02-26 00:39:23,404: 192.168.137.1 - - [26/Feb/2023 00:39:23] "POST /test HTTP/1.1" 200 -
-2023-02-26 00:39:53,158: {'status': 'OK', 'status_code': 200}
-2023-02-26 00:39:53,159: 192.168.137.1 - - [26/Feb/2023 00:39:53] "POST /test HTTP/1.1" 200 -
-2023-02-26 00:39:54,738: checkAI result : Opened time : 0.018097877502441406:
-2023-02-26 00:39:54,739: 192.168.137.1 - - [26/Feb/2023 00:39:54] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:39:56,016: checkAI result : Opened time : 0.012565135955810547:
-2023-02-26 00:39:56,016: 192.168.137.1 - - [26/Feb/2023 00:39:56] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:39:56,927: checkAI result : Opened time : 0.012560129165649414:
-2023-02-26 00:39:56,927: 192.168.137.1 - - [26/Feb/2023 00:39:56] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:39:57,823: checkAI result : Opened time : 0.011062383651733398:
-2023-02-26 00:39:57,824: 192.168.137.1 - - [26/Feb/2023 00:39:57] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:45:42,760: {'status': 'OK', 'status_code': 200}
-2023-02-26 00:45:42,760: 192.168.137.1 - - [26/Feb/2023 00:45:42] "POST /test HTTP/1.1" 200 -
-2023-02-26 00:45:50,427: checkAI result : Opened time : 0.009577274322509766:
-2023-02-26 00:45:50,427: 192.168.137.1 - - [26/Feb/2023 00:45:50] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:46:02,346: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://192.168.1.254:5000
-2023-02-26 00:46:02,346: [33mPress CTRL+C to quit[0m
-2023-02-26 00:46:02,347:  * Restarting with stat
-2023-02-26 00:46:03,067:  * Debugger is active!
-2023-02-26 00:46:03,079:  * Debugger PIN: 898-540-398
-2023-02-26 00:46:04,011: checkAI result : Opened time : 0.015578031539916992:
-2023-02-26 00:46:04,012: 192.168.137.1 - - [26/Feb/2023 00:46:04] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:46:09,950: checkAI result : Opened time : 0.009747982025146484:
-2023-02-26 00:46:09,950: 192.168.137.1 - - [26/Feb/2023 00:46:09] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:46:09,965: checkAI result : Opened time : 0.010514259338378906:
-2023-02-26 00:46:09,966: 192.168.137.1 - - [26/Feb/2023 00:46:09] "POST /checkAI HTTP/1.1" 200 -
-2023-02-26 00:46:09,980: checkAI result : Opened time : 0.010015249252319336:
-2023-02-26 00:46:09,981: 192.168.137.1 - - [26/Feb/2023 00:46:09] "POST /checkAI HTTP/1.1" 200 -
+ * Running on http://192.168.133.33:5000
+2023-02-27 15:39:49,463: [33mPress CTRL+C to quit[0m
+2023-02-27 15:39:49,465:  * Restarting with stat
+2023-02-27 15:39:51,161:  * Debugger is active!
+2023-02-27 15:39:51,178:  * Debugger PIN: 898-540-398
+2023-02-27 15:39:53,118: {'status': 'OK', 'status_code': 200}
+2023-02-27 15:39:53,119: 192.168.137.1 - - [27/Feb/2023 15:39:53] "POST /test HTTP/1.1" 200 -
+2023-02-27 15:39:53,933: checkAI result : Running time : 0.04241514205932617:
+2023-02-27 15:39:53,934: 192.168.137.1 - - [27/Feb/2023 15:39:53] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 15:39:56,881: checkAI result : Running time : 0.010005950927734375:
+2023-02-27 15:39:56,882: 192.168.137.1 - - [27/Feb/2023 15:39:56] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 15:40:03,181: checkAI result : Running time : 0.010979890823364258:
+2023-02-27 15:40:03,181: 192.168.137.1 - - [27/Feb/2023 15:40:03] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 15:40:04,128: checkAI result : Running time : 0.01299905776977539:
+2023-02-27 15:40:04,129: 192.168.137.1 - - [27/Feb/2023 15:40:04] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 15:40:05,187: checkAI result : Running time : 0.010973453521728516:
+2023-02-27 15:40:05,187: 192.168.137.1 - - [27/Feb/2023 15:40:05] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 15:40:06,098: checkAI result : Running time : 0.011002063751220703:
+2023-02-27 15:40:06,099: 192.168.137.1 - - [27/Feb/2023 15:40:06] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 15:40:06,859: checkAI result : Running time : 0.012911796569824219:
+2023-02-27 15:40:06,861: 192.168.137.1 - - [27/Feb/2023 15:40:06] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 15:40:07,354: checkAI result : Running time : 0.01797795295715332:
+2023-02-27 15:40:07,355: 192.168.137.1 - - [27/Feb/2023 15:40:07] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 15:40:07,880: checkAI result : Running time : 0.012998580932617188:
+2023-02-27 15:40:07,881: 192.168.137.1 - - [27/Feb/2023 15:40:07] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 15:40:10,752: checkAI result : Running time : 0.010997772216796875:
+2023-02-27 15:40:10,753: 192.168.137.1 - - [27/Feb/2023 15:40:10] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 15:40:10,769: checkAI result : Running time : 0.010998010635375977:
+2023-02-27 15:40:10,770: 192.168.137.1 - - [27/Feb/2023 15:40:10] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 15:40:10,791: checkAI result : Running time : 0.016000032424926758:
+2023-02-27 15:40:10,792: 192.168.137.1 - - [27/Feb/2023 15:40:10] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 15:40:44,970: {'status': 'OK', 'status_code': 200}
+2023-02-27 15:40:44,970: 192.168.137.1 - - [27/Feb/2023 15:40:44] "POST /test HTTP/1.1" 200 -
+2023-02-27 15:40:46,037: checkAI result : Running time : 0.009962320327758789:
+2023-02-27 15:40:46,039: 192.168.137.1 - - [27/Feb/2023 15:40:46] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 15:40:46,057: checkAI result : Running time : 0.01171112060546875:
+2023-02-27 15:40:46,058: 192.168.137.1 - - [27/Feb/2023 15:40:46] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 15:40:46,077: checkAI result : Running time : 0.013378381729125977:
+2023-02-27 15:40:46,078: 192.168.137.1 - - [27/Feb/2023 15:40:46] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 15:40:48,400: checkAI result : Running time : 0.009979963302612305:
+2023-02-27 15:40:48,401: 192.168.137.1 - - [27/Feb/2023 15:40:48] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 15:40:48,418: checkAI result : Running time : 0.011399507522583008:
+2023-02-27 15:40:48,419: 192.168.137.1 - - [27/Feb/2023 15:40:48] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 15:40:48,434: checkAI result : Running time : 0.01010751724243164:
+2023-02-27 15:40:48,435: 192.168.137.1 - - [27/Feb/2023 15:40:48] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 15:40:50,415: checkAI result : Running time : 0.010996580123901367:
+2023-02-27 15:40:50,416: 192.168.137.1 - - [27/Feb/2023 15:40:50] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 15:40:50,442: checkAI result : Running time : 0.010999917984008789:
+2023-02-27 15:40:50,443: 192.168.137.1 - - [27/Feb/2023 15:40:50] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 15:40:50,459: checkAI result : Running time : 0.011003494262695312:
+2023-02-27 15:40:50,460: 192.168.137.1 - - [27/Feb/2023 15:40:50] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 15:40:51,195: checkAI result : Running time : 0.011894702911376953:
+2023-02-27 15:40:51,196: 192.168.137.1 - - [27/Feb/2023 15:40:51] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 15:40:51,212: checkAI result : Running time : 0.010001420974731445:
+2023-02-27 15:40:51,212: 192.168.137.1 - - [27/Feb/2023 15:40:51] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 15:40:51,227: checkAI result : Running time : 0.009551525115966797:
+2023-02-27 15:40:51,228: 192.168.137.1 - - [27/Feb/2023 15:40:51] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 15:47:55,719: {'status': 'OK', 'status_code': 200}
+2023-02-27 15:47:55,720: 192.168.137.1 - - [27/Feb/2023 15:47:55] "POST /test HTTP/1.1" 200 -
+2023-02-27 15:47:57,720: inputnum: 1 inputact: 1
+2023-02-27 15:47:57,721: 192.168.137.1 - - [27/Feb/2023 15:47:57] "POST /checkleds HTTP/1.1" 200 -
+2023-02-27 15:49:35,356: {'status': 'OK', 'status_code': 200}
+2023-02-27 15:49:35,357: 192.168.137.1 - - [27/Feb/2023 15:49:35] "POST /test HTTP/1.1" 200 -
+2023-02-27 15:49:36,271: inputnum: 1 inputact: 1
+2023-02-27 15:49:36,272: 192.168.137.1 - - [27/Feb/2023 15:49:36] "POST /checkleds HTTP/1.1" 200 -
+2023-02-27 15:49:37,081: inputnum: 1 inputact: 1
+2023-02-27 15:49:37,081: 192.168.137.1 - - [27/Feb/2023 15:49:37] "POST /checkleds HTTP/1.1" 200 -
+2023-02-27 15:49:37,255: inputnum: 1 inputact: 1
+2023-02-27 15:49:37,256: 192.168.137.1 - - [27/Feb/2023 15:49:37] "POST /checkleds HTTP/1.1" 200 -
+2023-02-27 15:49:37,401: inputnum: 1 inputact: 1
+2023-02-27 15:49:37,402: 192.168.137.1 - - [27/Feb/2023 15:49:37] "POST /checkleds HTTP/1.1" 200 -
+2023-02-27 15:51:48,359: {'status': 'OK', 'status_code': 200}
+2023-02-27 15:51:48,360: 192.168.137.1 - - [27/Feb/2023 15:51:48] "POST /test HTTP/1.1" 200 -
+2023-02-27 15:51:51,114: {'status': 'OK', 'status_code': 200}
+2023-02-27 15:51:51,114: 192.168.137.1 - - [27/Feb/2023 15:51:51] "POST /test HTTP/1.1" 200 -
+2023-02-27 15:51:53,819: {'status': 'OK', 'status_code': 200}
+2023-02-27 15:51:53,820: 192.168.137.1 - - [27/Feb/2023 15:51:53] "POST /test HTTP/1.1" 200 -
+2023-02-27 15:51:56,254: inputnum: 1 inputact: 1
+2023-02-27 15:51:56,255: 192.168.137.1 - - [27/Feb/2023 15:51:56] "POST /checkleds HTTP/1.1" 200 -
+2023-02-27 15:51:57,218: inputnum: 3 inputact: 1
+2023-02-27 15:51:57,219: 192.168.137.1 - - [27/Feb/2023 15:51:57] "POST /checkleds HTTP/1.1" 200 -
+2023-02-27 15:53:47,937: {'status': 'OK', 'status_code': 200}
+2023-02-27 15:53:47,938: 192.168.137.1 - - [27/Feb/2023 15:53:47] "POST /test HTTP/1.1" 200 -
+2023-02-27 15:53:57,488: {'status': 'OK', 'status_code': 200}
+2023-02-27 15:53:57,489: 192.168.137.1 - - [27/Feb/2023 15:53:57] "POST /test HTTP/1.1" 200 -
+2023-02-27 15:54:11,504: {'status': 'OK', 'status_code': 200}
+2023-02-27 15:54:11,504: 192.168.137.1 - - [27/Feb/2023 15:54:11] "POST /test HTTP/1.1" 200 -
+2023-02-27 15:54:58,674: {'status': 'OK', 'status_code': 200}
+2023-02-27 15:54:58,675: 192.168.137.1 - - [27/Feb/2023 15:54:58] "POST /test HTTP/1.1" 200 -
+2023-02-27 15:55:18,491: {'status': 'OK', 'status_code': 200}
+2023-02-27 15:55:18,491: 192.168.137.1 - - [27/Feb/2023 15:55:18] "POST /test HTTP/1.1" 200 -
+2023-02-27 15:55:42,297: {'status': 'OK', 'status_code': 200}
+2023-02-27 15:55:42,297: 192.168.137.1 - - [27/Feb/2023 15:55:42] "POST /test HTTP/1.1" 200 -
+2023-02-27 15:56:26,386: {'status': 'OK', 'status_code': 200}
+2023-02-27 15:56:26,387: 192.168.137.1 - - [27/Feb/2023 15:56:26] "POST /test HTTP/1.1" 200 -
+2023-02-27 16:41:46,776: checkAI result : Opened time : 0.026150226593017578:
+2023-02-27 16:41:46,777: 192.168.137.1 - - [27/Feb/2023 16:41:46] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:41:53,264: checkAI result : Opened time : 0.009978532791137695:
+2023-02-27 16:41:53,265: 192.168.137.1 - - [27/Feb/2023 16:41:53] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:41:53,281: checkAI result : Opened time : 0.011000394821166992:
+2023-02-27 16:41:53,282: 192.168.137.1 - - [27/Feb/2023 16:41:53] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:41:53,301: checkAI result : Opened time : 0.012469053268432617:
+2023-02-27 16:41:53,302: 192.168.137.1 - - [27/Feb/2023 16:41:53] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:41:55,242: checkAI result : Opened time : 0.013019323348999023:
+2023-02-27 16:41:55,243: 192.168.137.1 - - [27/Feb/2023 16:41:55] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:41:55,262: checkAI result : Opened time : 0.013084173202514648:
+2023-02-27 16:41:55,263: 192.168.137.1 - - [27/Feb/2023 16:41:55] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:41:55,279: checkAI result : Opened time : 0.010999917984008789:
+2023-02-27 16:41:55,280: 192.168.137.1 - - [27/Feb/2023 16:41:55] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:49,630: checkAI result : Opened time : 0.016997575759887695:
+2023-02-27 16:43:49,631: 192.168.137.1 - - [27/Feb/2023 16:43:49] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:49,647: checkAI result : Opened time : 0.009999752044677734:
+2023-02-27 16:43:49,648: 192.168.137.1 - - [27/Feb/2023 16:43:49] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:49,675: checkAI result : Opened time : 0.012502908706665039:
+2023-02-27 16:43:49,676: 192.168.137.1 - - [27/Feb/2023 16:43:49] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:50,256: checkAI result : Opened time : 0.010428667068481445:
+2023-02-27 16:43:50,256: 192.168.137.1 - - [27/Feb/2023 16:43:50] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:50,274: checkAI result : Opened time : 0.011087179183959961:
+2023-02-27 16:43:50,276: 192.168.137.1 - - [27/Feb/2023 16:43:50] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:50,293: checkAI result : Opened time : 0.010704755783081055:
+2023-02-27 16:43:50,294: 192.168.137.1 - - [27/Feb/2023 16:43:50] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:50,698: checkAI result : Opened time : 0.011226892471313477:
+2023-02-27 16:43:50,699: 192.168.137.1 - - [27/Feb/2023 16:43:50] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:50,716: checkAI result : Opened time : 0.010999679565429688:
+2023-02-27 16:43:50,717: 192.168.137.1 - - [27/Feb/2023 16:43:50] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:50,743: checkAI result : Opened time : 0.009999513626098633:
+2023-02-27 16:43:50,744: 192.168.137.1 - - [27/Feb/2023 16:43:50] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:51,165: checkAI result : Opened time : 0.01947760581970215:
+2023-02-27 16:43:51,166: 192.168.137.1 - - [27/Feb/2023 16:43:51] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:51,191: checkAI result : Opened time : 0.010999679565429688:
+2023-02-27 16:43:51,192: 192.168.137.1 - - [27/Feb/2023 16:43:51] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:51,218: checkAI result : Opened time : 0.010999679565429688:
+2023-02-27 16:43:51,219: 192.168.137.1 - - [27/Feb/2023 16:43:51] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:51,502: checkAI result : Opened time : 0.012241363525390625:
+2023-02-27 16:43:51,503: 192.168.137.1 - - [27/Feb/2023 16:43:51] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:51,520: checkAI result : Opened time : 0.01100015640258789:
+2023-02-27 16:43:51,520: 192.168.137.1 - - [27/Feb/2023 16:43:51] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:51,536: checkAI result : Opened time : 0.009998083114624023:
+2023-02-27 16:43:51,537: 192.168.137.1 - - [27/Feb/2023 16:43:51] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:51,781: checkAI result : Opened time : 0.015803098678588867:
+2023-02-27 16:43:51,782: 192.168.137.1 - - [27/Feb/2023 16:43:51] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:51,811: checkAI result : Opened time : 0.011997699737548828:
+2023-02-27 16:43:51,812: 192.168.137.1 - - [27/Feb/2023 16:43:51] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:51,837: checkAI result : Opened time : 0.009999752044677734:
+2023-02-27 16:43:51,838: 192.168.137.1 - - [27/Feb/2023 16:43:51] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:52,026: checkAI result : Opened time : 0.009442806243896484:
+2023-02-27 16:43:52,027: 192.168.137.1 - - [27/Feb/2023 16:43:52] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:52,055: checkAI result : Opened time : 0.012351036071777344:
+2023-02-27 16:43:52,055: 192.168.137.1 - - [27/Feb/2023 16:43:52] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:52,081: checkAI result : Opened time : 0.011553525924682617:
+2023-02-27 16:43:52,082: 192.168.137.1 - - [27/Feb/2023 16:43:52] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:52,228: checkAI result : Opened time : 0.010951042175292969:
+2023-02-27 16:43:52,229: 192.168.137.1 - - [27/Feb/2023 16:43:52] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:52,246: checkAI result : Opened time : 0.010998964309692383:
+2023-02-27 16:43:52,247: 192.168.137.1 - - [27/Feb/2023 16:43:52] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:52,273: checkAI result : Opened time : 0.011002540588378906:
+2023-02-27 16:43:52,273: 192.168.137.1 - - [27/Feb/2023 16:43:52] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:52,397: checkAI result : Opened time : 0.011988162994384766:
+2023-02-27 16:43:52,398: 192.168.137.1 - - [27/Feb/2023 16:43:52] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:52,425: checkAI result : Opened time : 0.011504173278808594:
+2023-02-27 16:43:52,425: 192.168.137.1 - - [27/Feb/2023 16:43:52] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:52,442: checkAI result : Opened time : 0.01130366325378418:
+2023-02-27 16:43:52,442: 192.168.137.1 - - [27/Feb/2023 16:43:52] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:52,575: checkAI result : Opened time : 0.009999513626098633:
+2023-02-27 16:43:52,576: 192.168.137.1 - - [27/Feb/2023 16:43:52] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:52,592: checkAI result : Opened time : 0.010998964309692383:
+2023-02-27 16:43:52,593: 192.168.137.1 - - [27/Feb/2023 16:43:52] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:52,609: checkAI result : Opened time : 0.010998964309692383:
+2023-02-27 16:43:52,610: 192.168.137.1 - - [27/Feb/2023 16:43:52] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:52,734: checkAI result : Opened time : 0.009115934371948242:
+2023-02-27 16:43:52,735: 192.168.137.1 - - [27/Feb/2023 16:43:52] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:52,752: checkAI result : Opened time : 0.011003494262695312:
+2023-02-27 16:43:52,753: 192.168.137.1 - - [27/Feb/2023 16:43:52] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:52,778: checkAI result : Opened time : 0.01100015640258789:
+2023-02-27 16:43:52,778: 192.168.137.1 - - [27/Feb/2023 16:43:52] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:52,933: checkAI result : Opened time : 0.008981466293334961:
+2023-02-27 16:43:52,934: 192.168.137.1 - - [27/Feb/2023 16:43:52] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:52,950: checkAI result : Opened time : 0.010000228881835938:
+2023-02-27 16:43:52,951: 192.168.137.1 - - [27/Feb/2023 16:43:52] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:52,977: checkAI result : Opened time : 0.01109933853149414:
+2023-02-27 16:43:52,977: 192.168.137.1 - - [27/Feb/2023 16:43:52] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:53,111: checkAI result : Opened time : 0.009996175765991211:
+2023-02-27 16:43:53,112: 192.168.137.1 - - [27/Feb/2023 16:43:53] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:53,130: checkAI result : Opened time : 0.010997772216796875:
+2023-02-27 16:43:53,131: 192.168.137.1 - - [27/Feb/2023 16:43:53] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:53,148: checkAI result : Opened time : 0.010998725891113281:
+2023-02-27 16:43:53,149: 192.168.137.1 - - [27/Feb/2023 16:43:53] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:53,266: checkAI result : Opened time : 0.009982109069824219:
+2023-02-27 16:43:53,267: 192.168.137.1 - - [27/Feb/2023 16:43:53] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:53,285: checkAI result : Opened time : 0.011498212814331055:
+2023-02-27 16:43:53,285: 192.168.137.1 - - [27/Feb/2023 16:43:53] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:53,302: checkAI result : Opened time : 0.01100015640258789:
+2023-02-27 16:43:53,303: 192.168.137.1 - - [27/Feb/2023 16:43:53] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:53,451: checkAI result : Opened time : 0.009977340698242188:
+2023-02-27 16:43:53,452: 192.168.137.1 - - [27/Feb/2023 16:43:53] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:53,469: checkAI result : Opened time : 0.012004852294921875:
+2023-02-27 16:43:53,469: 192.168.137.1 - - [27/Feb/2023 16:43:53] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:53,488: checkAI result : Opened time : 0.01150822639465332:
+2023-02-27 16:43:53,488: 192.168.137.1 - - [27/Feb/2023 16:43:53] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:53,615: checkAI result : Opened time : 0.009997844696044922:
+2023-02-27 16:43:53,617: 192.168.137.1 - - [27/Feb/2023 16:43:53] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:53,633: checkAI result : Opened time : 0.011556148529052734:
+2023-02-27 16:43:53,633: 192.168.137.1 - - [27/Feb/2023 16:43:53] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:53,660: checkAI result : Opened time : 0.01232004165649414:
+2023-02-27 16:43:53,661: 192.168.137.1 - - [27/Feb/2023 16:43:53] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:53,805: checkAI result : Opened time : 0.010209798812866211:
+2023-02-27 16:43:53,805: 192.168.137.1 - - [27/Feb/2023 16:43:53] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:53,821: checkAI result : Opened time : 0.01021575927734375:
+2023-02-27 16:43:53,822: 192.168.137.1 - - [27/Feb/2023 16:43:53] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:53,848: checkAI result : Opened time : 0.011037588119506836:
+2023-02-27 16:43:53,849: 192.168.137.1 - - [27/Feb/2023 16:43:53] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:53,977: checkAI result : Opened time : 0.010973215103149414:
+2023-02-27 16:43:53,979: 192.168.137.1 - - [27/Feb/2023 16:43:53] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:53,996: checkAI result : Opened time : 0.012000560760498047:
+2023-02-27 16:43:53,997: 192.168.137.1 - - [27/Feb/2023 16:43:53] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:54,015: checkAI result : Opened time : 0.012997627258300781:
+2023-02-27 16:43:54,016: 192.168.137.1 - - [27/Feb/2023 16:43:54] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:54,157: checkAI result : Opened time : 0.010000228881835938:
+2023-02-27 16:43:54,158: 192.168.137.1 - - [27/Feb/2023 16:43:54] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:54,175: checkAI result : Opened time : 0.011002779006958008:
+2023-02-27 16:43:54,176: 192.168.137.1 - - [27/Feb/2023 16:43:54] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:54,201: checkAI result : Opened time : 0.012001514434814453:
+2023-02-27 16:43:54,201: 192.168.137.1 - - [27/Feb/2023 16:43:54] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:54,339: checkAI result : Opened time : 0.009894132614135742:
+2023-02-27 16:43:54,340: 192.168.137.1 - - [27/Feb/2023 16:43:54] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:54,355: checkAI result : Opened time : 0.010447263717651367:
+2023-02-27 16:43:54,356: 192.168.137.1 - - [27/Feb/2023 16:43:54] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:54,372: checkAI result : Opened time : 0.011002779006958008:
+2023-02-27 16:43:54,373: 192.168.137.1 - - [27/Feb/2023 16:43:54] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:54,519: checkAI result : Opened time : 0.009999275207519531:
+2023-02-27 16:43:54,520: 192.168.137.1 - - [27/Feb/2023 16:43:54] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:54,535: checkAI result : Opened time : 0.009996414184570312:
+2023-02-27 16:43:54,536: 192.168.137.1 - - [27/Feb/2023 16:43:54] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:54,552: checkAI result : Opened time : 0.00999903678894043:
+2023-02-27 16:43:54,553: 192.168.137.1 - - [27/Feb/2023 16:43:54] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:54,711: checkAI result : Opened time : 0.016004085540771484:
+2023-02-27 16:43:54,711: 192.168.137.1 - - [27/Feb/2023 16:43:54] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:54,732: checkAI result : Opened time : 0.014397144317626953:
+2023-02-27 16:43:54,733: 192.168.137.1 - - [27/Feb/2023 16:43:54] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:54,749: checkAI result : Opened time : 0.01100015640258789:
+2023-02-27 16:43:54,750: 192.168.137.1 - - [27/Feb/2023 16:43:54] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:54,892: checkAI result : Opened time : 0.009977340698242188:
+2023-02-27 16:43:54,892: 192.168.137.1 - - [27/Feb/2023 16:43:54] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:54,909: checkAI result : Opened time : 0.010999441146850586:
+2023-02-27 16:43:54,910: 192.168.137.1 - - [27/Feb/2023 16:43:54] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:54,928: checkAI result : Opened time : 0.010999679565429688:
+2023-02-27 16:43:54,929: 192.168.137.1 - - [27/Feb/2023 16:43:54] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:55,065: checkAI result : Opened time : 0.009996652603149414:
+2023-02-27 16:43:55,066: 192.168.137.1 - - [27/Feb/2023 16:43:55] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:55,091: checkAI result : Opened time : 0.010507822036743164:
+2023-02-27 16:43:55,092: 192.168.137.1 - - [27/Feb/2023 16:43:55] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:55,107: checkAI result : Opened time : 0.010715007781982422:
+2023-02-27 16:43:55,108: 192.168.137.1 - - [27/Feb/2023 16:43:55] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:55,246: checkAI result : Opened time : 0.009998798370361328:
+2023-02-27 16:43:55,247: 192.168.137.1 - - [27/Feb/2023 16:43:55] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:55,263: checkAI result : Opened time : 0.009999990463256836:
+2023-02-27 16:43:55,264: 192.168.137.1 - - [27/Feb/2023 16:43:55] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:55,280: checkAI result : Opened time : 0.010998964309692383:
+2023-02-27 16:43:55,281: 192.168.137.1 - - [27/Feb/2023 16:43:55] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:55,439: checkAI result : Opened time : 0.01097249984741211:
+2023-02-27 16:43:55,440: 192.168.137.1 - - [27/Feb/2023 16:43:55] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:55,456: checkAI result : Opened time : 0.011000871658325195:
+2023-02-27 16:43:55,457: 192.168.137.1 - - [27/Feb/2023 16:43:55] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:55,473: checkAI result : Opened time : 0.0110015869140625:
+2023-02-27 16:43:55,473: 192.168.137.1 - - [27/Feb/2023 16:43:55] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:55,618: checkAI result : Opened time : 0.00997471809387207:
+2023-02-27 16:43:55,618: 192.168.137.1 - - [27/Feb/2023 16:43:55] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:55,646: checkAI result : Opened time : 0.01100015640258789:
+2023-02-27 16:43:55,646: 192.168.137.1 - - [27/Feb/2023 16:43:55] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:55,664: checkAI result : Opened time : 0.010999917984008789:
+2023-02-27 16:43:55,665: 192.168.137.1 - - [27/Feb/2023 16:43:55] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:55,802: checkAI result : Opened time : 0.009980201721191406:
+2023-02-27 16:43:55,803: 192.168.137.1 - - [27/Feb/2023 16:43:55] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:55,820: checkAI result : Opened time : 0.010999917984008789:
+2023-02-27 16:43:55,821: 192.168.137.1 - - [27/Feb/2023 16:43:55] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:55,838: checkAI result : Opened time : 0.010999441146850586:
+2023-02-27 16:43:55,838: 192.168.137.1 - - [27/Feb/2023 16:43:55] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:55,984: checkAI result : Opened time : 0.009508848190307617:
+2023-02-27 16:43:55,985: 192.168.137.1 - - [27/Feb/2023 16:43:55] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:56,003: checkAI result : Opened time : 0.012959480285644531:
+2023-02-27 16:43:56,004: 192.168.137.1 - - [27/Feb/2023 16:43:56] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:56,021: checkAI result : Opened time : 0.011088848114013672:
+2023-02-27 16:43:56,022: 192.168.137.1 - - [27/Feb/2023 16:43:56] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:56,165: checkAI result : Opened time : 0.009980440139770508:
+2023-02-27 16:43:56,165: 192.168.137.1 - - [27/Feb/2023 16:43:56] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:56,182: checkAI result : Opened time : 0.010998010635375977:
+2023-02-27 16:43:56,183: 192.168.137.1 - - [27/Feb/2023 16:43:56] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:56,199: checkAI result : Opened time : 0.010999917984008789:
+2023-02-27 16:43:56,199: 192.168.137.1 - - [27/Feb/2023 16:43:56] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:56,343: checkAI result : Opened time : 0.009894371032714844:
+2023-02-27 16:43:56,343: 192.168.137.1 - - [27/Feb/2023 16:43:56] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:56,359: checkAI result : Opened time : 0.010000467300415039:
+2023-02-27 16:43:56,360: 192.168.137.1 - - [27/Feb/2023 16:43:56] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:56,376: checkAI result : Opened time : 0.010002374649047852:
+2023-02-27 16:43:56,377: 192.168.137.1 - - [27/Feb/2023 16:43:56] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:56,523: checkAI result : Opened time : 0.012972831726074219:
+2023-02-27 16:43:56,523: 192.168.137.1 - - [27/Feb/2023 16:43:56] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:56,540: checkAI result : Opened time : 0.01100015640258789:
+2023-02-27 16:43:56,541: 192.168.137.1 - - [27/Feb/2023 16:43:56] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:56,558: checkAI result : Opened time : 0.011999845504760742:
+2023-02-27 16:43:56,558: 192.168.137.1 - - [27/Feb/2023 16:43:56] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:56,710: checkAI result : Opened time : 0.008903264999389648:
+2023-02-27 16:43:56,711: 192.168.137.1 - - [27/Feb/2023 16:43:56] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:56,728: checkAI result : Opened time : 0.01103520393371582:
+2023-02-27 16:43:56,728: 192.168.137.1 - - [27/Feb/2023 16:43:56] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:56,744: checkAI result : Opened time : 0.00999760627746582:
+2023-02-27 16:43:56,745: 192.168.137.1 - - [27/Feb/2023 16:43:56] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:56,893: checkAI result : Opened time : 0.008979558944702148:
+2023-02-27 16:43:56,895: 192.168.137.1 - - [27/Feb/2023 16:43:56] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:56,914: checkAI result : Opened time : 0.013479948043823242:
+2023-02-27 16:43:56,914: 192.168.137.1 - - [27/Feb/2023 16:43:56] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:56,942: checkAI result : Opened time : 0.011005878448486328:
+2023-02-27 16:43:56,943: 192.168.137.1 - - [27/Feb/2023 16:43:56] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:57,112: checkAI result : Opened time : 0.00994873046875:
+2023-02-27 16:43:57,113: 192.168.137.1 - - [27/Feb/2023 16:43:57] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:57,131: checkAI result : Opened time : 0.010999917984008789:
+2023-02-27 16:43:57,132: 192.168.137.1 - - [27/Feb/2023 16:43:57] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:57,158: checkAI result : Opened time : 0.010999679565429688:
+2023-02-27 16:43:57,159: 192.168.137.1 - - [27/Feb/2023 16:43:57] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:57,279: checkAI result : Opened time : 0.009961128234863281:
+2023-02-27 16:43:57,279: 192.168.137.1 - - [27/Feb/2023 16:43:57] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:57,296: checkAI result : Opened time : 0.010999679565429688:
+2023-02-27 16:43:57,297: 192.168.137.1 - - [27/Feb/2023 16:43:57] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:57,312: checkAI result : Opened time : 0.010000228881835938:
+2023-02-27 16:43:57,313: 192.168.137.1 - - [27/Feb/2023 16:43:57] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:57,475: checkAI result : Opened time : 0.010013103485107422:
+2023-02-27 16:43:57,476: 192.168.137.1 - - [27/Feb/2023 16:43:57] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:57,492: checkAI result : Opened time : 0.010504961013793945:
+2023-02-27 16:43:57,492: 192.168.137.1 - - [27/Feb/2023 16:43:57] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:57,509: checkAI result : Opened time : 0.010999441146850586:
+2023-02-27 16:43:57,510: 192.168.137.1 - - [27/Feb/2023 16:43:57] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:57,613: checkAI result : Opened time : 0.011005163192749023:
+2023-02-27 16:43:57,614: 192.168.137.1 - - [27/Feb/2023 16:43:57] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:57,631: checkAI result : Opened time : 0.011464595794677734:
+2023-02-27 16:43:57,632: 192.168.137.1 - - [27/Feb/2023 16:43:57] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:57,659: checkAI result : Opened time : 0.011001825332641602:
+2023-02-27 16:43:57,660: 192.168.137.1 - - [27/Feb/2023 16:43:57] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:57,805: checkAI result : Opened time : 0.012001752853393555:
+2023-02-27 16:43:57,806: 192.168.137.1 - - [27/Feb/2023 16:43:57] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:57,831: checkAI result : Opened time : 0.010430097579956055:
+2023-02-27 16:43:57,832: 192.168.137.1 - - [27/Feb/2023 16:43:57] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:57,849: checkAI result : Opened time : 0.011000633239746094:
+2023-02-27 16:43:57,849: 192.168.137.1 - - [27/Feb/2023 16:43:57] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:57,985: checkAI result : Opened time : 0.010486841201782227:
+2023-02-27 16:43:57,986: 192.168.137.1 - - [27/Feb/2023 16:43:57] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:58,002: checkAI result : Opened time : 0.011394023895263672:
+2023-02-27 16:43:58,002: 192.168.137.1 - - [27/Feb/2023 16:43:58] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:58,026: checkAI result : Opened time : 0.018207311630249023:
+2023-02-27 16:43:58,027: 192.168.137.1 - - [27/Feb/2023 16:43:58] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:58,164: checkAI result : Opened time : 0.009956121444702148:
+2023-02-27 16:43:58,165: 192.168.137.1 - - [27/Feb/2023 16:43:58] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:58,181: checkAI result : Opened time : 0.009999990463256836:
+2023-02-27 16:43:58,182: 192.168.137.1 - - [27/Feb/2023 16:43:58] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:58,197: checkAI result : Opened time : 0.009000062942504883:
+2023-02-27 16:43:58,198: 192.168.137.1 - - [27/Feb/2023 16:43:58] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:58,361: checkAI result : Opened time : 0.010943412780761719:
+2023-02-27 16:43:58,362: 192.168.137.1 - - [27/Feb/2023 16:43:58] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:58,379: checkAI result : Opened time : 0.01102304458618164:
+2023-02-27 16:43:58,379: 192.168.137.1 - - [27/Feb/2023 16:43:58] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:58,395: checkAI result : Opened time : 0.008999109268188477:
+2023-02-27 16:43:58,396: 192.168.137.1 - - [27/Feb/2023 16:43:58] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:58,551: checkAI result : Opened time : 0.009978532791137695:
+2023-02-27 16:43:58,552: 192.168.137.1 - - [27/Feb/2023 16:43:58] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:58,569: checkAI result : Opened time : 0.010997295379638672:
+2023-02-27 16:43:58,569: 192.168.137.1 - - [27/Feb/2023 16:43:58] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:58,586: checkAI result : Opened time : 0.010510921478271484:
+2023-02-27 16:43:58,587: 192.168.137.1 - - [27/Feb/2023 16:43:58] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:58,728: checkAI result : Opened time : 0.00997781753540039:
+2023-02-27 16:43:58,729: 192.168.137.1 - - [27/Feb/2023 16:43:58] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:58,745: checkAI result : Opened time : 0.010999679565429688:
+2023-02-27 16:43:58,745: 192.168.137.1 - - [27/Feb/2023 16:43:58] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:58,770: checkAI result : Opened time : 0.01100015640258789:
+2023-02-27 16:43:58,771: 192.168.137.1 - - [27/Feb/2023 16:43:58] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:58,898: checkAI result : Opened time : 0.009997844696044922:
+2023-02-27 16:43:58,899: 192.168.137.1 - - [27/Feb/2023 16:43:58] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:58,916: checkAI result : Opened time : 0.011553525924682617:
+2023-02-27 16:43:58,916: 192.168.137.1 - - [27/Feb/2023 16:43:58] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:58,943: checkAI result : Opened time : 0.01199793815612793:
+2023-02-27 16:43:58,943: 192.168.137.1 - - [27/Feb/2023 16:43:58] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:59,074: checkAI result : Opened time : 0.01100301742553711:
+2023-02-27 16:43:59,075: 192.168.137.1 - - [27/Feb/2023 16:43:59] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:59,091: checkAI result : Opened time : 0.011510848999023438:
+2023-02-27 16:43:59,091: 192.168.137.1 - - [27/Feb/2023 16:43:59] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:59,116: checkAI result : Opened time : 0.01830887794494629:
+2023-02-27 16:43:59,117: 192.168.137.1 - - [27/Feb/2023 16:43:59] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:59,225: checkAI result : Opened time : 0.010955810546875:
+2023-02-27 16:43:59,227: 192.168.137.1 - - [27/Feb/2023 16:43:59] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:59,243: checkAI result : Opened time : 0.009999752044677734:
+2023-02-27 16:43:59,244: 192.168.137.1 - - [27/Feb/2023 16:43:59] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:59,261: checkAI result : Opened time : 0.010000228881835938:
+2023-02-27 16:43:59,261: 192.168.137.1 - - [27/Feb/2023 16:43:59] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:59,382: checkAI result : Opened time : 0.00999593734741211:
+2023-02-27 16:43:59,382: 192.168.137.1 - - [27/Feb/2023 16:43:59] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:59,400: checkAI result : Opened time : 0.010999679565429688:
+2023-02-27 16:43:59,401: 192.168.137.1 - - [27/Feb/2023 16:43:59] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:59,417: checkAI result : Opened time : 0.010998964309692383:
+2023-02-27 16:43:59,418: 192.168.137.1 - - [27/Feb/2023 16:43:59] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:59,543: checkAI result : Opened time : 0.008888721466064453:
+2023-02-27 16:43:59,544: 192.168.137.1 - - [27/Feb/2023 16:43:59] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:59,560: checkAI result : Opened time : 0.010998249053955078:
+2023-02-27 16:43:59,561: 192.168.137.1 - - [27/Feb/2023 16:43:59] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:43:59,577: checkAI result : Opened time : 0.010002374649047852:
+2023-02-27 16:43:59,578: 192.168.137.1 - - [27/Feb/2023 16:43:59] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:00,122: inputnum: 4 inputact: 1
+2023-02-27 16:44:00,122: 192.168.137.1 - - [27/Feb/2023 16:44:00] "POST /checkrelay HTTP/1.1" 200 -
+2023-02-27 16:44:00,280: inputnum: 4 inputact: 1
+2023-02-27 16:44:00,281: 192.168.137.1 - - [27/Feb/2023 16:44:00] "POST /checkrelay HTTP/1.1" 200 -
+2023-02-27 16:44:00,461: inputnum: 4 inputact: 1
+2023-02-27 16:44:00,462: 192.168.137.1 - - [27/Feb/2023 16:44:00] "POST /checkrelay HTTP/1.1" 200 -
+2023-02-27 16:44:00,633: inputnum: 4 inputact: 1
+2023-02-27 16:44:00,633: 192.168.137.1 - - [27/Feb/2023 16:44:00] "POST /checkrelay HTTP/1.1" 200 -
+2023-02-27 16:44:00,810: inputnum: 4 inputact: 1
+2023-02-27 16:44:00,811: 192.168.137.1 - - [27/Feb/2023 16:44:00] "POST /checkrelay HTTP/1.1" 200 -
+2023-02-27 16:44:00,974: inputnum: 4 inputact: 1
+2023-02-27 16:44:00,975: 192.168.137.1 - - [27/Feb/2023 16:44:00] "POST /checkrelay HTTP/1.1" 200 -
+2023-02-27 16:44:01,130: inputnum: 4 inputact: 1
+2023-02-27 16:44:01,131: 192.168.137.1 - - [27/Feb/2023 16:44:01] "POST /checkrelay HTTP/1.1" 200 -
+2023-02-27 16:44:01,289: inputnum: 4 inputact: 1
+2023-02-27 16:44:01,289: 192.168.137.1 - - [27/Feb/2023 16:44:01] "POST /checkrelay HTTP/1.1" 200 -
+2023-02-27 16:44:01,461: inputnum: 4 inputact: 1
+2023-02-27 16:44:01,462: 192.168.137.1 - - [27/Feb/2023 16:44:01] "POST /checkrelay HTTP/1.1" 200 -
+2023-02-27 16:44:01,647: inputnum: 4 inputact: 1
+2023-02-27 16:44:01,648: 192.168.137.1 - - [27/Feb/2023 16:44:01] "POST /checkrelay HTTP/1.1" 200 -
+2023-02-27 16:44:01,763: inputnum: 4 inputact: 1
+2023-02-27 16:44:01,763: 192.168.137.1 - - [27/Feb/2023 16:44:01] "POST /checkrelay HTTP/1.1" 200 -
+2023-02-27 16:44:01,936: inputnum: 4 inputact: 1
+2023-02-27 16:44:01,937: 192.168.137.1 - - [27/Feb/2023 16:44:01] "POST /checkrelay HTTP/1.1" 200 -
+2023-02-27 16:44:02,083: inputnum: 4 inputact: 1
+2023-02-27 16:44:02,084: 192.168.137.1 - - [27/Feb/2023 16:44:02] "POST /checkrelay HTTP/1.1" 200 -
+2023-02-27 16:44:02,964: checkAI result : Opened time : 0.010976552963256836:
+2023-02-27 16:44:02,964: 192.168.137.1 - - [27/Feb/2023 16:44:02] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:02,980: checkAI result : Opened time : 0.010001420974731445:
+2023-02-27 16:44:02,981: 192.168.137.1 - - [27/Feb/2023 16:44:02] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:03,007: checkAI result : Opened time : 0.010998010635375977:
+2023-02-27 16:44:03,008: 192.168.137.1 - - [27/Feb/2023 16:44:03] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:03,141: checkAI result : Opened time : 0.009967565536499023:
+2023-02-27 16:44:03,141: 192.168.137.1 - - [27/Feb/2023 16:44:03] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:03,157: checkAI result : Opened time : 0.009998559951782227:
+2023-02-27 16:44:03,158: 192.168.137.1 - - [27/Feb/2023 16:44:03] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:03,175: checkAI result : Opened time : 0.011004447937011719:
+2023-02-27 16:44:03,176: 192.168.137.1 - - [27/Feb/2023 16:44:03] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:03,308: checkAI result : Opened time : 0.009885311126708984:
+2023-02-27 16:44:03,309: 192.168.137.1 - - [27/Feb/2023 16:44:03] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:03,326: checkAI result : Opened time : 0.011000633239746094:
+2023-02-27 16:44:03,328: 192.168.137.1 - - [27/Feb/2023 16:44:03] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:03,347: checkAI result : Opened time : 0.012999296188354492:
+2023-02-27 16:44:03,347: 192.168.137.1 - - [27/Feb/2023 16:44:03] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:03,492: checkAI result : Opened time : 0.010486125946044922:
+2023-02-27 16:44:03,492: 192.168.137.1 - - [27/Feb/2023 16:44:03] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:03,510: checkAI result : Opened time : 0.011999368667602539:
+2023-02-27 16:44:03,511: 192.168.137.1 - - [27/Feb/2023 16:44:03] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:03,529: checkAI result : Opened time : 0.01199793815612793:
+2023-02-27 16:44:03,530: 192.168.137.1 - - [27/Feb/2023 16:44:03] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:03,669: checkAI result : Opened time : 0.010974407196044922:
+2023-02-27 16:44:03,670: 192.168.137.1 - - [27/Feb/2023 16:44:03] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:03,687: checkAI result : Opened time : 0.012003421783447266:
+2023-02-27 16:44:03,688: 192.168.137.1 - - [27/Feb/2023 16:44:03] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:03,710: checkAI result : Opened time : 0.016002893447875977:
+2023-02-27 16:44:03,710: 192.168.137.1 - - [27/Feb/2023 16:44:03] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:03,856: checkAI result : Opened time : 0.015519857406616211:
+2023-02-27 16:44:03,856: 192.168.137.1 - - [27/Feb/2023 16:44:03] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:03,876: checkAI result : Opened time : 0.014235973358154297:
+2023-02-27 16:44:03,876: 192.168.137.1 - - [27/Feb/2023 16:44:03] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:03,892: checkAI result : Opened time : 0.009309053421020508:
+2023-02-27 16:44:03,893: 192.168.137.1 - - [27/Feb/2023 16:44:03] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:04,031: checkAI result : Opened time : 0.017952442169189453:
+2023-02-27 16:44:04,031: 192.168.137.1 - - [27/Feb/2023 16:44:04] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:04,049: checkAI result : Opened time : 0.01200103759765625:
+2023-02-27 16:44:04,049: 192.168.137.1 - - [27/Feb/2023 16:44:04] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:04,074: checkAI result : Opened time : 0.010999917984008789:
+2023-02-27 16:44:04,074: 192.168.137.1 - - [27/Feb/2023 16:44:04] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:04,196: checkAI result : Opened time : 0.011508941650390625:
+2023-02-27 16:44:04,197: 192.168.137.1 - - [27/Feb/2023 16:44:04] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:04,224: checkAI result : Opened time : 0.010999917984008789:
+2023-02-27 16:44:04,225: 192.168.137.1 - - [27/Feb/2023 16:44:04] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:04,251: checkAI result : Opened time : 0.012000083923339844:
+2023-02-27 16:44:04,252: 192.168.137.1 - - [27/Feb/2023 16:44:04] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:04,366: checkAI result : Opened time : 0.011993646621704102:
+2023-02-27 16:44:04,367: 192.168.137.1 - - [27/Feb/2023 16:44:04] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:04,385: checkAI result : Opened time : 0.011003732681274414:
+2023-02-27 16:44:04,385: 192.168.137.1 - - [27/Feb/2023 16:44:04] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:04,412: checkAI result : Opened time : 0.01199960708618164:
+2023-02-27 16:44:04,413: 192.168.137.1 - - [27/Feb/2023 16:44:04] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:04,519: checkAI result : Opened time : 0.009995698928833008:
+2023-02-27 16:44:04,520: 192.168.137.1 - - [27/Feb/2023 16:44:04] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:04,536: checkAI result : Opened time : 0.010999679565429688:
+2023-02-27 16:44:04,537: 192.168.137.1 - - [27/Feb/2023 16:44:04] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:04,554: checkAI result : Opened time : 0.01100015640258789:
+2023-02-27 16:44:04,555: 192.168.137.1 - - [27/Feb/2023 16:44:04] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:04,658: checkAI result : Opened time : 0.009996891021728516:
+2023-02-27 16:44:04,659: 192.168.137.1 - - [27/Feb/2023 16:44:04] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:04,677: checkAI result : Opened time : 0.012004852294921875:
+2023-02-27 16:44:04,677: 192.168.137.1 - - [27/Feb/2023 16:44:04] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:04,705: checkAI result : Opened time : 0.011999845504760742:
+2023-02-27 16:44:04,706: 192.168.137.1 - - [27/Feb/2023 16:44:04] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:06,852: checkAI result : Opened time : 0.009998798370361328:
+2023-02-27 16:44:06,853: 192.168.137.1 - - [27/Feb/2023 16:44:06] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:07,058: checkAI result : Opened time : 0.012978792190551758:
+2023-02-27 16:44:07,058: 192.168.137.1 - - [27/Feb/2023 16:44:07] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:07,243: checkAI result : Opened time : 0.010998010635375977:
+2023-02-27 16:44:07,244: 192.168.137.1 - - [27/Feb/2023 16:44:07] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:07,413: checkAI result : Opened time : 0.010966062545776367:
+2023-02-27 16:44:07,414: 192.168.137.1 - - [27/Feb/2023 16:44:07] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:07,590: checkAI result : Opened time : 0.00996708869934082:
+2023-02-27 16:44:07,590: 192.168.137.1 - - [27/Feb/2023 16:44:07] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:07,762: checkAI result : Opened time : 0.010466814041137695:
+2023-02-27 16:44:07,763: 192.168.137.1 - - [27/Feb/2023 16:44:07] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:07,928: checkAI result : Opened time : 0.010995149612426758:
+2023-02-27 16:44:07,928: 192.168.137.1 - - [27/Feb/2023 16:44:07] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:08,089: checkAI result : Opened time : 0.010003089904785156:
+2023-02-27 16:44:08,090: 192.168.137.1 - - [27/Feb/2023 16:44:08] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:08,255: checkAI result : Opened time : 0.00897669792175293:
+2023-02-27 16:44:08,256: 192.168.137.1 - - [27/Feb/2023 16:44:08] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:08,439: checkAI result : Opened time : 0.010506153106689453:
+2023-02-27 16:44:08,440: 192.168.137.1 - - [27/Feb/2023 16:44:08] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:08,603: checkAI result : Opened time : 0.010506391525268555:
+2023-02-27 16:44:08,604: 192.168.137.1 - - [27/Feb/2023 16:44:08] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:08,762: checkAI result : Opened time : 0.011395454406738281:
+2023-02-27 16:44:08,763: 192.168.137.1 - - [27/Feb/2023 16:44:08] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:08,937: checkAI result : Opened time : 0.009976863861083984:
+2023-02-27 16:44:08,938: 192.168.137.1 - - [27/Feb/2023 16:44:08] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:09,094: checkAI result : Opened time : 0.010005712509155273:
+2023-02-27 16:44:09,095: 192.168.137.1 - - [27/Feb/2023 16:44:09] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:09,260: checkAI result : Opened time : 0.009979009628295898:
+2023-02-27 16:44:09,260: 192.168.137.1 - - [27/Feb/2023 16:44:09] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:09,425: checkAI result : Opened time : 0.009976387023925781:
+2023-02-27 16:44:09,426: 192.168.137.1 - - [27/Feb/2023 16:44:09] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:09,581: checkAI result : Opened time : 0.010997295379638672:
+2023-02-27 16:44:09,582: 192.168.137.1 - - [27/Feb/2023 16:44:09] "POST /checkAI HTTP/1.1" 200 -
+2023-02-27 16:44:09,708: checkAI result : Opened time : 0.01000356674194336:
+2023-02-27 16:44:09,709: 192.168.137.1 - - [27/Feb/2023 16:44:09] "POST /checkAI HTTP/1.1" 200 -

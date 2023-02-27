@@ -546,12 +546,17 @@ def checkAI():
         }
         act_f = act_mapping.get(act, None)
         num_f = num_mapping.get(num, None)
-        if result == "Running" or result == act_f:# Running状态必定异常
+        if result == "Running" or result == act_f:  # Running状态必定异常
             final_result = "异常"
         elif result != act_f:
             final_result = "无异常"
-        print(act_f,final_result)
-        ren = {'result': final_result, 'status': result, 'status_code': 200, 'time': t}
+        ren = {
+            'num': num_f,
+            'result': final_result,
+            'status': result,
+            'status_code': 200,
+            'time': t
+        }
 
     except Exception as e:
         ren = {'status': 'ERROR', 'status_code': 404}
