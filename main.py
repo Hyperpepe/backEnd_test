@@ -490,8 +490,8 @@ def checkleds():
             control_gpio(num, act, 1)
         else:
             control_gpio(num, act, 3)
-        print('inputnum:', num, 'inputact:', act)
-        logging.debug('inputnum: {} inputact: {}'.format(num, act))
+        # print('inputnum:', num, 'inputact:', act)
+        # logging.debug('inputnum: {} inputact: {}'.format(num, act))
         ren = {'status': 'OK', 'status_code': 200}
     except:
         ren = {'status': 'ERROR', 'status_code': 404}
@@ -508,8 +508,8 @@ def checkrelay():
             control_gpio(num, act, 0)
         else:
             control_gpio(num, act, 2)
-        print('inputnum:', num, 'inputact:', act)
-        logging.debug('inputnum: {} inputact: {}'.format(num, act))
+        # print('inputnum:', num, 'inputact:', act)
+        # logging.debug('inputnum: {} inputact: {}'.format(num, act))
         ren = {'status': 'OK', 'status_code': 200}
     except:
         ren = {'status': 'ERROR', 'status_code': 404}
@@ -531,11 +531,9 @@ def checkAI():
         result = picin.name
         print(num, act)
         output(num, act, result)
-        t2 = time.time()
-        T = t2 - t1
-        t = '{:.3f}s'.format(T)
+
         num_mapping = {
-            "ALL": "ALL",
+            "ALL": "全部刀闸",
             "A": "A相",
             "B": "B相",
             "C": "C相"
@@ -546,10 +544,16 @@ def checkAI():
         }
         act_f = act_mapping.get(act, None)
         num_f = num_mapping.get(num, None)
-        if result == "Running" or result == act_f:  # Running状态必定异常
+        if result == "Running":  # Running状态必定异常
             final_result = "异常"
         elif result != act_f:
             final_result = "无异常"
+        else :
+            final_result = "异常"
+        # print(final_result,num_f,act_f,result)
+        t2 = time.time()
+        T = t2 - t1
+        t = '{:.3f}s'.format(T)
         ren = {
             'num': num_f,
             'result': final_result,
