@@ -1,13 +1,8 @@
-import base64
 import json
 import logging
-import re
-import threading
 import time
 
-import cv2
 import flask
-import numpy as np
 import onnxruntime
 from flask import request
 
@@ -67,6 +62,28 @@ def checkrelay():
     except:
         ren = {'status': 'ERROR', 'status_code': 404}
     return json.dumps(ren, ensure_ascii=False)
+
+@api.route('/startRS485Service', methods=['post'])
+def startRS485Service():
+    try:
+        #打开串口
+        print("open serial ttys3")
+
+    except Exception as e:
+        # 报错
+        print(e)
+
+
+@api.route('/stopRS485Service', methods=['post'])
+def stopRS485Service():
+    try:
+        #打开串口
+        print("close serial ttys3")
+
+    except Exception as e:
+        # 报错
+        print(e)
+
 
 
 @api.route('/checkAI', methods=['post'])

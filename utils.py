@@ -1,15 +1,11 @@
 import base64
-import json
 import logging
 import re
 import threading
 import time
 
 import cv2
-import flask
 import numpy as np
-import onnxruntime
-from flask import request
 
 from main import names, session
 
