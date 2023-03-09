@@ -5,13 +5,13 @@ import os
 import re
 import threading
 import time
-
+import serial
 import cv2
 import flask
 import numpy as np
 import onnxruntime
 from flask import request
-
+# ser = serial.Serial('/dev/ttyS3', 9600, timeout=1)
 # 日志输出
 logging.basicConfig(filename="log.txt", level=logging.DEBUG, format="%(asctime)s: %(message)s")
 # flask服务
@@ -115,7 +115,6 @@ def output(num, act, result):
                 os.system('echo 1 > ' + gpioes[1])
                 print('echo 1 > ' + gpios[0])
                 print('echo 1 > ' + gpioes[1])
-
             elif result == "Running":  # 合不到位
                 print("ALL relay are reset", 'output')
                 print("ALL leds are reset", 'output')
@@ -153,7 +152,6 @@ def output(num, act, result):
                 os.system('echo 1 > ' + gpioes[3])
                 print('echo 1 > ' + gpioes[3])
                 print('echo 1 > ' + gpios[2])
-
             elif result == "Running":
                 print("ALL leds are reset", 'output')
                 print("ALL relay are reset", 'output')
@@ -374,6 +372,44 @@ class PicInfo(threading.Thread):
     # 输出结果
     def get_result(self):
         return self.name
+ser = serial.Serial('/dev/ttyS3', 9600, timeout=0.001)
+def start_rs485_service():
+    global ser, ser_thread
+    if ser is not None :
+        # 打开串口连接
+        # 启动应声虫线程
+        ser_thread = threading.Thread(target=echo_serial)
+        ser_thread.start()
+    elif ser_thread is not None and not ser_thread.is_alive():
+        # 重新启动应声虫线程
+        ser_thread = threading.Thread(target=echo_serial)
+        ser_thread.start()
+def echo_serial():
+    global ser
+    while True:
+        data = ser.readline().strip()
+        ser.write(data)
+
+# 在 Flask 应用程序中定义路由，接收 startRS485Service 和 stopRS485Service 请求
+@api.route('/startRS485Service', methods=['POST'])
+def start_rs485():
+    start_rs485_service()
+    ren = {'status': 'OK', 'status_code': 200}
+    return json.dumps(ren, ensure_ascii=False)
+
+@api.route('/stopRS485Service', methods=['POST'])
+def stop_rs485():
+    global ser, ser_thread
+    if ser is not None and ser_thread is not None and ser_thread.is_alive():
+        # 关闭应声虫线程
+        ser_thread.join()
+        ser_thread = None
+        # 关闭串口连接
+        ser.close()
+        ser = None
+    ren = {'status': 'OK', 'status_code': 200}
+    return json.dumps(ren, ensure_ascii=False)
+
 
 
 @api.route('/test', methods=['post'])
