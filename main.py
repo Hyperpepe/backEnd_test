@@ -407,7 +407,9 @@ def stop_rs485():
         # 关闭串口连接
         ser.close()
         ser = None
-    ren = {'status': 'OK', 'status_code': 200}
+        ren = {'status': 'OK', 'status_code': 200}
+    else:
+        ren = {'status': 'ERROR', 'status_code':404}
     return json.dumps(ren, ensure_ascii=False)
 
 
