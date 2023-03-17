@@ -372,45 +372,19 @@ class PicInfo(threading.Thread):
     # 输出结果
     def get_result(self):
         return self.name
-ser = serial.Serial('/dev/ttyS3', 9600, timeout=0.001)
-def start_rs485_service():
-    global ser, ser_thread
-    if ser is not None :
-        # 打开串口连接
-        # 启动应声虫线程
-        ser_thread = threading.Thread(target=echo_serial)
-        ser_thread.start()
-    elif ser_thread is not None and not ser_thread.is_alive():
-        # 重新启动应声虫线程
-        ser_thread = threading.Thread(target=echo_serial)
-        ser_thread.start()
+    
+ser = serial.Serial('/dev/ttyS3', 115200, timeout=0.001)
 def echo_serial():
     global ser
     while True:
         data = ser.readline().strip()
         ser.write(data)
+ser_thread = threading.Thread(target=echo_serial)
+ser_thread.start()
 
-# 在 Flask 应用程序中定义路由，接收 startRS485Service 和 stopRS485Service 请求
-@api.route('/startRS485Service', methods=['POST'])
-def start_rs485():
-    start_rs485_service()
-    ren = {'status': 'OK', 'status_code': 200}
-    return json.dumps(ren, ensure_ascii=False)
 
-@api.route('/stopRS485Service', methods=['POST'])
-def stop_rs485():
-    global ser, ser_thread
-    if ser is not None and ser_thread is not None and ser_thread.is_alive():
-        # 关闭应声虫线程
-        ser_thread.join()
-        ser_thread = None
-        # 关闭串口连接
-        ser.close()
-        ser = None
-        ren = {'status': 'OK', 'status_code': 200}
-    else:
-        ren = {'status': 'ERROR', 'status_code':404}
-    return json.dumps(ren, ensure_ascii=False)
+control_gpio(7, 0, 3)
+control_gpio(7, 0, 2)
 
 
 
