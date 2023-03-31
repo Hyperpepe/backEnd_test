@@ -38,270 +38,275 @@ gpioes = [
     "/proc/rp_gpio/gpioz6",  # C相和
 ]
 
+def output(num, act, result):
+    # control_gpio(7, 0, 3)
+    # control_gpio(7, 0, 2)
+    if num == "ALL":  # A,B,C 相
+        if act == "C":
+            if result == "Opened":
+                gpioled = [gpios[1], gpios[3], gpios[5]]
+                gpiorelay = [gpioes[1], gpioes[3], gpioes[5]]
+                # 全部置高
+                for gpiol in gpioled:
+                    os.system('echo 1 > ' + gpiol)
+                for gpior in gpiorelay:
+                    os.system('echo 1 > ' + gpior)
+            elif result == "Closed":
+                # led全灭
+                # 继电器全开
+                control_gpio(7, 0, 3)
+                control_gpio(7, 0, 2)
+            elif result == "Running":
+                # led全灭
+                # 继电器全开
+                control_gpio(7, 0, 3)
+                control_gpio(7, 0, 2)
+        elif act == "O":
+            if result == "Opened":
+                # led全灭
+                # 继电器全开
+                control_gpio(7, 0, 3)
+                control_gpio(7, 0, 2)
+            elif result == "Closed":
+                gpioled = [gpios[0], gpios[2], gpios[4]]
+                gpiorelay = [gpioes[0], gpioes[2], gpioes[4]]
+                for gpiol in gpioled:
+                    os.system('echo 0 > ' + gpiol)
+                for gpior in gpiorelay:
+                    os.system('echo 0 > ' + gpior)
+            elif result == "Running":
+                # led全灭
+                # 继电器全开
+                control_gpio(7, 0, 3)
+                control_gpio(7, 0, 2)
+    elif num == "A":  # A 相
+        if act == "C":
+            if result == "Opened":  # 开到位
+                os.system('echo 0 > ' + gpios[0])
+                os.system('echo 1 > ' + gpios[1])
+                os.system('echo 0 > ' + gpioes[0])
+                os.system('echo 1 > ' + gpioes[1])
+                # print('echo 1 > ' + gpios[1])
+                # print('echo 1 > ' + gpioes[0])
+            elif result == "Closed":  # 开不到位
+                print("ALL leds are reset", 'output')
+                print("ALL relay are reset", 'output')
+                control_gpio(7, 0, 3)
+                control_gpio(7, 0, 2)
+            elif result == "Running":  # 开不到位
+                print("ALL relay are reset", 'output')
+                print("ALL leds are reset", 'output')
+                control_gpio(7, 0, 3)
+                control_gpio(7, 0, 2)
+        elif act == "O":
+            if result == "Opened":  # 合不到位
+                print("ALL relay are reset", 'output')
+                print("ALL leds are reset", 'output')
+                control_gpio(7, 0, 3)
+                control_gpio(7, 0, 2)
+            elif result == "Closed":  # 合到位
+                os.system('echo 1 > ' + gpios[0])
+                os.system('echo 0 > ' + gpios[1])
+                os.system('echo 1 > ' + gpioes[0])
+                os.system('echo 0 > ' + gpioes[1])
+                print('echo 1 > ' + gpios[0])
+                print('echo 1 > ' + gpioes[1])
+            elif result == "Running":  # 合不到位
+                print("ALL relay are reset", 'output')
+                print("ALL leds are reset", 'output')
+                control_gpio(7, 0, 3)
+                control_gpio(7, 0, 2)
+    elif num == "B":  # B 相
+        if act == "C":
+            if result == "Opened":
+                os.system('echo 0 > ' + gpios[2])
+                os.system('echo 1 > ' + gpios[3])
+                os.system('echo 0 > ' + gpioes[2])
+                os.system('echo 1 > ' + gpioes[3])
+                print('echo 1 > ' + gpios[3])
+                print('echo 1 > ' + gpioes[2])
+            elif result == "Closed":
+                print("ALL leds are reset", 'output')
+                print("ALL relay are reset", 'output')
+                control_gpio(7, 0, 3)
+                control_gpio(7, 0, 2)
+            elif result == "Running":
+                print("ALL leds are reset", 'output')
+                print("ALL relay are reset", 'output')
+                control_gpio(7, 0, 3)
+                control_gpio(7, 0, 2)
+        elif act == "O":
+            if result == "Opened":
+                print("ALL leds are reset", 'output')
+                print("ALL relay are reset", 'output')
+                control_gpio(7, 0, 3)
+                control_gpio(7, 0, 2)
+            elif result == "Closed":
+                os.system('echo 1 > ' + gpios[2])
+                os.system('echo 0 > ' + gpios[3])
+                os.system('echo 1 > ' + gpioes[2])
+                os.system('echo 0 > ' + gpioes[3])
+                print('echo 1 > ' + gpioes[3])
+                print('echo 1 > ' + gpios[2])
+            elif result == "Running":
+                print("ALL leds are reset", 'output')
+                print("ALL relay are reset", 'output')
+                control_gpio(7, 0, 3)
+                control_gpio(7, 0, 2)
+    elif num == "C":  # C 相
+        if act == "C":
+            if result == "Opened":
+                os.system('echo 0 > ' + gpios[4])
+                os.system('echo 1 > ' + gpios[5])
+                os.system('echo 0 > ' + gpioes[4])
+                os.system('echo 1 > ' + gpioes[5])
+                print('echo 1 > ' + gpios[5])
+                print('echo 1 > ' + gpioes[4])
+            elif result == "Closed":
+                print("ALL leds are reset", 'output')
+                print("ALL relay are reset", 'output')
+                control_gpio(7, 0, 3)
+                control_gpio(7, 0, 2)
+            elif result == "Running":
+                print("ALL leds are reset", 'output')
+
+                print("ALL relay are reset", 'output')
+                control_gpio(7, 0, 3)
+                control_gpio(7, 0, 2)
+        elif act == "O":
+            if result == "Opened":
+                print("ALL leds are reset", 'output')
+                print("ALL relay are reset", 'output')
+                control_gpio(7, 0, 3)
+                control_gpio(7, 0, 2)
+            elif result == "Closed":
+                os.system('echo 1 > ' + gpios[4])
+                os.system('echo 0 > ' + gpios[5])
+                os.system('echo 1 > ' + gpioes[4])
+                os.system('echo 0 > ' + gpioes[5])
+                print('echo 1 > ' + gpios[4])
+                print('echo 1 > ' + gpioes[5])
+            elif result == "Running":
+                print("ALL leds are reset", 'output')
+                print("ALL relay are reset", 'output')
+                control_gpio(7, 0, 3)
+                control_gpio(7, 0, 2)
+
+
+
+
 
 # def output(num, act, result):
-#     # control_gpio(7, 0, 3)
-#     # control_gpio(7, 0, 2)
-#     if num == "ALL":  # A,B,C 相
+#     def control_leds(leds, values):
+#         for led, value in zip(leds, values):
+#             os.system(f'echo {value} > {led}')
+#
+#     def control_relays(relays, values):
+#         for relay, value in zip(relays, values):
+#             os.system(f'echo {value} > {relay}')
+#
+#     def reset_all():
+#         control_gpio(7, 0, 3)
+#         control_gpio(7, 0, 2)
+#
+#     if num == "ALL":
 #         if act == "C":
 #             if result == "Opened":
-#                 gpioled = [gpios[1], gpios[3], gpios[5]]
-#                 gpiorelay = [gpios[0], gpios[2], gpios[4]]
-#                 # 全部置高
-#                 for gpiol in gpioled:
-#                     os.system('echo 1 > ' + gpiol)
-#                 for gpior in gpiorelay:
-#                     os.system('echo 1 > ' + gpior)
-#             elif result == "Closed":
-#                 # led全灭
-#                 # 继电器全开
-#                 control_gpio(7, 0, 3)
-#                 control_gpio(7, 0, 2)
-#             elif result == "Running":
-#                 # led全灭
-#                 # 继电器全开
-#                 control_gpio(7, 0, 3)
-#                 control_gpio(7, 0, 2)
+#                 control_leds([gpios[1], gpios[3], gpios[5]], [1, 1, 1])
+#                 control_relays([gpios[0], gpios[2], gpios[4]], [1, 1, 1])
+#             else:  # "Closed" or "Running"
+#                 reset_all()
 #         elif act == "O":
-#             if result == "Opened":
-#                 # led全灭
-#                 # 继电器全开
-#                 control_gpio(7, 0, 3)
-#                 control_gpio(7, 0, 2)
-#             elif result == "Closed":
-#                 gpioled = [gpios[0], gpios[2], gpios[4]]
-#                 gpiorelay = [gpios[1], gpios[3], gpios[5]]
-#                 for gpiol in gpioled:
-#                     os.system('echo 0 > ' + gpiol)
-#                 for gpior in gpiorelay:
-#                     os.system('echo 0 > ' + gpior)
-#             elif result == "Running":
-#                 # led全灭
-#                 # 继电器全开
-#                 control_gpio(7, 0, 3)
-#                 control_gpio(7, 0, 2)
-#     elif num == "A":  # A 相
-#         if act == "C":
-#             if result == "Opened":  # 开到位
-#                 os.system('echo 0 > ' + gpios[0])
-#                 os.system('echo 1 > ' + gpios[1])
-#                 os.system('echo 1 > ' + gpioes[0])
-#                 os.system('echo 0 > ' + gpioes[1])
-#                 # print('echo 1 > ' + gpios[1])
-#                 # print('echo 1 > ' + gpioes[0])
-#             elif result == "Closed":  # 开不到位
-#                 print("ALL leds are reset", 'output')
-#                 print("ALL relay are reset", 'output')
-#                 control_gpio(7, 0, 3)
-#                 control_gpio(7, 0, 2)
-#             elif result == "Running":  # 开不到位
-#                 print("ALL relay are reset", 'output')
-#                 print("ALL leds are reset", 'output')
-#                 control_gpio(7, 0, 3)
-#                 control_gpio(7, 0, 2)
-#         elif act == "O":
-#             if result == "Opened":  # 合不到位
-#                 print("ALL relay are reset", 'output')
-#                 print("ALL leds are reset", 'output')
-#                 control_gpio(7, 0, 3)
-#                 control_gpio(7, 0, 2)
-#             elif result == "Closed":  # 合到位
-#                 os.system('echo 1 > ' + gpios[0])
-#                 os.system('echo 0 > ' + gpios[1])
-#                 os.system('echo 0 > ' + gpioes[0])
-#                 os.system('echo 1 > ' + gpioes[1])
-#                 print('echo 1 > ' + gpios[0])
-#                 print('echo 1 > ' + gpioes[1])
-#             elif result == "Running":  # 合不到位
-#                 print("ALL relay are reset", 'output')
-#                 print("ALL leds are reset", 'output')
-#                 control_gpio(7, 0, 3)
-#                 control_gpio(7, 0, 2)
-#     elif num == "B":  # B 相
+#             if result == "Closed":
+#                 control_leds([gpios[0], gpios[2], gpios[4]], [0, 0, 0])
+#                 control_relays([gpios[1], gpios[3], gpios[5]], [0, 0, 0])
+#             else:  # "Opened" or "Running"
+#                 reset_all()
+#     else:
+#         idx = {"A": 0, "B": 2, "C": 4}[num]
 #         if act == "C":
 #             if result == "Opened":
-#                 os.system('echo 0 > ' + gpios[2])
-#                 os.system('echo 1 > ' + gpios[3])
-#                 os.system('echo 1 > ' + gpioes[2])
-#                 os.system('echo 0 > ' + gpioes[3])
-#                 print('echo 1 > ' + gpios[3])
-#                 print('echo 1 > ' + gpioes[2])
-#             elif result == "Closed":
-#                 print("ALL leds are reset", 'output')
-#                 print("ALL relay are reset", 'output')
-#                 control_gpio(7, 0, 3)
-#                 control_gpio(7, 0, 2)
-#             elif result == "Running":
-#                 print("ALL leds are reset", 'output')
-#                 print("ALL relay are reset", 'output')
-#                 control_gpio(7, 0, 3)
-#                 control_gpio(7, 0, 2)
+#                 control_leds([gpios[idx + 1]], [1])
+#                 control_relays([gpios[idx], gpioes[idx]], [1, 0])
+#             else:  # "Closed" or "Running"
+#                 reset_all()
 #         elif act == "O":
-#             if result == "Opened":
-#                 print("ALL leds are reset", 'output')
-#                 print("ALL relay are reset", 'output')
-#                 control_gpio(7, 0, 3)
-#                 control_gpio(7, 0, 2)
-#             elif result == "Closed":
-#                 os.system('echo 1 > ' + gpios[2])
-#                 os.system('echo 0 > ' + gpios[3])
-#                 os.system('echo 0 > ' + gpioes[2])
-#                 os.system('echo 1 > ' + gpioes[3])
-#                 print('echo 1 > ' + gpioes[3])
-#                 print('echo 1 > ' + gpios[2])
-#             elif result == "Running":
-#                 print("ALL leds are reset", 'output')
-#                 print("ALL relay are reset", 'output')
-#                 control_gpio(7, 0, 3)
-#                 control_gpio(7, 0, 2)
-#     elif num == "C":  # C 相
-#         if act == "C":
-#             if result == "Opened":
-#                 os.system('echo 0 > ' + gpios[4])
-#                 os.system('echo 1 > ' + gpios[5])
-#                 os.system('echo 1 > ' + gpioes[4])
-#                 os.system('echo 0 > ' + gpioes[5])
-#                 print('echo 1 > ' + gpios[5])
-#                 print('echo 1 > ' + gpioes[4])
-#             elif result == "Closed":
-#                 print("ALL leds are reset", 'output')
-#                 print("ALL relay are reset", 'output')
-#                 control_gpio(7, 0, 3)
-#                 control_gpio(7, 0, 2)
-#             elif result == "Running":
-#                 print("ALL leds are reset", 'output')
-#
-#                 print("ALL relay are reset", 'output')
-#                 control_gpio(7, 0, 3)
-#                 control_gpio(7, 0, 2)
-#         elif act == "O":
-#             if result == "Opened":
-#                 print("ALL leds are reset", 'output')
-#                 print("ALL relay are reset", 'output')
-#                 control_gpio(7, 0, 3)
-#                 control_gpio(7, 0, 2)
-#             elif result == "Closed":
-#                 os.system('echo 1 > ' + gpios[4])
-#                 os.system('echo 0 > ' + gpios[5])
-#                 os.system('echo 0 > ' + gpioes[4])
-#                 os.system('echo 1 > ' + gpioes[5])
-#                 print('echo 1 > ' + gpios[4])
-#                 print('echo 1 > ' + gpioes[5])
-#             elif result == "Running":
-#                 print("ALL leds are reset", 'output')
-#                 print("ALL relay are reset", 'output')
-#                 control_gpio(7, 0, 3)
-#                 control_gpio(7, 0, 2)
-def output(num, act, result):
-    def control_leds(leds, values):
-        for led, value in zip(leds, values):
-            os.system(f'echo {value} > {led}')
-
-    def control_relays(relays, values):
-        for relay, value in zip(relays, values):
-            os.system(f'echo {value} > {relay}')
-
-    def reset_all():
-        control_gpio(7, 0, 3)
-        control_gpio(7, 0, 2)
-
-    if num == "ALL":
-        if act == "C":
-            if result == "Opened":
-                control_leds([gpios[1], gpios[3], gpios[5]], [1, 1, 1])
-                control_relays([gpios[0], gpios[2], gpios[4]], [1, 1, 1])
-            else:  # "Closed" or "Running"
-                reset_all()
-        elif act == "O":
-            if result == "Closed":
-                control_leds([gpios[0], gpios[2], gpios[4]], [0, 0, 0])
-                control_relays([gpios[1], gpios[3], gpios[5]], [0, 0, 0])
-            else:  # "Opened" or "Running"
-                reset_all()
-    else:
-        idx = {"A": 0, "B": 2, "C": 4}[num]
-        if act == "C":
-            if result == "Opened":
-                control_leds([gpios[idx + 1]], [1])
-                control_relays([gpios[idx], gpioes[idx]], [1, 0])
-            else:  # "Closed" or "Running"
-                reset_all()
-        elif act == "O":
-            if result == "Closed":
-                control_leds([gpios[idx]], [1])
-                control_relays([gpios[idx + 1], gpioes[idx + 1]], [0, 1])
-            else:  # "Opened" or "Running"
-                reset_all()
-
-
-# def control_gpio(gpio_index, value, classes):
-#     # Check if the value is valid
-#     # global gpio
-#     global gpio
-#     if value != 0 and value != 1:
-#         print("Error: Invalid value")
-#         return
-#     # Get the path of the GPIO
-#     if classes == 1:
-#         gpio = gpios[gpio_index - 1]
-#
-#         if gpio_index < 0 or gpio_index >= len(gpios) + 1:
-#             print("Error: Invalid GPIO index")
-#             return
-#     elif classes == 0:
-#         if gpio_index < 0 or gpio_index >= len(gpioes) + 1:
-#             print("Error: Invalid GPIO index")
-#             return
-#         gpio = gpioes[gpio_index - 1]
-#     elif classes == 2:
-#         print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()), "ALL leds are reset", "control_gpio")
-#         for gpio in gpioes:
-#             os.system('echo 0 > ' + gpio)
-#
-#     elif classes == 3:
-#         print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()), "ALL relays are reset", "control_gpio")
-#         for gpio in gpios:
-#             os.system('echo 0 > ' + gpio)
-#
-#     os.system('echo {0} > {1}'.format(str(value), gpio))
-#     print("GPIO", gpio, "is now", value)
-#     # logging.debug("GPIO" + gpio + "is now" + str(value))
-
+#             if result == "Closed":
+#                 control_leds([gpios[idx]], [1])
+#                 control_relays([gpios[idx + 1], gpioes[idx + 1]], [0, 1])
+#             else:  # "Opened" or "Running"
+#                 reset_all()
 
 
 def control_gpio(gpio_index, value, classes):
     # Check if the value is valid
-    if value not in (0, 1):
+    # global gpio
+    global gpio
+    if value != 0 and value != 1:
         print("Error: Invalid value")
         return
+    # Get the path of the GPIO
+    if classes == 1:
+        gpio = gpios[gpio_index - 1]
 
-    # Helper function to control GPIO pins
-    def set_gpio_pins(pin_list, pin_value):
-        for pin in pin_list:
-            os.system(f'echo {pin_value} > {pin}')
-            print(f"GPIO {pin} is now {pin_value}")
-
-    if classes in (0, 1):
-        # Control individual GPIO pin
-        gpio_list = gpios if classes == 1 else gpioes
-
-        if 0 <= gpio_index < len(gpio_list) + 1:
-            gpio = gpio_list[gpio_index]
-            os.system(f'echo {value} > {gpio}')
-            print(f"GPIO {gpio} is now {value}")
-        else:
+        if gpio_index < 0 or gpio_index >= len(gpios) + 1:
             print("Error: Invalid GPIO index")
-
+            return
+    elif classes == 0:
+        if gpio_index < 0 or gpio_index >= len(gpioes) + 1:
+            print("Error: Invalid GPIO index")
+            return
+        gpio = gpioes[gpio_index - 1]
     elif classes == 2:
-        # Reset all LED states
         print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()), "ALL leds are reset", "control_gpio")
-        set_gpio_pins(gpioes, 0)
+        for gpio in gpioes:
+            os.system('echo 0 > ' + gpio)
 
     elif classes == 3:
-        # Reset all relay states
         print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()), "ALL relays are reset", "control_gpio")
-        set_gpio_pins(gpios, 0)
+        for gpio in gpios:
+            os.system('echo 0 > ' + gpio)
 
+    os.system('echo {0} > {1}'.format(str(value), gpio))
+    print("GPIO", gpio, "is now", value)
+    # logging.debug("GPIO" + gpio + "is now" + str(value))
+
+
+
+# def control_gpio(gpio_index, value, classes):
+#     # Check if the value is valid
+#     if value not in (0, 1):
+#         print("Error: Invalid value")
+#         return
+#
+#     # Helper function to control GPIO pins
+#     def set_gpio_pins(pin_list, pin_value):
+#         for pin in pin_list:
+#             os.system(f'echo {pin_value} > {pin}')
+#             print(f"GPIO {pin} is now {pin_value}")
+#
+#     if classes in (0, 1):
+#         # Control individual GPIO pin
+#         gpio_list = gpios if classes == 1 else gpioes
+#
+#         if 0 <= gpio_index < len(gpio_list) + 1:
+#             gpio = gpio_list[gpio_index]
+#             os.system(f'echo {value} > {gpio}')
+#             print(f"GPIO {gpio} is now {value}")
+#         else:
+#             print("Error: Invalid GPIO index")
+#
+#     elif classes == 2:
+#         # Reset all LED states
+#         print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()), "ALL leds are reset", "control_gpio")
+#         set_gpio_pins(gpioes, 0)
+#
+#     elif classes == 3:
+#         # Reset all relay states
+#         print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()), "ALL relays are reset", "control_gpio")
+#         set_gpio_pins(gpios, 0)
+control_gpio(7, 0, 3)
+control_gpio(7, 0, 2)
 
 
 
@@ -372,7 +377,7 @@ def detection(session, img, input_width, input_height, thresh):
     # 输入图像的原始宽高
     H, W, _ = img.shape
 
-    # 数据预处理: resize, 1/255
+    # 数据预处理: resize, 1/25v5
     data = preprocess(img, [input_width, input_height])
 
     # 模型推理
@@ -449,7 +454,7 @@ class PicInfo(threading.Thread):
         return self.name
 
 
-ser = serial.Serial('/dev/ttyS3', 115200, timeout=0.001)
+ser = serial.Serial('/dev/ttyS3', 9600, timeout=0.001)
 
 
 def echo_serial():
@@ -462,8 +467,8 @@ def echo_serial():
 ser_thread = threading.Thread(target=echo_serial)
 ser_thread.start()
 
-control_gpio(7, 0, 3)
-control_gpio(7, 0, 2)
+# control_gpio(7, 0, 3)
+# control_gpio(7, 0, 2)
 
 
 @api.route('/test', methods=['post'])
@@ -560,3 +565,5 @@ def checkAI():
 
 if __name__ == '__main__':
     api.run(port=5000, debug=True, host='0.0.0.0')
+    control_gpio(7, 0, 3)
+    control_gpio(7, 0, 2)
